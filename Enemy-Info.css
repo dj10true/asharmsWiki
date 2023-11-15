@@ -1,0 +1,62 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.main_con{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#main_header{
+    border: black 9px thick;
+    background-color: gray;
+}
+
+.enemy_con{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 
+    200px 200px 200px 200px 200px
+    200px 200px 200px 200px 200px
+    200px 200px 200px 200px;
+    height: 100%;
+    width: 100%;
+    border: solid red 9px;
+    margin: 0;
+    padding: 0;
+}
+.enemy_header{
+    background-color: grey;
+    width: 100%;
+}
+.enemy{
+    background-color: white;
+    border-style: groove ridge;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.enemy img{
+    height: 70%;
+    width: 100%;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+.enemy_info_con{
+    background-color: grey;
+}
+.passive_skills{
+    cursor: pointer;
+    background-color: goldenrod;  
+}
+.active_skills{
+    cursor: pointer;
+  background-color: red;
+}
