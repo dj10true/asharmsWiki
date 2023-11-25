@@ -30,6 +30,7 @@ Maus.src = "./img/BaseArt/maus full.png";
 Skua.src = "./img/BaseArt/SkuaFull.png";
 Tis_A.src = "./img/BaseArt/Tis-AFull.png";
 B4.src = "./img/BaseArt/B4Full.png";
+Aircraftmodel11.src = "./img/BaseArt/Aircraftmodel11Full.png";
 //two stars
 Hyabusa.src = "./img/BaseArt/HyabusaFull.png";
 

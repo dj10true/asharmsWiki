@@ -144,12 +144,6 @@
 <span class="role_con"><h1>Light-Type Fighter Plane</h1><img class="role_img" src="img/Icon_GetStep2_Fighter.png"></span></h3>
 </div>
 
-<div class="icon_info_con">
-<h3 class="icon_header">BeauFort
-<img  id="Beaufort_icon" class="icon_tag" src="./img/Icons/Beaufort.png"  onclick="Display(event, 'Beaufort_body')">
-<span class="role_con"><h1>Light-Type Fighter Plane</h1><img class="role_img" src="img/Icon_GetStep2_Fighter.png"></span></h3>
-</div>
-
 
 <div class="icon_info_con">
 <h3 class="icon_header">HellCat
@@ -319,6 +313,26 @@
 <img  id="Bulldog_icon" class="icon_tag" src="./img/Icons/Bulldog.png"  onclick="Display(event, 'Bulldog_body')">
 <span class="role_con"><h1>Light-Type Tank</h1><img class="role_img" src="img/Icon_GetStep2_Tank.png"></span></h3>
 </div> 
+
+<div class="icon_info_con">
+<h3 class="icon_header">I-220
+<img  id="I220_icon" class="icon_tag" src="./img/Icons/I-220.png"  onclick="Display(event, 'I220_body')">
+<span class="role_con"><h1>Light-Type Fighter Plane</h1><img class="role_img" src="img/Icon_GetStep2_Fighter.png"></span></h3>
+</div>
+
+
+<div class="icon_info_con">
+<h3 class="icon_header">Shiden
+<img  id="Shiden_icon" class="icon_tag" src="./img/Icons/Shiden.png"  onclick="Display('Shiden_body')">
+<span class="role_con"><h1>Light-Type Fighter Plane</h1><img class="role_img" src="img/Icon_GetStep2_Fighter.png"></span></h3>
+</div>
+
+
+<div class="icon_info_con">
+<h3 class="icon_header">Fukuyama
+<img  id="Fukuyama_icon" class="icon_tag" src="./img/Icons/Fukuyama.png"  onclick="Display('Fukuyama_body')">
+<span class="role_con"><h1>Heavy-Type Bomber Plane</h1><img class="role_img" src="img/Icon_GetStep2_Bomber.png"></span></h3>
+</div>
     
 
 
@@ -351,6 +365,12 @@
 <img  id="Hyabusa_icon" class="icon_tag" src="./img/Icons/Hyabusa.png"  onclick="Display(event, 'Hyabusa_body')">
 <span class="role_con"><h1>Light-Type Fighter Plane</h1><img class="role_img" src="img/Icon_GetStep2_Fighter.png"></span></h3>
 </div> 
+
+<div class="icon_info_con">
+<h3 class="icon_header">BeauFort
+<img  id="Beaufort_icon" class="icon_tag" src="./img/Icons/Beaufort.png"  onclick="Display(event, 'Beaufort_body')">
+<span class="role_con"><h1>Light-Type Fighter Plane</h1><img class="role_img" src="img/Icon_GetStep2_Fighter.png"></span></h3>
+</div>
 
 <div class="icon_info_con">
 <h3 class="icon_header">CW-19
@@ -655,7 +675,7 @@
 <div class="icon_info_con">
 <h3 class="icon_header">WildCat
 <img  id="WildCat_icon" class="icon_tag" src="./img/Icons/WildCat.png"  onclick="Display(event, 'WildCat_body')">
-<span class="role_con"><h1>Light-Fighter Plane</h1><img class="role_img" src="img/Icon_GetStep2_Fighter.png"></span></h3>
+<span class="role_con"><h1>Light-Type Fighter Plane</h1><img class="role_img" src="img/Icon_GetStep2_Fighter.png"></span></h3>
 </div>
 
 <div class="icon_info_con">
@@ -1106,6 +1126,206 @@ increases own [Anti-Ground-Firepower](30%/3-turns/non-stackable), at the start o
 
 </div>
 <!--end of Maus-->
+
+
+
+<div id="Aircraftmodel11_body" class="child_body"><h1 class="doll_header">Aircraft Model-11</h1>
+<img id="Aircraftmodel11" class ="modal_img" src="" loading="lazy">
+<img  id="Skins_icon" class="collection_assignment" loading="lazy" src="./img/Icons/Item_Quality_Boxs_Skin.png" onclick="Assign(aircraftmodel11_collection)">
+<div class="job_select">
+<div class="job_header"><h1 >Jobs</h1></div>
+<div class="jobs"><img loading="lazy" src="./img/Icons/Bomber.png"     class="jobswap" onclick="JobSwap(aircraftmodel11_j1)">
+<span class="jobtxt"><h1>Scout ⅠⅠ</h1></span></div>
+<div class="jobs" ><img loading="lazy" src="./img/Icons/Strategic_Cruiser.png" class="jobswap" onclick="JobSwap(aircraftmodel11_j2)">
+<span class="jobtxt"><h1>Strategic Scout ⅠⅠ</h1></span></div></div>                   
+    
+<div id="aircraftmodel11_j1" class="job_container" style="display: none;">                            
+<div class="p_header"><h1 >Passives</h1></div>
+<div class="skill_con">
+
+<div class="skill"><div class="skill_name"><h1>All Weather Proof<br><img loading="lazy" src="./img/Icons/passive.png"></h1></div><br>
+<div class= "affect">
+<h2>[Cloudy],[Strong Winds],[Thundering Rain], is adapted to these climates</h2>
+</div>
+
+<div class="skill"><div class="skill_name"><h1>Anti Heavy Special Attack ● Ground<br><img loading="lazy" src="./img/Icons/passive.png"></h1></div><br>
+<div class= "affect">
+<h2>If you are attacking a "Heavy"type enemy increases own [Anti Ground Firepower](10%)</h2>
+</div></div></div>
+
+</div>
+<!--Actives-->
+<div class="a_header"><h1 >Actives</h1></div>
+<div class="skill_con">
+
+
+<div class="skill"><div class="skill_name"><h1>Low Air Search<br><img loading="lazy" src="./img/Icons/Search.png"></h1></div><br>
+<div class= "affect">
+<h2>applies [Marked] to every enemy unit in range of 0-2squares below, attacks the enemy in the first square</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<div class="Tiles" style="background-color:purple"></div><div class="Tiles" style="background-color:purple"></div><div class="Tiles" style="background-color:purple"></div>
+</div></div>
+
+<div class="skill"><div class="skill_name"><h1>Circling Ascent<br><img loading="lazy" src="./img/Icons/Self_Buff.png"></h1></div><br>
+<div class= "affect">
+<h2>Removes every [Marked] affect, if not [Marked] increases own [Mobility](30%/this turn),
+transitions into "High Flying" mode grants self [Super High Flying] if attacked by a ground unit increases own [Damage Cut](70%/for this attack)  
+</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<div class="Tiles" style="background-color:green"><span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span></div> 
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+</div></div>
+
+
+<div class="skill"><div class="skill_name"><h1>Smoke<br><img loading="lazy" src="./img/Icons/Smoke.png"></h1></div><br>
+<div class= "affect">
+<h2>If  there are any ally ground units 0~1~squares below reduces their [Threat Level -3](1-turn/non-stackable) & [Mobility](15%/1-turn/non-stackable),
+removes all allies [Marked] affects
+</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<div class="Tiles" style="background-color: green;"></div><div class="Tiles" style="background-color: green;"></div> 
+</div></div> 
+
+
+<div class="skill"><div class="skill_name"><h1>Area Exploration<br><img loading="lazy" src="./img/Icons/MarkIcon.png"></h1></div><br>
+<div class= "affect">
+<h2>Applies [Marked](3-turns) to every enemy ground unit 2-3~squares beneath you</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div> <div class="Tiles"></div>
+</div></div> 
+
+
+<div class="skill"><div class="skill_name"><h1>Rear end Shooting<br><img loading="lazy" src="./img/Icons/Rear_Shooting.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out a attack on 1-Squad of enemies 1-2~squares ahead of you, after attacking increases own [Mobility](15%/1-turn) retreats back 1~square and transitions into "Low Flying" mode</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span><div class="Tiles"></div><div class="Tiles"></div> 
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+</div></div> 
+
+
+<div class="skill"><div class="skill_name"><h1>Super Long Range Attack<br><img loading="lazy" src="./img/Icons/Special_Skill.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on 2-Sqauds of "ground" enemies in range of 0-3~Squares below, has [50%]base Power, for every 1-Square of distance between the first aerial square and the target give this attack [Increased Power](20%) 
+</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div> 
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+</div></div></div>
+
+</div>
+
+
+
+<!--2nd Job-->
+<div id= "aircraftmodel11_j2" class="jobswap_con" style="display: none;"> 
+<div class="a_header"><h1 >Actives</h1></div>
+<div class="skill_con">
+
+<div class="skill"><div class="skill_name"><h1>Supressed Bombing<br><img loading="lazy" src="./img/Icons/Supressed_Bombing.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on  all "ground" enemies 1-2~Squares below,  removes all targets [Anti Ground Firepower] & [Anti Air Firepower](Regardless if a ally or enemy/Removes buffs of these types),  reduces the enemies [Crit Rate](20%/2-turns/Non-stackable) & [Threat Level -3](2-turns/Non-stackable) after attacking advances forward 1-Square
+</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<br><br><div class="Tiles" style="opacity: 0.5"></div> <div class="Tiles" style="opacity: 0.5"></div><div class="Tiles"></div><div class="Tiles"></div> 
+</div></div>
+
+<div class="skill"><div class="skill_name"><h1>Air Battle Control<br><img loading="lazy" src="./img/Icons/Air_Buff.png"></h1></div><br>
+<div class= "affect">
+<h2>Increases all ally "Flying" units [Accuracy] & [Anti Air Firepower](20%/2-turns/Non-stackable)
+</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<div class="Tiles" style="background-color:green"></div><div class="Tiles" style="background-color:green"><span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span></div><div class="Tiles" style="background-color:green"></div><div class="Tiles" style="background-color:green"></div><div class="Tiles" style="background-color:green"></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+</div></div>
+
+<div class="skill"><div class="skill_name"><h1>Super Long Range Attack<br><img loading="lazy" src="./img/Icons/Special_Skill.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on 2-Sqauds of "ground" enemies in range of 0-3~Squares below, has [50%]base Power, for every 1-Square of distance between the first aerial square and the target give this attack [Increased Power](20%) 
+</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<div class="Tiles" style="opacity: 0.5"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div> 
+</div></div>
+
+
+<div class="skill"><div class="skill_name"><h1>Defensive Power<br><img loading="lazy" src="./img/Icons/Defense_Power.png"></h1></div><br>
+<div class= "affect">
+<h2>Removes all [Marked] affects, increases own [Damage Cut] & [Anti Air Firepower](25%/this turn),  if attacked by any "flying" enemies ahead carry out a counterattack, if not [Marked] grants self [High Flying] if attacked by any "ground" enemies increases own [Damage Cut](70%/this turn)<h2>
+</div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span><div class="Tiles"></div><div class="Tiles"></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+</div></div>
+
+<div class="skill"><div class="skill_name"><h1>High Flying Observation<br><img loading="lazy" src="./img/Icons/MarkIcon.png"></h1></div><br>
+<div class= "affect">
+<h2>Applies [Marked](3-turns) to the "ground" enemies  within range of 1-4~Squares below you</h2>
+</div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<div class="Tiles" style="background-color: purple"></div><div class="Tiles" style="background-color: purple"></div><div class="Tiles" style="background-color: purple"></div><div class="Tiles" style="background-color: purple"></div><div class="Tiles" style="background-color: purple"></div><div class="Tiles" style="background-color: purple"></div>
+</div></div>
+
+
+<div class="skill"><div class="skill_name"><h1>Super Long Range Attack<br><img loading="lazy" src="./img/Icons/Special_Skill.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on 2-Sqauds of "ground" enemies in range of 0-3~Squares below, has [50%]base Power, for every 1-Square of distance between the first aerial square and the target give this attack [Increased Power](20%) 
+</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/Aircraftmodel11Chibi.png"></span>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<div class="Tiles" style="opacity: 0.5"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div> 
+</div></div></div></div>
+
+</div>
+<!--end of Aircraft model 11-->
 
 
 
@@ -2090,6 +2310,7 @@ at your next turn  after attacking carries out an additional attack on the close
 </div>
 
 <!--End Of B4-->
+
 
 
 <!--Two Star Bodies----------->
