@@ -1329,6 +1329,200 @@ removes all allies [Marked] affects
 
 
 
+
+
+<div id="Ahat_body" class="child_body"><h1 class="doll_header">Ahat</h1>
+<img id="Ahat" class ="modal_img" src="" loading="lazy">
+<img  id="Skins_icon" class="collection_assignment" loading="lazy" src="./img/Icons/Item_Quality_Boxs_Skin.png" onclick="Assign(ahat_collection)">
+<div class="job_select">
+<div class="job_header"><h1 >Jobs</h1></div>
+<div class="jobs"><img loading="lazy" src="./img/Icons/Air_Defense.png" class="jobswap" onclick="JobSwap(ahat_j1)">
+<span class="jobtxt"><h1>Air Defense ΙΙ</h1></span></div>
+<div class="jobs" ><img loading="lazy" src="./img/Icons/Patrol.png"    class="jobswap" onclick="JobSwap(ahat_j2)">
+<span class="jobtxt"><h1>Sentry Patrol ΙΙ</h1></span></div></div>                   
+    
+<div class="job_container">                            
+<div id= "ahat_j1" class="jobswap_con" style="display: none;">
+<!-- <div class="p_header"><h1 >Passives</h1></div>
+<div class="skill_con">
+
+<div class="skill"><div class="skill_name"><h1>Alarmer<br><img loading="lazy" src="./img/Icons/SelfPassive.png"></h1></div><br>
+<div class= "affect">
+<h2>Only if you are present in the battlefield, if an ally "Stardust Federation"member is attacked increase[Damage Cut](10%)</h2></div>
+</div>
+
+<div class="skill"><div class="skill_name"><h1>Air Support<br><img loading="lazy" src="./img/Icons/passive.png"></h1></div><br>
+<div class= "affect">
+<h2>If attacking a "Flying"enemy, reduces the enemies [Anti Ground Hit Rate](5%/1-turn/Non-Stackable)</h2></div>
+</div>
+
+<div class="skill"><div class="skill_name"><h1>Crowd Affect (Ground)<br><img loading="lazy" src="./img/Icons/passive.png"></h1></div><br>
+<div class= "affect">
+<h2>If you [Sqaud Count] is above 3, at the time of attacking increases [Anti Ground Firepower](5%)</h2></div>
+</div>
+
+<div class="skill"><div class="skill_name"><h1>Low Tempature Adaptability<br><img loading="lazy" src="./img/Icons/passive.png"></h1></div><br>
+<div class= "affect">
+<h2>[Water Lands], [Snow Mountains], [Frozen Rivers], nullifies the demerits of these terrains</h2></div>
+</div>
+
+<div class="skill"><div class="skill_name"><h1>Anti Light Type Attack<br><img loading="lazy" src="./img/Icons/passive.png"></h1></div><br>
+<div class= "affect">
+<h2>If you are about to attack a "light type"enemy, increases own [Firepower](10%)</h2></div>
+</div>
+
+
+<div class="skill"><div class="skill_name"><h1>Furious Rage Ι<br><img loading="lazy" src="./img/Icons/passive.png"></h1></div><br>
+<div class= "affect">
+<h2>Every turn increases own [Crit Rate](3%/Max 9%), if a crit occurs increases own [Crit Damage](15%/3-turns)</h2>
+</div>
+</div></div> -->
+
+
+<!--Actives-->
+<div class="a_header"><h1 >Actives</h1></div>
+<div class="skill_con">
+
+<div class="skill"><div class="skill_name"><h1>Reflexive Frontward Fire<br><img loading="lazy" src="./img/Icons/AttackIcon.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on a squad of enemies 1-2~Squares ahead</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/AhatChibi.png"></span><div class="Tiles"></div><div class="Tiles"></div>
+</div></div>
+
+    
+
+<div class="skill"><div class="skill_name"><h1>Anti Air Shooting<br><img loading="lazy" src="./img/Icons/Double_airGuns.png"></h1></div><br>
+<div class= "affect">
+<h2>Transfers into "Stationary"mode, Carries out an attack on 1-Group of "flying" enemies, inflicts [Marked](3-turns)</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<div class="Tiles" style="opacity:0.5"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/AhatChibi.png"></span>
+</div></div> 
+
+
+<div class="skill"><div class="skill_name"><h1>Air Defensive Bullet Shower<br><img loading="lazy" src="./img/Icons/Double_airGuns.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on all "Flying" enemies 2-3~Squares above, reduces enemies [Hit rate](15%/2-turns/Non-stackable) & [Threat Level -3](2-turns/Non-stackable), if the target is marked increases own [Anti Air Firepower](30%/for this attack)</h2>
+</div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div><div class="Tiles"></div> 
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/AhatChibi.png"></span>
+</div></div> 
+
+
+
+<div class="skill"><div class="skill_name"><h1>Precise Anti Air<br><img loading="lazy" src="./img/Icons/Double_airGuns.png"></h1></div><br>
+<div class= "affect">
+<h2>increases own [Anti Air Firepower](30%/for this attack), carries out an attack on 1-group of "Flying" enemies above, reduces the targets [Hit Rate](15%/Non-stackable) & [Threat Level -3](2-turns/Non-stackable)</h2>
+</div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/AhatChibi.png"></span>
+</div></div>
+
+<div class="skill"><div class="skill_name"><h1>Auto Shooting ● Revised<br><img loading="lazy" src="./img/Icons/Special_Skill.png"></h1></div><br>
+<div class= "affect">
+    <h2>Powerful Stationary Anti Ground Attack Skill, after attacking attacks the same target again </h2>
+</div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/AhatChibi.png"></span><div class="Tiles" style="opacity:0.5"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div></div></div>
+</div>
+
+
+
+<!--2nd Job-->
+<div id= "ahat_j2" class="jobswap_con" style="display: none;"> 
+<div class="a_header"><h1 >Actives</h1></div>
+<div class="skill_con">
+
+<div class="skill"><div class="skill_name"><h1>Reflexive Frontward Fire<br><img loading="lazy" src="./img/Icons/AttackIcon.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on a squad of enemies 1-2~Squares ahead</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/AhatChibi.png"></span><div class="Tiles"></div><div class="Tiles"></div>
+</div></div>
+
+    
+
+<div class="skill"><div class="skill_name"><h1>Aerial Defense<br><img loading="lazy" src="./img/Icons/aaDefense.png"></h1></div><br>
+<div class= "affect">
+<h2>Transfers into "Stationary"mode, Ccarries out a cutionary attack on the "Flying" enemies 1-3~Squares above, can activate an infinite amount of times</h2>
+<h1>Range:</h1>
+</div>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/AhatChibi.png"></span>
+</div></div> 
+
+<div class="skill"><div class="skill_name"><h1>Defense Position<br><img loading="lazy" src="./img/Icons/Defensepos.png"></h1></div><br>
+<div class= "affect">
+<h2>applies [Encampment] to self, removes [Marked] along with other special affects, Carries out an attack on all of the [Marked] "Flying" enemies, give this attack increased [Ant Air Firepower](30%), while in [Encampment] if you become inflicted with [Marked] increases own [Anti Ground Firepower](30%/3-turns/Non-stackable)</h2>
+</div>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/AhatChibi.png"></span>
+</div></div>
+
+<div class="skill"><div class="skill_name"><h1>Forward firing Position<br><img loading="lazy" src="./img/Icons/AttackIcon.png"></h1></div><br>
+<div class= "affect">
+<h2>applies [Encampment] to self, removes [Marked] along with other special affects, Carries out an attack on 1-Squad of "ground" enemies 2-3~Squares ahead, if the target is [Marked] increase own [Anti Ground Firepower](30%/for this attack), while in [Encampment] if you become inflicted with [Marked] increases own [Anti Ground Firepower](30%/3-turns/Non-stackable)</h2>
+</div>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/AhatChibi.png"></span><div class="Tiles" style="opacity:0.5"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div></div>
+
+
+<div class="skill"><div class="skill_name"><h1>Auto Shooting ● Revised<br><img loading="lazy" src="./img/Icons/Special_Skill.png"></h1></div><br>
+<div class= "affect">
+    <h2>Powerful Stationary Anti Ground Attack Skill, after attacking attacks the same target again </h2>
+</div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/AhatChibi.png"></span><div class="Tiles" style="opacity:0.5"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div></div></div></div></div>
+
+
+</div>
+<!--End of Ahat-->
+
+
+
 <div id="Skua_body" class="child_body"><h1 class="doll_header">Skua</h1>
 <img id="Skua" class ="modal_img" src="" loading="lazy">
 <img  id="Skins_icon" class="collection_assignment" loading="lazy" src="./img/Icons/Item_Quality_Boxs_Skin.png" onclick="Assign(skua_collection)">
@@ -4565,7 +4759,7 @@ if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack)</h
 <span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/T77Chibi.png"></span><div class="Tiles"></div>
 </div></div> 
 
-<div class="skill"><div class="skill_name"><h1>Anti Air Cannon Fire<br><img loading="lazy" src="./img/Icons/AntiAirfire.png"></h1></div><br>
+<div class="skill"><div class="skill_name"><h1>Anti Air Cannon Fire<br><img loading="lazy" src="./img/Icons/Double_airGuns.png"></h1></div><br>
 <div class= "affect">
 <h2>Transfers into "Stationary"Mode, carries out an attack on 1-Squad  of "Flying" enemies 0-3~Squares above, applies [Marked](3-turns)</h2>
 </div>
@@ -4579,7 +4773,7 @@ if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack)</h
 </div></div> 
 
 
-<div class="skill"><div class="skill_name"><h1>Air Defensive Bullet Shower<br><img loading="lazy" src="./img/Icons/AntiAirfire.png"></h1></div><br>
+<div class="skill"><div class="skill_name"><h1>Air Defensive Bullet Shower<br><img loading="lazy" src="./img/Icons/Double_airGuns.png"></h1></div><br>
 <div class= "affect">
 <h2>Carries out an attack on all "Flying" enemies 2-3~Squares above, reduces enemies [Hit rate](15%/2-turns/Non-stackable) & [Threat Level -3](2-turns/Non-stackable), if the target is marked increases own [Anti Air Firepower](30%/for this attack)</h2>
 </div>
@@ -4594,7 +4788,7 @@ if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack)</h
 
 
 
-<div class="skill"><div class="skill_name"><h1>Precise Anti Air<br><img loading="lazy" src="./img/Icons/AntiAirfire.png"></h1></div><br>
+<div class="skill"><div class="skill_name"><h1>Precise Anti Air<br><img loading="lazy" src="./img/Icons/Double_airGuns.png"></h1></div><br>
 <div class= "affect">
 <h2>increases own [Anti Air Firepower](30%/for this attack), carries out an attack on 1-group of "Flying" enemies above, reduces the targets [Hit Rate](15%/Non-stackable) & [Threat Level -3](2-turns/Non-stackable)</h2>
 </div>
