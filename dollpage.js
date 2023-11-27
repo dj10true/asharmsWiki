@@ -35,6 +35,7 @@ Ahat.src  = "./img/BaseArt/AhatFull.png";
 Chito.src = "./img/BaseArt/ChitoFull.png";
 Blackwidow.src = "./img/BaseArt/BlackwidowFull.png";
 Bf109.src = "./img/BaseArt/Bf109Full.png";
+Shamon.src ="./img/BaseArt/ShamonFull.png";
 
 //two stars
 Hyabusa.src = "./img/BaseArt/HyabusaFull.png";
