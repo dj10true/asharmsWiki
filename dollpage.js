@@ -36,6 +36,14 @@ Chito.src = "./img/BaseArt/ChitoFull.png";
 Blackwidow.src = "./img/BaseArt/BlackwidowFull.png";
 Bf109.src = "./img/BaseArt/Bf109Full.png";
 Shamon.src ="./img/BaseArt/ShamonFull.png";
+Senha.src ="./img/BaseArt/SenhaFull.png";
+Ryusei.src = "./img/BaseArt/RyuseiFull.png";
+Puma.src  = "./img/BaseArt/PumaFull.png";
+Raincaster.src = "./img/BaseArt/RaincasterFull.png";
+Raiden.src = "./img/BaseArt/RaidenFull.png";
+Pershing.src = "./img/BaseArt/PershingFull.png";
+Lightning.src = "./img/BaseArt/LightningFull.png";
+B29.src  = "./img/BaseArt/B29Full.png";
 
 //two stars
 Hyabusa.src = "./img/BaseArt/HyabusaFull.png";
