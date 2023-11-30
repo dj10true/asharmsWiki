@@ -25,6 +25,12 @@ function Display(e, doll) {
 
 
 //The Src For Modal Images Inside Modal
+
+//Limiteds
+Marfusha.src = "./img/BaseArt/MarfushaFull.png";
+Laica.src    = "./img/BaseArt/LaicaFull.png";
+Albina.src   = "./img/BaseArt/AlbinaFull.png";
+
 //three stars
 Maus.src = "./img/BaseArt/maus full.png";
 Skua.src = "./img/BaseArt/SkuaFull.png";

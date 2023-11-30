@@ -86,7 +86,7 @@ body{
   background-color: black;
  }
 
-#threestr_header,#twostr_header,#onestr_header{
+#threestr_header,#twostr_header,#onestr_header,#Limited_header{
   position: sticky;
   left: 1px;
   height: 100%;
@@ -95,6 +95,19 @@ body{
   min-height: 12em;
   margin: 0;
   padding: 0;
+}
+
+#Limited_con{
+  display: inline-flex;
+  max-width: 20rem;
+  max-height: 34.5rem;
+  background-color: rgb(199, 187, 70);
+  padding: 0;
+  padding-inline-start: 3.8em;
+  margin: 1em;
+  outline: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 #threestr_con{
