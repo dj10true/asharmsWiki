@@ -2,7 +2,7 @@ body
 html{
   margin: 0;
   padding: 0;
-   display: flex;
+  display: flex;
   flex-direction: column; 
 }
 
@@ -33,6 +33,7 @@ html{
   position: sticky;
   float: left;
   width: 100%;
+  z-index: 99;
 }
 
 .link_img{
@@ -52,6 +53,7 @@ html{
   background-color: red;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 #main_hub_con{
   display: flex;
@@ -61,7 +63,7 @@ html{
 #hub_content{
   display: inline-flex;
   flex-wrap: wrap;
-  max-width: 25%;
+  width: 100%;
 }
 #site_main_img{
   margin: 0;
@@ -76,33 +78,40 @@ html{
   min-width: 100%;
   max-height: 2rem;
   background-color: yellowgreen;
-  top: 20.5rem;
+  top: 19rem;
   margin: 0;
   padding: 0;
 }
 
 #hub_content_footer{
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   margin:  0;
   padding: 0;
-  margin-left: 1em;
-  padding-top: 8em;
+  margin-left: 2px;
+  padding-top: 2em;
 }
 .links{
-  width: 40%;
-  max-width:  100%;
-  max-height: 100%;
+  width:  80%;
+  height: 100%;
+  object-fit: contain;
   margin: 5px;
   padding: 0;  
 }
 .footer_imgs{
-  height: 60px;
-  width:  90px;
+  height: 100%;
+  width:  50%;
+  object-fit: contain;
+  flex-grow: 1;
 }
 #modes{
+  display: inline-flex;
+  flex-grow: 1;
   width: 100%;
-  height: 5em;
+  height: 100%;
 }
 #test{
   position: relative;
@@ -125,10 +134,37 @@ html{
   padding: 0;
   margin:  0;
 }
-#campaign_img:hover + .txt{
+.Dollpage-text:hover + .txt{
   position: absolute;
   display: inline-block;
-  transform: translate(0px,10px);
+  transform: translate(-90px,10px);
+  opacity: 1;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.Events-text:hover + .txt{
+  position: absolute;
+  display: inline-block;
+  transform: translate(-90px,10px);
+  opacity: 1;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.Mainstory-text:hover + .txt{
+  position: absolute;
+  display: inline-block;
+  transform: translate(-90px,10px);
+  opacity: 1;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.Guide-text:hover + .txt{
+  position: absolute;
+  display: inline-block;
+  transform: translate(-90px,10px);
   opacity: 1;
   transition: 0.3s;
   z-index: 99;
