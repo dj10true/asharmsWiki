@@ -56,7 +56,7 @@ B29.src  = "./img/BaseArt/B29Full.png";
 Hellcat.src = "./img/BaseArt/HellcatFull.png";
 Fokker.src = "./img/BaseArt/FokkerFull.png";
 Halifax.src = "./img/BaseArt/HalifaxFull.png";
-He177a.src = "./img/BaseArt/He177aFull.png";
+He177.src = "./img/BaseArt/He177aFull.png";
 Flyingfortress.src = "./img/BaseArt/FlyingfortressFull.png";
 Do335.src = "./img/BaseArt/Do335aFull.png";
 
@@ -64,28 +64,34 @@ Do335.src = "./img/BaseArt/Do335aFull.png";
 Hyabusa.src = "./img/BaseArt/HyabusaFull.png";
 
 //one stars
-T26E.src    = "./img/BaseArt/T-26EFull.png";
-Tetrak.src  = "./img/BaseArt/TetrakFull.png";
-Brenten.src = "./img/BaseArt/BrentenFull.png";
-Dawnt.src   = "./img/BaseArt/DawntFull.png";
-T70.src     = "./img/BaseArt/T-70Full.png";
-Ju88.src    = "./img/BaseArt/Ju88A-4Full.png";
-Grille.src  = "./img/BaseArt/GrilleFull.png";
-Pe2.src     = "./img/BaseArt/Pe-2Full.png";
-WildCat.src = "./img/BaseArt/WildCatFull.png";
-Hesshia.src = "./img/BaseArt/HesshiaFull.png";
-T77.src     = "./img/BaseArt/T77Full.png";
+T26E.src      = "./img/BaseArt/T-26EFull.png";
+Tetrak.src    = "./img/BaseArt/TetrakFull.png";
+Brenten.src   = "./img/BaseArt/BrentenFull.png";
+Dawnt.src     = "./img/BaseArt/DawntFull.png";
+T70.src       = "./img/BaseArt/T-70Full.png";
+Ju88.src      = "./img/BaseArt/Ju88A-4Full.png";
+Grille.src    = "./img/BaseArt/GrilleFull.png";
+Wolverine.src = "./img/BaseArt/WolverineFull.png";
+Pe2.src       = "./img/BaseArt/Pe-2Full.png";
+WildCat.src   = "./img/BaseArt/WildCatFull.png";
+Hesshia.src   = "./img/BaseArt/HesshiaFull.png";
+Mc200.src     = "./img/BaseArt/Mc200Full.png";
+T77.src       = "./img/BaseArt/T77Full.png";
+He111.src     = "./img/BaseArt/He111Full.png";
 Hoischlek.src = "./img/BaseArt/HoischlekFull.png";
+T60z.src      = "./img/BaseArt/T60zFull.png";
+M3lee.src     = "./img/BaseArt/M3leeFull.png";
 BT5.src       = "./img/BaseArt/BT5Full.png";
 I165.src      = "./img/BaseArt/I165Full.png";
 Veroche.src   = "./img/BaseArt/VerocheFull.png";
 Bis.src       = "./img/BaseArt/BisFull.png";
 Hs129.src     = "./img/BaseArt/Hs129Full.png";
+Hurricane.src = "./img/BaseArt/HurricaneFull.png";
 Su26.src      = "./img/BaseArt/Su26Full.png";
 M8.src        = "./img/BaseArt/m8Full.png";
-Hurricane.src = "./img/BaseArt/HurricaneFull.png";
+Lagg3.src     = "./img/BaseArt/LaggFull.png";
 Malda.src     = "./img/BaseArt/MaldaFull.png";
-Wolverine.src = "./img/BaseArt/WolverineFull.png";
+
 
 
 function Assign(collection){
