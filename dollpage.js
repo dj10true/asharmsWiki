@@ -53,6 +53,12 @@ Raiden.src = "./img/BaseArt/RaidenFull.png";
 Pershing.src = "./img/BaseArt/PershingFull.png";
 Lightning.src = "./img/BaseArt/LightningFull.png";
 B29.src  = "./img/BaseArt/B29Full.png";
+Hellcat.src = "./img/BaseArt/HellcatFull.png";
+Fokker.src = "./img/BaseArt/FokkerFull.png";
+Halifax.src = "./img/BaseArt/HalifaxFull.png";
+He177a.src = "./img/BaseArt/He177aFull.png";
+Flyingfortress.src = "./img/BaseArt/FlyingfortressFull.png";
+Do335.src = "./img/BaseArt/Do335aFull.png";
 
 //two stars
 Hyabusa.src = "./img/BaseArt/HyabusaFull.png";
