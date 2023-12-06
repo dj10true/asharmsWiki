@@ -59,6 +59,15 @@ Halifax.src = "./img/BaseArt/HalifaxFull.png";
 He177.src = "./img/BaseArt/He177aFull.png";
 Flyingfortress.src = "./img/BaseArt/FlyingfortressFull.png";
 Do335.src = "./img/BaseArt/Do335aFull.png";
+Daemon.src = "./img/BaseArt/DaemonFull.png";
+Coventry.src ="./img/BaseArt/CoventryFull.png";
+Shuvalbe.src = "./img/BaseArt/ShuvalbeFull.png";
+Churchellmk2.src = "./img/BaseArt/Churchellmk2Full.png";
+Leopard.src = "./img/BaseArt/LeopardFull.png";
+Kv1.src = "./img/BaseArt/Kv85Full.png";
+Kv2.src = "./img/BaseArt/Kv2Full.png";
+Jagdtiger.src = "./img/BaseArt/JagdtigerFull.png";
+
 
 //two stars
 Hyabusa.src = "./img/BaseArt/HyabusaFull.png";
