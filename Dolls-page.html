@@ -15274,6 +15274,223 @@ applies [Marked](3-turns) & [Accuracy](20%/2-turns/non-stackable) & [Threat Leve
 
 
 
+<div id="Felicette_body" class="child_body"><h1 class="doll_header">Felicette</h1>
+<img id="Felicette" class ="modal_img" src="" loading="lazy">
+<img  id="Skins_icon" class="collection_assignment" loading="lazy" src="./img/Icons/Item_Quality_Boxs_Skin.png" onclick="Assign(felicette_collection)">
+<div class="job_select">
+<div class="job_header"><h1 >Jobs</h1></div>
+<div class="jobs"><img loading="lazy" src="./img/Icons/Exterminator.png"  class="jobswap" onclick="JobSwap(felicette_j1)">
+<span class="jobtxt"><h1>Exterminator</h1></span></div>
+<div class="jobs" ><img loading="lazy" src="./img/Icons/Interceptor.png"   class="jobswap" onclick="JobSwap(felicette_j2)">
+<span class="jobtxt"><h1>Interceptor</h1></span></div>
+<div class="jobs" ><img loading="lazy" src="./img/Icons/Patrol.png"   class="jobswap" onclick="JobSwap(felicette_j3)">
+<span class="jobtxt"><h1>Sentry Patrol</h1></span></div></div>                   
+    
+<div class="job_container">                            
+<div id= "felicette_j1" class="jobswap_con" style="display: none;">
+<div class="p_header"><h1 >Passives</h1></div>
+<div class="skill_con">
+
+<div class="skill"><div class="skill_name"><h1>Zero Ability To Live<br><img loading="lazy" src="./img/Icons/SelfPassive.png"></h1></div><br>
+<div class= "affect">
+ <h2>Before takig an action if [Marfusha],[Laica],[Albina],[Bion],[Strelka] are present in the battlefield increases own [Armor Penetration](6%per ally unit present/permanent), during battle activates only 1-time</h2>
+</div></div>
+
+<div class="skill"><div class="skill_name"><h1>Anti-Heavy Type Special Attack<br><img loading="lazy" src="./img/Icons/passive.png"></h1></div><br>
+<div class= "affect">
+<h2>If you are about to attack a "Heavy-type" enemy, increase own [Firepower](10%)</h2>
+</div></div>
+
+<div class="skill"><div class="skill_name"><h1>Disguise<br><img loading="lazy" src="./img/Icons/passive.png"></h1></div><br>
+<div class= "affect">
+<h2>At the start of your phase if in "Stationary"mode reduces own [Reaction -2](during this turn)</h2>
+</div></div>
+
+</div>
+<!--Actives-->
+
+
+<div class="a_header"><h1 >Actives</h1></div>
+<div class="skill_con">
+
+<div class="skill"><div class="skill_name"><h1>Close-Range Attack<br><img loading="lazy" src="./img/Icons/AttackIcon.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on 1-squad of enemies 1~Square ahead of you, if the target is [Marked] give this attack [Anti-Ground Firepower](30%)</h2></div> 
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span><div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div> <div class="Tiles"></div> 
+</div></div>
+
+<div class="skill"><div class="skill_name"><h1>Fierce Assault<br><img loading="lazy" src="./img/Icons/Extermination_attack.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on 1-enemy squad, if the target is [Marked] before attacking reduces the targets [Armor](18%) & [Mobility](18%/until [Broken] affect ends), enemies inflicted with [Broken] prioritizes abnormal effects after receiving an attack the effect is gauranteed to activate </h2>
+</div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span><div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div></div> 
+
+<div class="skill"><div class="skill_name"><h1>Extermination Sniper<br><img loading="lazy" src="./img/Icons/Extermination_attack.png"></h1></div><br>
+<div class= "affect">
+<h2>Increases own [Anti-Ground Firepower](30%/for this attack), attacks 1-enemy Squad in front of you that is [Marked] </h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div></div> 
+
+
+<div class="skill"><div class="skill_name"><h1>Throw Away My Support<br><img loading="lazy" src="./img/Icons/Special_Skill.png"></h1></div><br>
+<div class= "affect">
+    <h2>Stationary Mode Limited skill, carries out a powerful attack on 1-Squad of enemies 3-5~Suares ahead, if this attack has defeated a "Special Individuals" inflicts [Restriction](1-turn) to all enemies, after attacking inflicts [Marked](2-turns) to self</h2>
+</div> 
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span><div class="Tiles" style="opacity:0.5"></div><div class="Tiles" style="opacity:0.5"></div> <div class="Tiles"></div><div class="Tiles"></div>
+</div></div></div>
+
+</div>
+<!--2nd job-->
+<div id= "felicette_j2" class="jobswap_con" style="display: none;"> 
+<div class="a_header"><h1 >Actives</h1></div>
+<div class="skill_con">
+
+<div class="skill"><div class="skill_name"><h1>Ambush<br><img loading="lazy" src="./img/Icons/Concealment.png"></h1></div><br>
+<div class= "affect">
+<h2>Removes all [Marked] effects, increases own [Crit-Rate](28%/2-Turns/non-stackable), reduces own [Threat-Level -2](2-Turns/non-stackable) grants self [Concealment],during [Concealment] when attacked by an enemy within range  if there exists an ally with a higher[Threat Level] you do not receive this attack [concealment] & [Marked] does not co-exist</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<div class="Tiles" style="background-color: green;"><span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span></div>
+</div></div>
+    
+
+<div class="skill"><div class="skill_name"><h1>Mobile Firing<br><img loading="lazy" src="./img/Icons/AttackIcon.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out a single attack on 1-Squad of enemies 1-Square ahead of you, if you are in [Concleament] increase own [Crit-Rate](28%/for this attack), if the target is inflicted with [Broken] increase own [Crit-Damage](33%/for this attack)</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span><div class="Tiles"></div>
+</div></div> 
+
+<div class="skill"><div class="skill_name"><h1>Concealed Sniper<br><img loading="lazy" src="./img/Icons/Breakthrough_Assault.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on 1-Squad of enemies that is [Marked], give this attack [Anti-Ground Firepower](30%), if in [Concealment] increases own [Crit-Rate](28%/for this atack), if the enemy is inflicted with [Broken] increases own [Crit-Rate](33%/for this attack)</h2>
+</div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<div class="Tiles" style="background-color: green;"><span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span></div>
+</div></div> 
+
+
+<div class="skill"><div class="skill_name"><h1>Stationary Caution<br><img loading="lazy" src="./img/Icons/Stationary_Caution.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on all enemies 1-4~Squares ahead of you that has moved this turn, if the target is [Marked] before attacking increases own [Anti-Ground Firepower](24%/this attack)</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div> 
+</div></div> 
+
+
+<div class="skill"><div class="skill_name"><h1>Throw Away My Support<br><img loading="lazy" src="./img/Icons/Special_Skill.png"></h1></div><br>
+<div class= "affect">
+    <h2>Stationary Mode Limited skill, carries out a powerful attack on 1-Squad of enemies 3-5~Suares ahead, if this attack has defeated a "Special Individuals" inflicts [Restriction](1-turn) to all enemies, after attacking inflicts [Marked](2-turns) to self</h2>
+</div> 
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span><div class="Tiles" style="opacity:0.5"></div><div class="Tiles" style="opacity:0.5"></div> <div class="Tiles"></div><div class="Tiles"></div>
+</div></div></div>
+
+</div>
+<!--3rd Job-->
+<div id= "felicette_j3" class="jobswap_con" style="display: none;"> 
+<div class="a_header"><h1 >Actives</h1></div>
+<div class="skill_con">
+
+<div class="skill"><div class="skill_name"><h1>Reflexive Frontward Fire<br><img loading="lazy" src="./img/Icons/AttackIcon.png"></h1></div><br>
+<div class= "affect">
+<h2>Carries out an attack on a squad of enemies 1-2~Squares ahead</h2></div>
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span><div class="Tiles"></div><div class="Tiles"></div>
+</div></div>
+
+
+<div class="skill"><div class="skill_name"><h1>Aerial Defense<br><img loading="lazy" src="./img/Icons/aaDefense.png"></h1></div><br>
+<div class= "affect">
+<h2>Transfers into "Stationary"mode, Ccarries out a cutionary attack on the "Flying" enemies 1-3~Squares above, can activate an infinite amount of times</h2>
+<h1>Range:</h1>
+</div>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span>
+</div></div> 
+
+<div class="skill"><div class="skill_name"><h1>Defense Position<br><img loading="lazy" src="./img/Icons/Defensepos.png"></h1></div><br>
+<div class= "affect">
+<h2>applies [Encampment] to self, removes [Marked] along with other special affects, Carries out an attack on all of the [Marked] "Flying" enemies, give this attack increased [Ant Air Firepower](30%), while in [Encampment] if you become inflicted with [Marked] increases own [Anti Ground Firepower](30%/3-turns/Non-stackable)</h2>
+</div>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+<div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span>
+</div></div>
+
+<div class="skill"><div class="skill_name"><h1>Forward firing Position<br><img loading="lazy" src="./img/Icons/AttackIcon.png"></h1></div><br>
+<div class= "affect">
+<h2>applies [Encampment] to self, removes [Marked] along with other special affects, Carries out an attack on 1-Squad of "ground" enemies 2-3~Squares ahead, if the target is [Marked] increase own [Anti Ground Firepower](30%/for this attack), while in [Encampment] if you become inflicted with [Marked] increases own [Anti Ground Firepower](30%/3-turns/Non-stackable)</h2>
+</div>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+</div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span><div class="Tiles" style="opacity:0.5"></div><div class="Tiles"></div><div class="Tiles"></div>
+</div></div>
+
+
+<div class="skill"><div class="skill_name"><h1>Throw Away My Support<br><img loading="lazy" src="./img/Icons/Special_Skill.png"></h1></div><br>
+<div class= "affect">
+    <h2>Stationary Mode Limited skill, carries out a powerful attack on 1-Squad of enemies 3-5~Suares ahead, if this attack has defeated a "Special Individuals" inflicts [Restriction](1-turn) to all enemies, after attacking inflicts [Marked](2-turns) to self</h2>
+</div> 
+<h1>Range:</h1>
+<div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+<div class= "Ground_Ranges">
+<div class="Skills_header"><h1>Ground</h1></div>
+<span class="chibi_con"><img class="chibi"loading="lazy" src="./img/Battle_Chibis/FelicetteChibi.png"></span><div class="Tiles" style="opacity:0.5"></div><div class="Tiles" style="opacity:0.5"></div> <div class="Tiles"></div><div class="Tiles"></div>
+</div></div></div></div></div>
+
+
+</div>
+<!--End of Felicette-->
+
+
+
+
 
 
 

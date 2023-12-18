@@ -31,7 +31,7 @@ Marfusha.src  = "./img/BaseArt/MarfushaFull.png";
 Laica.src     = "./img/BaseArt/LaicaFull.png";
 Albina.src    = "./img/BaseArt/AlbinaFull.png";
 Bion.src      = "./img/BaseArt/BionFull.png";
-// Felicette.src = "./img/BaseArt/FelicetteFull.png";
+Felicette.src = "./img/BaseArt/FelicetteFull.png";
 Strelka.src   = "./img/BaseArt/StrelkaFull.png";
 
 //three stars
