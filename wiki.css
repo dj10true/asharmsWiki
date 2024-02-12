@@ -201,18 +201,12 @@ html{
   #hub_content{
     min-width: 85%;
     float: left;
-    left: 8rem;
-  }
-  #hub_content_footer{
-    width: 65%;
+    left: 3rem;
   }
   .footer_imgs{
     width: 100%;
     height: 5em;
 
-  }
-  #test{
-    display: none;
   }
   #site_main_img{
     width: 19%;
@@ -222,6 +216,7 @@ html{
   #test{
     width: 100%;
     height: 15rem;
+    display: none;
     padding-inline: 0;
   }
 }  
