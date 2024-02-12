@@ -8,20 +8,41 @@ const skua_collection = document.getElementById("skua_collection");
 const expanded_container = document.getElementById("expanded_container");
 const Expanded = document.querySelectorAll("Expanded");
 
+
 function Display(e, doll) {
-  var i, DollBody, dollIcon;
-  DollBody = document.getElementsByClassName("child_body");
-  for (i = 0; i < DollBody.length; i++) {
-    DollBody[i].style.display = "none";
-  }
-  dollIcon = document.getElementsByClassName("icon_tag");
-  for (i = 0; i < dollIcon.length; i++) {
-    dollIcon[i].className = dollIcon[i].className.replace("child_body","");
-  }
+  document.querySelectorAll(".child_body").forEach(body=>{
+    body.style.display = "none";
+  });
+  document.querySelectorAll("icon_tag").forEach(tag=>{
+    tag.className.replace("child_body","");
+  });
   document.getElementById(doll).style = "display: block";
   document.getElementById(doll).scrollIntoView({behavior: 'smooth'});
   e.currentTarget.className += "";
 }
+
+// document.querySelectorAll('.icon_tag').forEach(tag=>{
+//   const childBodies = document.querySelectorAll(".child_body");
+//   tag.addEventListener('click',(e)=>{
+//     e.stopPropagation()
+//     childBodies.forEach(body=>{
+//       if(!body.style.display === 'none'){
+//        body.style.display = 'none';
+//        //if(!tag.hasAttribute('data-Body')) return 
+//        tag.className += ""
+//       } else body.className.replace("child_body","");    
+//     })
+//     //body.style.display = "inline-block";
+//     //body.scrollIntoView({behavior: 'smooth'});
+//     //console.log(body.id)
+//     //console.log(id[e.currentTarget])
+    
+//   })
+//   Clicked = false;
+// })
+ 
+    
+
 
 
 //The Src For Modal Images Inside Modal
@@ -141,7 +162,7 @@ function JobSwap(job){
   job.style = "display:none";
   job.className = "";
   }
-  }JobSwap(jobswap)
+}JobSwap(jobswap)
 
 
 

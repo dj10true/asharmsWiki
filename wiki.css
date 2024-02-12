@@ -40,11 +40,12 @@ html{
 .link_img{
   height: 30px;
 }
-.site_welcome *{
+.site_welcome{
   display: block;
   color: white;
   text-align: center;
   padding-bottom: 20px;
+  padding-top: 3em;
 }
 
 #main_hub header{
@@ -57,29 +58,34 @@ html{
   z-index: 1;
 }
 #main_hub_con{
-  display: flex;
+  display: flex; 
+  flex-wrap: wrap;
   background-color: grey;
   align-items: flex-start;
+  margin-bottom: 12em;
 }
 #hub_content{
+  position: relative;
   display: inline-flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
+  left: 12em;
 }
 #site_main_img{
+  position: absolute;
+  float: left;
+  left: -25px;
   margin: 0;
   padding: 0;
   display: block;
   width: 20%;
 }
 #hub_header{ 
-  position: absolute;
-  float: left;
+  position: relative;
   text-align: center;
   min-width: 100%;
   max-height: 2rem;
   background-color: yellowgreen;
-  top: 19rem;
   margin: 0;
   padding: 0;
 }
@@ -93,7 +99,7 @@ html{
   margin:  0;
   padding: 0;
   margin-left: 2px;
-  padding-top: 2em;
+  padding-top: 5em;
 }
 .links{
   width:  80%;
@@ -181,21 +187,24 @@ html{
 /*SMARTPHONES*/ 
  @media screen and(max-width: 400px),(orientation: portrait){
   #hub_header{
-    position: absolute;
+    position: inherit;
     top: -1.5em;
     left: 0;
   } 
   #main_hub_con{
     width: 100%;
     transform: translate(0px,0px);
+    align-items: self-start;
     margin:  0;
     padding: 0;
   }
   #hub_content{
     min-width: 85%;
+    float: left;
+    left: 8rem;
   }
   #hub_content_footer{
-    width: 90%;
+    width: 65%;
   }
   .footer_imgs{
     width: 100%;
