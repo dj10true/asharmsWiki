@@ -197,19 +197,25 @@ html{
     align-items: self-start;
     margin:  0;
     padding: 0;
+    margin-bottom: 2em;
   }
   #hub_content{
     min-width: 85%;
     float: left;
     left: 3rem;
   }
+  #hub_content_footer{
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
   .footer_imgs{
     width: 100%;
-    height: 5em;
-
+    height: 60px;
   }
   #site_main_img{
-    width: 19%;
+    width: 15%;
+    top:  20px;
+    left: -1px;
     margin:  0;
     padding: 0;
   }
