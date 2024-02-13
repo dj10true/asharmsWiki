@@ -1,19 +1,72 @@
+* { text-align: center; }
+
 body
 html{
   margin: 0;
   padding: 0;
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
   flex-direction: column; 
+  overflow-x: hidden;
 }
+
 body{
+  padding: 0;
+  margin:  0;
   background-color: black;
+  overflow-x: hidden;
 }
+
+/*GLOBALS*/
+#home_btn{
+  position: relative;
+  height: 30px;
+  left: 20px;
+}
+
+.site_side_bar{
+  position: sticky;
+  left: 0;
+  top:  0;
+  width: 100%;
+  opacity: 0.8;
+  /* padding: 11.3px; */
+  margin: 0;
+  background-color: orange;
+  z-index: 100;
+  display: block;
+}  
+
+ul,li,ol,header{
+  color: white;
+  word-break: break-all;
+  align-self: center; 
+  margin:  1em;
+  padding: 1em;
+  background-color: rgba(69, 60, 60, 1);
+}
+
+h2{
+  width: 100%;
+  font-size: 3vh;
+  text-transform:capitalize;
+  margin:  0;
+  padding: 0;
+}
+/*End of Globals*/
 
 #site_body_inner{
   background-color: black;
+  background-image: url('/img/1500x500.jpg');
+  background-repeat: space;
+  background-position-x: center;
+  background-position-y: 70%;
+  background-blend-mode: lighten;
+  background-size:contain;
   width: 100%;
   height: 100%;
-  margin: 0;
+  margin:  0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -38,6 +91,11 @@ body{
   float: left;
   width: 100%;
   z-index: 99;
+  margin: 0;
+}
+.nav-item ,.dropdown{
+  margin: 0;
+  padding: 0;
 }
 
 .link_img{
@@ -46,13 +104,12 @@ body{
 .site_welcome{
   display: block;
   color: white;
-  text-align: center;
+  position: relative;
   padding-bottom: 20px;
   padding-top: 3em;
 }
 
 #main_hub header{
-  text-align: center;
   height: 100%;
   width: 100%;
   background-color: red;
@@ -63,6 +120,7 @@ body{
 #main_hub_con{
   display: flex; 
   flex-wrap: wrap;
+  opacity: 0.9;
   background-color: grey;
   align-items: flex-start;
   margin-bottom: 12em;
@@ -85,7 +143,6 @@ body{
 }
 #hub_header{ 
   position: relative;
-  text-align: center;
   min-width: 100%;
   max-height: 2rem;
   background-color: yellowgreen;
@@ -229,3 +286,1029 @@ body{
     padding-inline: 0;
   }
 }  
+/* End of homepage////////////////////////////*/
+
+
+
+/*Doll-page start*/
+ .icon_container{
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; 
+  overflow-y: hidden;
+  overflow: visible;
+  flex-direction: column;
+  background-image: url(img/1500x500.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position:center;
+ }
+ 
+ 
+ .icon_tag{
+  width: 100%;
+  height: 5em;
+  outline: auto black 10rem;
+  cursor: pointer;
+}
+ 
+ 
+ 
+.icon_info_con{
+  position: relative;
+  max-width: 32rem;
+  right: 5em;
+  top: 0.5em;
+  margin: 0px;
+  padding: 5px;
+}
+
+.role_con{
+  display: flex;
+  flex-wrap: wrap;
+  height: 20.5em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: purple;
+} 
+
+.role_img{
+  position: relative;
+  align-self: center;
+  width: 100%;
+  min-height: 9rem;
+  background-image: url(/img//Camp_Preview_SE001.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+padding: 0;
+}
+.icon_header{
+position: relative;
+width: 100%;
+height: 100%;
+color: white;
+background-color: black;
+}
+
+#threestr_header,#twostr_header,#onestr_header,#Limited_header{
+  position: sticky;
+  left: 1px;
+  height: 100%;
+  width: 100%;
+  min-width: 5%;
+  min-height: 12em;
+  margin: 0;
+  padding: 0;
+}
+
+#Limited_con{
+  display: inline-flex;
+  max-width: 20rem;
+  max-height: 34.5rem;
+  background-color: rgb(199, 187, 70);
+  padding: 0;
+  padding-inline-start: 3.8em;
+  margin: 1em;
+  outline: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#threestr_con{
+  display: inline-flex;
+  max-width: 20rem;
+  max-height: 34.5rem;
+  background-color: rgb(199, 187, 70);
+  padding: 0;
+  padding-inline-start: 3.8em;
+  margin: 1em;
+  outline: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+
+#twostr_con{
+  display: inline-flex;
+  max-width: 20rem;
+  max-height: 34.5rem;
+  background-color: silver;
+  padding: 0;
+  padding-inline-start: 3.8em;
+  margin: 1em; 
+  outline: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#onestr_con{
+  display: inline-flex;
+  width: 20rem;
+  max-height: 34.5rem;
+  background-color: burlywood;
+  padding: 0;
+  padding-inline-start: 3.8em;
+  margin: 1em;
+  outline: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+
+
+
+
+  /*Container for Popup display for after clicking on doll icons*/
+.body_container{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow: hidden;
+  margin: 1px;
+  padding: 1px;
+}
+
+.child_body{
+    min-height: 100%;
+    min-width: 25rem;
+    width: 100%;
+    min-width: 30%;
+    height: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    background-image: url(img/Camp_Preview_SE001.png);
+    display: none;
+}
+
+
+
+/*header when for clicked on doll*/
+.doll_header {
+  background-color: blue;
+  width: 100%;
+  height: 37px;
+  margin: 0;
+  padding: 0;
+}
+
+/*The Container For The Image In the Popup Display*/
+.modal_img{
+  min-width: 21em;
+  min-height: 21em;
+  max-height: 0;
+  padding: 0;
+  margin: 0;
+  background-image: url(/img/bg_a.jpg);
+}
+
+/*For The Skins*/
+.collection_assignment{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+
+.job_header{
+  height: 55px;
+  width: 100%;
+  background-color: #8e9992;
+  margin:  0;
+}
+
+.job_container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.job_select{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50%;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  background-color: #121716;
+}
+
+
+.jobtxt{
+  position: inherit;
+  opacity: 0;
+  z-index: 99;
+  top: -50px;
+  left: 0;
+  color: rgb(171, 0, 0);
+  padding: 0;
+  margin: 0;
+}
+
+
+/*here*/
+.jobs{
+  position: relative;
+  display: flex;
+  left: 15px;
+  height: 60px;
+  width: 60px;
+}
+.jobs img:hover{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  transform: translate(0px,10px);
+  transition: all  ease-in-out;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.jobswap:hover + .jobtxt{
+  transform: translate(0px,10px);
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.skill_name{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  top: -21px;
+}
+
+
+.skill_con{ 
+  display: flex;
+  background-color: grey;
+  flex-direction: column;
+}
+
+
+.skill{
+  min-height: 40rem;
+  width: 100%;
+  min-width: 15rem;
+  color: whitesmoke;
+  padding: 0;
+  padding-bottom: 5rem;
+}
+
+
+
+.affect{
+  position: relative;
+  background-color: black;
+  max-width: 100%;
+  min-width: 84%;
+  top: -45px;
+}
+
+.p_header{
+  position: relative;
+  width: 100%;
+  min-width: 50%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.p_descrip img{
+  gap: 4px;
+  width: 60px;
+  height: 60px;
+  padding: auto;
+  align-self: center;
+}
+
+.a_header{
+  position: relative;
+  width: 100%;
+  min-width: 50%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+
+.morphs{
+  width: 500px;
+  height: 100%;
+  outline: solid 2px black;
+  padding: 0;
+  margin: 0;
+}
+
+.chibi_con{
+  padding: 0;
+  width: 60px;
+  height: 17px;
+  margin: -7px;
+}
+
+.chibi{
+  height: 60px;
+}
+
+.chibitxt{
+  background-color: black;
+  position: relative;
+  z-index: 2;
+  top: -20px;
+  left: -5px;
+  width: 49px;
+}
+
+.Skills_header{
+  background-color: black;
+  color: white;
+  border-radius: 9px;
+  margin-right: 6px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.Air_Ranges{
+  display: flex;
+  border-radius: 40px;
+  gap: 5px;
+  background-color: red;
+  padding: 0;
+  margin: 0;
+  min-height: 130px;
+  max-width: 98%;
+
+}
+.Tiles{
+  border: 5px solid black;
+  border-radius: 5px;
+  min-height: 100px;
+  min-width: 30px;
+  background-color: yellow;
+  padding: 5px;
+  margin: 5px;
+}
+
+.Ground_Ranges{
+  display: flex;
+  border-radius: 40px;
+  gap: 5px;
+  background-color: red;
+  padding: 0;
+  margin: 0;
+  min-height: 130px;
+  max-width: 98%;
+  margin-top: 20px;
+}
+
+
+
+/*Skins*/
+#Skin_container{
+  white-space: nowrap;
+  width: 90%;
+  height: 100%;
+  min-width: 24em;
+  max-height: 26em;
+  background-color: rgba(69, 20, 44, 1);
+  padding: 1rem;
+  margin: 1rem;
+  display: none;
+  overflow-y: hidden;
+} 
+
+#Skins_icon{
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+#skin_closer{
+  height: 100%;
+  min-width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: red;
+}
+.Skin_header{
+  width: 100%;
+}
+.Skin_header h1{
+position: sticky;
+width: 100%;
+height: fit-content;
+margin: 0;
+padding: 0;
+background-color: gray;
+}
+
+.skin_collection{
+  display: flex;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.Skins{
+  background-color: black;
+  max-width: 25em;
+  max-height: 14rem;
+  margin: 5px;
+  padding: 5px;
+  outline: solid 5px white;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+
+
+#maus_collection{
+  display: none;
+}
+
+#skua_collection{
+  display: none;
+}
+
+
+#expanded_container{
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+/*For When Clicking To Enlarge Skin*/
+.Expanded{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow-y: hidden;
+  object-fit: contain; 
+  inline-size: 100%;
+  max-height: 580px;
+}
+
+.Expanded img{
+  overflow-x: scroll;
+}
+
+
+@media  screen and(max-device-width: 400px),(pointer: coarse) {
+  .site_side_bar{
+    width: 91%;
+    margin: 0;
+    padding: 0;
+    padding-inline: 2.7rem;
+  }
+  .icon_container{
+    display: initial;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .body_container{
+    padding-right: 100%;
+    max-width: 20%;
+  }
+  .child_body{
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .modal_img{
+    display: block;
+  }
+    #threestr_con{
+      display: flex;
+      width: 89%;
+      background-color: rgb(199, 187, 70);
+      padding: 0;
+      padding-top: 1rem;
+      margin: 0;
+      padding-inline-start: 3.8em;
+      outline: auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    
+    
+    #twostr_con{
+      display: flex;
+      width: 89%;
+      background-color: silver;
+      padding: 0;
+      padding-top: 1rem;
+      margin: 0;
+      margin-top: 25px;
+      padding-inline-start: 3.8em;
+      outline: auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    
+    #onestr_con{
+      display: flex;
+      width: 89%;
+      background-color: burlywood;
+      padding: 0;
+      padding-top: 1rem;
+      margin: 0;
+      margin-top: 25px;
+      padding-inline-start: 3.8em;
+      outline: auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    .Air_Ranges{
+      border-radius: 15px;
+      gap: 0px;
+    }
+    .Ground_Ranges{
+      border-radius: 15px;
+      gap: 0px;
+    }
+    .skill{
+      max-width: 30rem;
+    }
+  }
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(1)}
+  to {-webkit-transform:scale(1.5)}
+}
+
+@keyframes zoom {
+  from {transform:scale(1)}
+  to {transform:scale(100)}
+}
+
+@-webkit-keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(3)}
+}
+@keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(2)}
+}
+/*End of doll-page////////////////////////////////////////////////*/
+
+
+/*Start of gameui*/
+#Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:  100%;
+  height: 100%;
+  padding: 0;
+  margin:  0;
+  background-color: black;
+}
+
+#ui_info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: grey;
+  margin:  0;
+  padding: 0;
+}
+#ui_img{
+  width: 100%;
+  height: 100%;
+}
+.icons{
+  height: 50px;
+  width: 50px;
+}
+
+/* #contet{
+margin: 0;
+margin-top: 40px;
+padding-top: 40px;
+padding: 0;
+} */
+
+/*End of gameui*/
+#body_inner{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+  margin:  0;
+  padding: 0;
+}
+.MapBox{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+}
+.BG {
+  width:  100%;
+  height: 100%;
+  z-index: 99;
+  overflow: hidden;
+  /* display: none; */
+}
+.Stages{
+  position: absolute;
+  float: left;
+  left: 0;
+  background-color: red; 
+  width: 11%;
+  height: 100%;
+  cursor: pointer;
+  /* transform: translate(100%, -2000%); */
+}
+.stage_infoCon{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width:  30%;
+  height: 50%;
+  background-color: blue;
+  overflow: hidden;
+  display: none;
+}
+.stage_info_header{
+  width: 100%;
+  font-size: 3vh;
+  background-color: white;
+}
+.stageWrapper{
+  background-color: yellow;
+  width: 100%;
+  height: 50%;
+  margin:  0;
+  padding: 0;
+}
+.enemy_grid{
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 6rem 6em 6em 6em;
+  grid-template-rows: 5em;
+  width:  100%;
+  height: 100%;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 5px;
+  justify-content: flex-end;
+}
+.enemy_grid img{
+  width:  35px;
+  height: 35px;
+}
+.enemy_placements{
+  display: flex;
+  background-color: grey;
+  outline: 1px solid red;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.Next{
+  cursor: pointer;
+}
+
+#a{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(25em,1em);
+}
+#b{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(36em,-9em);
+}
+#c{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(47em,-2em);
+}
+#d{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(60em,5em);
+}
+#e{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(66em,-5em);
+}
+
+#f{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(52em,-12em);
+}
+#s1{
+  position: relative;
+  width: 7%;
+  height: 15%;
+  transform: translate(39em,-30em); 
+  cursor: pointer;
+  background-color: green;
+}
+
+
+/*Map-Two*/
+#g{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(26em,-34em);
+}
+#h{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(38em,-22em);
+}
+#i{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(46em,-36em);
+}
+#j{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(64em,-28em);
+}
+#s2{
+  position: relative;
+  width: 7%;
+  height: 15%;
+  transform: translate(75em,-31em); 
+  cursor: pointer;
+  background-color: green;
+}
+/*End of mainstory*/
+
+/*Start of Enemy-info*/
+.main_con{  
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+#main_header{
+  border: black 9px thick;
+  background-color: gray;
+}
+
+.enemy_con{
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 
+  200px 200px 200px 200px 200px
+  200px 200px 200px 200px 200px
+  200px 200px 200px 200px;
+  height: 100%;
+  width: 100%;
+  border: solid red 9px;
+  margin: 0;
+  padding: 0;
+}
+.enemy_header{
+  background-color: grey;
+  width: 100%;
+}
+.enemy{
+  background-color: white;
+  border-style: groove ridge;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.enemy img{
+  height: 70%;
+  width: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+.enemy_info_con{
+  background-color: grey;
+}
+.passive_skills{
+  cursor: pointer;
+  background-color: goldenrod;  
+}
+.active_skills{
+  cursor: pointer;
+background-color: red;
+}
+/*End of enemy-info/////////////////////////////////////////////////////*/
+
+
+
+
+
+#body-inner{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  margin:  0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+#tab_con{
+  overflow: hidden;
+  border: 2px solid grey;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+#tab button{
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+#tab_con button:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+#tab_con button.active{
+  background-color: red;
+}
+
+.tabContent{
+  display: none;
+  padding: 6px 12px;
+  border: 5rem solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+
+#doll-personalgrwth_header{
+  color: rgba(49, 146, 78, 0.9);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+section{
+  display: inline-block;
+}
+
+#Azban_tab{
+  display: flex;
+  color: white;
+  flex-direction: row;
+
+}
+
+#Azban_con{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+
+
+
+#frames_con_header{
+  width: 100%;
+  height: 100%;
+}
+.frames_con{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+.frame_img{
+  margin: 0;
+  padding: 0;
+}
+.frame_img:hover{
+  cursor: pointer;
+  background-color: gainsboro;
+}
+
+.framesect{
+  background-color: grey;
+  display: inline-grid;
+  width: 35em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.frameHeader{
+  color: white;
+  background-color: black;
+  text-align: center;
+  transform: translate(49%);
+  width: 50%;
+  height: 40px;
+  border: 3.2px solid red;
+  border-radius: 5px;
+  margin:  0;
+  padding: 0;
+}
+p{
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 3vh;
+}
+
+
+
+button:hover{ cursor: pointer; }
+
+.frame_descrip{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.framelvlTab{
+  display: inline-block;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 5px;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 9px 9px 0px -9px;
+}
+.framelvlTab:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.frame-modal{
+  background-color: darkred;
+  width: 50%;
+  height: 50%;
+  z-index: 10;
+  transform: translate(50%);
+  opacity: 1;
+}
+
+
+.frame_descrip button{
+  width: 10rem;
+}
+/*End of personal-Growth/////////////////////////////////////////////////*/
