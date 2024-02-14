@@ -63,6 +63,7 @@ B4.src = "/img/BaseArt/B4Full.png";
 Aircraftmodel11.src = "/img/BaseArt/Aircraftmodel11Full.png";
 Ahat.src  = "/img/BaseArt/AhatFull.png";
 Chito.src = "/img/BaseArt/ChitoFull.png";
+Centurion.src = "/img/BaseArt/CenturionFull.png";
 Blackwidow.src = "/img/BaseArt/BlackwidowFull.png";
 Bf109.src = "/img/BaseArt/Bf109Full.png";
 Shamon.src ="/img/BaseArt/ShamonFull.png";
