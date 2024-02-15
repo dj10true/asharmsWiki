@@ -1014,7 +1014,7 @@ padding: 0;
   position: absolute;
   float: left;
   left: 0;
-  background-color: red; 
+  /* background-color: red;  */
   width: 11%;
   height: 100%;
   cursor: pointer;
