@@ -587,6 +587,10 @@ background-color: black;
   height: 60px;
   width: 60px;
 }
+.jobswap{
+  margin:  0;
+  padding: 0;
+}
 .jobs img:hover{
   margin: 0;
   padding: 0;
@@ -637,12 +641,12 @@ background-color: black;
 }
 
 .passive_con{
+  height: 46.9em; 
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 50%;
+  gap: 2rem;
+  grid-template-columns: 24em 24em 26em;
+  grid-template-rows: 15em 15em 15em;
   background-color: grey;
-  height: 36.5em;
-  align-items: baseline;
   justify-content: space-evenly;
 }
 .passive{
