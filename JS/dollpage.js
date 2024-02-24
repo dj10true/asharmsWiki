@@ -8,10 +8,10 @@ const skua_collection = document.getElementById("skua_collection");
 const expanded_container = document.getElementById("expanded_container");
 const Expanded = document.querySelectorAll("Expanded");
 
-
 function Display(e, doll) {
   document.querySelectorAll(".child_body").forEach(body=>{
     body.style.display = "none";
+    document.getElementById('body_container').style = 'display:flex';
   });
   document.querySelectorAll("icon_tag").forEach(tag=>{
     tag.className.replace("child_body","");

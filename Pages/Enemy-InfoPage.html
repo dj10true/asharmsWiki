@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,35 +9,228 @@
     <title>Enemy-Info</title>
 </head>
 <body>   
-<main class="main_con">
+<main class="main_body_con">
  <header id="main_header">Resetter's</header>
+<span class="site_side_bar"><a href="/index.html"><img id="home_btn" src="/img//515864.png"></a></span>
+
  
   <section class="enemy_con">
-    <div class="enemy"><header class="enemy_header">Wiess-Blaut</header>
-        <img src="/img/maus full2.png">
-        <div class="enemy_info_con">
-          <div class="active_skills"><a href="/img/1500x500.jpg"</a>Actives<div>
-          <div class="passive_skills"><a href="/img/maus full2.png"</a>Passives</div>
-       
-
-    </div></div>
-
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
-    <div class="enemy"><img src="/img/maus full2.png"></div>
+    <div class="enemy"><img class="enemyImg" id="Weiss-Blaut" src="/img/BaseArt/Enemies/WeissBlaut.png" loading="lazy" alt="Weiss-Blaut"></div>
+    <div class="enemy"><img class="enemyImg" src="/img/BaseArt/Enemies/emy_Tharsis.png" loading="lazy" alt="Tharsis"></div>
+    <div class="enemy"><img class="enemyImg" src="/img/BaseArt/Enemies/Crown.png" loading="lazy" alt="Crown"></div>
   </section>
+
+  <div id="modal-container">
+
+   <div class="modal">
+    <span class="close">&times;</span>
+     <img class="modal_img" id="popupImg" alt="">
+      <p id="caption"></p>
+     <span class="bio"></span>
+    <div class="job_container">      
+
+  <div id= "maus_j1" class="jobswap_con" style="display: none;">
+  <div class="skill_header"><h1 >Passives</h1></div>
+  <div class="passive_con">
+  
+  <div class="passive"><div class="skill_name"><h1>Dawn Of Black-Cross<br><img loading="lazy" src="/img//Icons/SelfPassive.png"></h1></div><br>
+  <div class= "affect">
+  <h2 >At the start of your turn, increases ally black cross members [Damage~Cut]-(15%) & [Anti-Air-FirePower]-(15%)</h2>
+  </div></div>
+  
+  
+  <div class="passive"><div class="skill_name"><h1>Counter(Heavy Tank)<br><img loading="lazy" src="/img//Icons/passive.png"></h1></div><br>
+  <div class= "affect">
+  <h2 >During the enemies turn if attacked, Carries Out a Counter attack on the enemies 1~Square Ahead, if your reaction value is greater move first </h2>
+  </div></div>
+  
+  
+  
+  <div class="passive"><div class="skill_name"><h1>Heavy Tank Type Battle Group<br><img loading="lazy" src="/img//Icons/passive.png"></h1></div><br>
+  <div class= "affect">
+  <h2 >At the start of your turn if attacked, Carries Out a Counter attack on the enemies 1~Square Ahead</h2>
+  </div></div>
+  
+  <div class="passive"><div class="skill_name"><h1>Super Heavy Equipment<br><img loading="lazy" src="/img//Icons/passive.png"></h1></div><br>
+  <div class= "affect">
+  <h2>If an enemy attempts to attack you, increase own [Damage-Cut](18%/this attack only)</h2>
+  </div></div>
+  
+  
+  <div class="passive"><div class="skill_name"><h1>Anti Heavy Tank Special Attack ● Ground<br><img loading="lazy" src="/img//Icons/passive.png"></h1></div><br>
+  <div class= "affect">
+  <h2 >At the start of your turn if attacked, Carries Out a Counter attack on the enemies 1~Square Ahead</h2>
+  </div></div>
+  
+  </div>
+  <!--Actives-->
+  
+  
+  <div class="skill_header"><h1 >Actives</h1></div>
+  <div class="skill_con">
+  
+   <div class="skill"><div class="skill_name"><h1>Breakthrough Assult<br><img loading="lazy" src="/img//Icons/Breakthrough_Assault.png"></h1></div><br>
+     <div class= "affect">
+      <h2>Carries out an attack on 1-group of enemies 2~squares ahead of you, inflicts [Broken], afer attacking increases own [Armor](15%/2-turns), advances forward 1~sqaure,
+       if the target is already inflicted with [Broken] status, before attacking reduces targets [Armor] & [Mobility](18%/until [Broken] is removed/non-stackable),
+       normal attacks have an affect after attacking, the affect will activate</h2> 
+      </div>
+    <h1>Range:</h1>
+     <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+     <div class= "Ground_Ranges">
+     <div class="Skills_header"><h1>Ground</h1></div>
+     <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles" style="opacity: 0.5;"></div> <div class="Tiles"></div> 
+   </div></div>
+  
+  <div class="skill"><div class="skill_name"><h1>Thrusting Blade<br><img loading="lazy" src="/img//Icons/DoubleKnifeIcon.png"></h1></div><br>
+  <div class= "affect">
+  <h2>Carries out a blade battle against a group of enemies 1~2~squares ahead,
+  if the target is in [Broken]status reduces [Armor] & [Mobility](18%/until [Broken] ends/non-Stackable) advances 2~squares
+  </h2></div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div><div class="Tiles"></div> 
+  </div></div>
+  
+  
+  <div class="skill"><div class="skill_name"><h1>Additional Artillery Attack<br><img loading="lazy" src="/img//Icons/Special_Skill.png"></h1></div><br>
+  <div class= "affect">
+  <h2 >'Anti Ground attack Skill', after attacking attacks the same target again</h2></div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div> 
+  </div></div> 
+  
+  
+  <div class="skill"><div class="skill_name"><h1>Destructive Shooting<br><img loading="lazy" src="/img//Icons/destructive_fire.png"></h1></div><br>
+  <div class= "affect">
+  <h2>Carries out an atack on 1-group of enemies 1-2~squares ahead of you, if attacking a "Heavy Tank" type increases own [Anti-Ground-FirePower](25%/for this attack), 
+  if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack only)</h2></div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div><div class="Tiles"></div> 
+  </div></div> 
+  
+  
+  
+  
+  
+  <div class="skill"><div class="skill_name"><h1>Charging Blade<br><img loading="lazy" src="/img//Icons/DoubleKnifeIcon.png"></h1></div><br>
+  <div class= "affect">
+  <h2 >Carries out a blade battle against all enemy units on the enemy side, if a target was already defeated, reduces enemies [Armor] & [Mobility](18%/until defeated/non-stackable)</h2></div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div> 
+  </div></div> 
+  
+  
+  <div class="skill"><div class="skill_name"><h1>Additional Artillery Attack<br><img loading="lazy" src="/img//Icons/Special_Skill.png"></h1></div><br>
+  <div class= "affect">
+  <h2>'Anti Ground attack Skill', after attacking attacks the same target again</h2></div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div> 
+  </div></div></div>
+  
+  </div>
+
+  <!--2nd-job-->
+  <div id= "maus_j2" class="jobswap_con" style="display: none;">
+  <div class="skill_header"><h1 >Actives</h1></div>
+  <div class="skill_con">
+  
+  
+  <div class="skill"><div class="skill_name"><h1>Diversion Battle Plan<br><img loading="lazy" src="/img//Icons/diversion_skill.png"></h1></div><br>
+  <div class= "affect">
+  <h2>Gives self [Marked] status increases [Crit Rate](25%/1-turn) & [Threat Level +2] & [Damage Cut](20%/during this turn)
+  carries out an atack on any existing squad of enemies ahead of you</h2></div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div> 
+  </div></div> 
+  
+  <div class="skill"><div class="skill_name"><h1>Defense Vigilance<br><img loading="lazy" src="/img//Icons/warning_skill.png"></h1></div><br>
+  <div class= "affect">
+  <h2>Transitions to Stationary State, at the start of the enemies phase,
+  carries out a pre-emptive attack on an existing group of enemies 1~2~squares ahead of you  </h2></div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div><div class="Tiles"></div> 
+  </div></div>
+  
+  <div class="skill"><div class="skill_name"><h1>Additional Artillery Attack<br><img loading="lazy" src="/img//Icons/Special_Skill.png"></h1></div><br>
+  <div class= "affect">
+  <h2>'Anti Ground attack Skill', after attacking attacks the same target again</h2></div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div> 
+  </div></div>
+  
+  
+  <div class="skill"><div class="skill_name"><h1>Provocative Shooting<br><img loading="lazy" src="/img//Icons/Provoke.png"></h1></div><br>
+  <div class= "affect">
+  <h2>Carries out an attack on 1~group of enemies..after attacking, increases [Threat +4](during this turn)
+  </h2></div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div> 
+  </div></div> 
+  
+  
+  <div class="skill"><div class="skill_name"><h1>Counter Position<br><img loading="lazy" src="/img//Icons/counter_position.png"></h1></div><br>
+  <div class= "affect">
+  <h2>
+  At the start of your phase, if attacked by any "ground" enemy carries out a counter-attack to that enemy
+  applies [Camp] status to self Removes every debuff affect including [Marked] except special debuffs,
+  increases [Armor](50%/during this turn) & [Damage Cut](20%/during this turn), while under the affect of [Camp] if [Marked]
+  increases own [Anti-Ground-Firepower](30%/3-turns/non-stackable), at the start of the phase if in "mobile" state cancels [Camp]
+  </h2>
+  </div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div><div class="Tiles"></div> 
+  </div></div> 
+  
+  
+  <div class="skill"><div class="skill_name"><h1>Additional Artillery Attack<br><img loading="lazy" src="/img//Icons/Special_Skill.png"></h1></div><br>
+  <div class= "affect">
+  <h2>'Anti Ground attack Skill', after attacking attacks the same target again</h2></div>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
+  <span class="chibi_con"><img class="chibi"loading="lazy" src="/img//Battle_Chibis/MausChibi.png"></span><div class="Tiles"></div> 
+  </div></div></div></div></div>
+  
+  </div>
+  <!--end of Maus-->
+    </div>
+   </div>
+  </div>
+
 
 
 </main>
+<script src="/JS/Enemy-info.js"></script>
 </body>
 </html>

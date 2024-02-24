@@ -19,23 +19,11 @@ body{
 }
 
 /*GLOBALS*/
-.body-inner{
-  width: 100%;
-  height: 100%;
-  background-color: black;
+.main_body_con{
+  background-image: url('/img/1500x500.jpg');
   margin:  0;
   padding: 0;
-  overflow: hidden;
-}
-.Container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width:  100%;
-  height: 100%;
-  padding: 0;
-  margin:  0;
-  background-color: grey;
+
 }
 
 #home_btn{
@@ -51,13 +39,21 @@ body{
   width: 100%;
   opacity: 0.8;
   /* padding: 11.3px; */
-  margin: 0;
+  margin:  0;
+  padding: 0;
   background: linear-gradient(180deg, grey, orange);
   z-index: 100;
   display: block;
+  padding-left: 3rem;
+  padding-right: 9rem;
 }  
+.site_side_bar img{
+  width: 60px;
+  height: 60px;
+}
+
 img{
-  max-width: fit-content;
+  max-width: 100%;
 }
 
 p{
@@ -118,21 +114,7 @@ h4{
 }
 /*End of Globals*/
 
-#site_body_inner{
-  background-color: black;
-  background-image: url('/img/1500x500.jpg');
-  background-repeat: space;
-  background-position-x: center;
-  background-position-y: 70%;
-  background-blend-mode: lighten;
-  background-size:contain;
-  width: 100%;
-  height: 100%;
-  margin:  0;
-  padding: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
+
 #site_header{
   display: flex;
   background-color: red;
@@ -352,20 +334,14 @@ h4{
 
 
 
-/*Doll-page start*/
- .icon_container{
+/*Doll-page start/////////////////////////////*/
+ #icon_container{
+  display: inline-flex;
+  flex-wrap: nowrap;
   width: 100%;
-  height: fit-content;
+  height: 100%;
   padding: 0;
   margin: 0;
-  overflow-x: hidden; 
-  overflow-y: hidden;
-  overflow: visible;
-  flex-direction: column;
-  background-image: url(img/1500x500.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position:center;
  }
  
  
@@ -406,25 +382,25 @@ h4{
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
-padding: 0;
+  padding: 0;
 }
 .icon_header{
-position: relative;
-width: 100%;
-height: 100%;
-color: white;
-background-color: black;
-}
-
-#threestr_header,#twostr_header,#onestr_header,#Limited_header{
-  position: sticky;
-  left: 1px;
-  height: 100%;
+  position: relative;
   width: 100%;
-  min-width: 5%;
-  min-height: 12em;
-  margin: 0;
+  height: 100%;
+  color: white;
+  background-color: black;
+}
+.doll-starheader{
+  position: sticky;
+  top:  0;
+  left: 0;
+  min-width: 4rem;
+  margin:  0;
   padding: 0;
+}
+.doll-starheader img{
+  width: 90rem;
 }
 
 #Limited_con{
@@ -484,9 +460,8 @@ background-color: black;
 
 
 
-  /*Container for Popup display for after clicking on doll icons*/
-.body_container{
-  display: flex;
+/*Container for Popup display for after clicking on doll icons*/
+#body_container{
   flex-wrap: wrap;
   position: absolute;
   width: 100%;
@@ -495,6 +470,7 @@ background-color: black;
   overflow: hidden;
   margin: 1px;
   padding: 1px;
+  display: none;
 }
 
 .child_body{
@@ -860,19 +836,35 @@ background-color: gray;
 
 @media  screen and(max-device-width: 400px),(pointer: coarse) {
   .site_side_bar{
-    width: 91%;
+    width: 80%;
     margin: 0;
     padding: 0;
     padding-inline: 2.7rem;
   }
-  .icon_container{
-    display: initial;
+  #icon_container{
+    /* display:  inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 2rem;
     overflow-y: scroll;
+    overflow-x: hidden; */
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    overflow-y: scroll;
+    justify-content: center;
     overflow-x: hidden;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
   }
-  .body_container{
-    padding-right: 100%;
+  #body_container{
+    /* padding-right: 100%;
     max-width: 20%;
+    display: none; */
+    width: 100%;
+    margin:  0;
+    padding: 0;
   }
   .child_body{
     overflow-x: scroll;
@@ -952,17 +944,73 @@ background-color: gray;
     }
     
   }
+/*End of doll-page////////////////////////////////////////////////*/
+
+/*Start of Enemy-info*/
+.enemy:hover{
+  cursor: pointer;
+  background-color: green;
+}
+#modal-container{
+  flex-wrap: wrap;
+  margin:  0;
+  padding: 0;
+  display: none;
+}
+.modal{
+  position: absolute;
+  transform: translate(0,0);
+  container-type: inline-size;
+  background-color: grey;
+  width: 100%;
+  display: none;
+}
+
+#caption {
+  width: 95cqi;
+  height: 10cqh;
+  color: #ccc;
+  display: none;
+  margin:  0;
+  padding: 0;
+}
+.bio{
+  position: relative;
+}
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.close {
+  position: relative;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  height: auto;
+  display: none;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(1)}
-  to {-webkit-transform:scale(1.5)}
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(1)}
-  to {transform:scale(100)}
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
 }
-
 @-webkit-keyframes zoom-out {
   from {transform:scale(1)}
   to {transform:scale(3)}
@@ -970,8 +1018,14 @@ background-color: gray;
 @keyframes zoom-out {
   from {transform:scale(1)}
   to {transform:scale(2)}
+} 
+/* 100% Image Width on Smaller Screens */
+@container(max-width: 700px){
+  .modal_img {
+    width: 100%;
+  }
 }
-/*End of doll-page////////////////////////////////////////////////*/
+/*End of Enemy-info*/
 
 
 /*Start of gameui*/
@@ -1149,14 +1203,6 @@ padding: 0;
 /*End of mainstory*/
 
 /*Start of Enemy-info*/
-.main_con{  
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
 #main_header{
   border: black 9px thick;
   background-color: gray;
@@ -1170,7 +1216,6 @@ padding: 0;
   200px 200px 200px 200px 200px
   200px 200px 200px 200px;
   height: 100%;
-  width: 100%;
   border: solid red 9px;
   margin: 0;
   padding: 0;
@@ -1320,7 +1365,6 @@ section{
 .frameHeader{
   color: white;
   background-color: black;
-  text-align: center;
   transform: translate(49%);
   width: 50%;
   height: 40px;
@@ -1346,7 +1390,6 @@ section{
   background-color: #04AA6D;
   border: none;
   color: white;
-  text-align: center;
   text-decoration: none;
   font-size: 5px;
   border-radius: 20px;
