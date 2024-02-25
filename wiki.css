@@ -25,6 +25,17 @@ body{
   padding: 0;
 
 }
+.page-hint{
+  background-color: green;
+  /* animation: hint 3s forwards cubic-bezier(0.5, 1, 0.89, 1); */
+  max-width: fit-content;
+  align-self: center;
+  animation: hint 2s ease-in-out forwards;
+}@keyframes hint {
+  0%  {opacity: 0;};
+  80% { opacity: 0.6;};
+  100%{ opacity: 1;};
+}
 
 #home_btn{
   position: relative;
@@ -60,7 +71,7 @@ p{
   color: white;
   margin: 0;
   padding: 0;
-  font-size: 3vh;
+  font-size: 1.7rem;
 }
 
 button:hover{ cursor: pointer; }
@@ -95,6 +106,8 @@ header{
   background: linear-gradient(34deg, grey, red);
   width:  100%;
   height: 100%;
+  font-weight: bolder;
+  font-size: larger;
   margin: 0;
 }
 h1{
@@ -617,20 +630,22 @@ h4{
 }
 
 .passive_con{
-  height: 46.9em; 
   display: grid;
   gap: 2rem;
-  grid-template-columns: 24em 24em 26em;
-  grid-template-rows: 15em 15em 15em;
+  grid-template-columns: repeat(3, minmax(1em, 1fr));
+  grid-template-rows: 15em 15em;
   background-color: grey;
-  justify-content: space-evenly;
+  align-items: start;
+  justify-items: center;
 }
 .passive{
-  min-height: 40rem;
-  width: 100%;
-  min-width: 15rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 21px;
   color: whitesmoke;
-  padding: 5px;
+  margin:  0;
+  padding: 0;
   padding-bottom: 0;
 }
 
@@ -771,12 +786,12 @@ h4{
   width: 100%;
 }
 .Skin_header h1{
-position: sticky;
-width: 100%;
-height: fit-content;
-margin: 0;
-padding: 0;
-background-color: gray;
+  position: sticky;
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
 }
 
 .skin_collection{
@@ -926,19 +941,16 @@ background-color: gray;
       max-width: 30rem;
     }
     .passive_con{
-      display: grid;
-      grid-template-columns: 20em 20em;
-      grid-template-rows: 22em;
-      background-color: grey;
-      height: 45rem;
-      align-items: baseline;
-      justify-content: space-evenly;
+      display: inline-grid;
+      grid-template-columns: repeat(2, minmax(615px, 1fr));
+      height: 100%;
+      width: 100%;
+      grid-gap: 5em;
+      justify-content: space-around;
+      padding-bottom: 8em;
     }
     .passive{
-      min-height: 40rem;
       width: 100%;
-      min-width: 15rem;
-      color: whitesmoke;
       padding: 5px;
       padding-bottom: 0;
     }
@@ -1418,6 +1430,12 @@ section{
 
 
 /*Start of misc-Page*/
+.Container{
+  display: flex;
+  flex-direction: column;
+  background-color: grey; 
+  opacity: 0.95;
+}
 #misc_body{
   display: flex;
   flex-wrap: wrap;
