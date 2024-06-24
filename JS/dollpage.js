@@ -1,3 +1,4 @@
+const main_body = document.querySelector(".main_body_con");
 const doll = document.querySelectorAll("icon_tag");
 const collection_assignment = document.querySelectorAll("collection_assignment");
 const jobswap = document.querySelectorAll("jobswap");
@@ -8,6 +9,7 @@ const skua_collection = document.getElementById("skua_collection");
 const expanded_container = document.getElementById("expanded_container");
 const Expanded = document.querySelectorAll("Expanded");
 
+
 function Display(e, doll) {
   document.querySelectorAll(".child_body").forEach(body=>{
     body.style.display = "none";
@@ -16,9 +18,11 @@ function Display(e, doll) {
   document.querySelectorAll("icon_tag").forEach(tag=>{
     tag.className.replace("child_body","");
   });
+  main_body.style = "padding-bottom: 0";
   document.getElementById(doll).style = "display: block";
   document.getElementById(doll).scrollIntoView({behavior: 'smooth'});
   e.currentTarget.className += "";
+  main_body.style = ""
 }
 
 // document.querySelectorAll('.icon_tag').forEach(tag=>{
