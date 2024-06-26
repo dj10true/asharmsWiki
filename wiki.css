@@ -20,14 +20,10 @@ body{
 
 /*GLOBALS*/
 .main_body_con{
-  /* background-image: url('/img/1500x500.jpg');
-  background-size: 100%; */
-  /* display: inline-flex; 
-  flex-wrap: nowrap;  */
   height: 100%;
+  width:  100%;
   margin:  0;
   padding: 0;
-
 }
 .page-hint{
   background-color: green;
@@ -146,6 +142,15 @@ h4{
 #site_header_logo {
  align-self: center;
 }
+
+#homepage{
+ background-image: url('/img/BG_Preview_L_Default.png');
+ background-repeat:no-repeat ;
+}
+/* #homepage img{
+ width:  50%;
+ height: 50%;
+} */
 
 #navId{
   position: sticky;
