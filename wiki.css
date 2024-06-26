@@ -20,8 +20,11 @@ body{
 
 /*GLOBALS*/
 .main_body_con{
-  background-image: url('/img/1500x500.jpg');
-  background-size: 100%;
+  /* background-image: url('/img/1500x500.jpg');
+  background-size: 100%; */
+  /* display: inline-flex; 
+  flex-wrap: nowrap;  */
+  height: 100%;
   margin:  0;
   padding: 0;
 
@@ -117,7 +120,7 @@ h1{
 
 h2{
   width: 100%;
-  font-size: 3vh;
+  font-size: 2.5vh;
   text-transform:capitalize;
   margin:  0;
   padding: 0;
@@ -176,8 +179,6 @@ h4{
   z-index: 1;
 }
 #main_hub_con{
-  display: flex; 
-  flex-wrap: wrap;
   opacity: 0.9;
   background-color: grey;
   align-items: flex-start;
@@ -350,8 +351,11 @@ h4{
 
 /*Doll-page start/////////////////////////////*/
  #icon_container{
-  display: inline-flex;
-  flex-wrap: nowrap;
+  /* display: inline-flex;
+  flex-wrap: nowrap; */
+  background-image: url('/img/BG_Preview_L_Default.png');
+  background-size: 100%;
+  height: 80rem;
   padding: 0;
   margin: 0;
  }
@@ -373,6 +377,7 @@ h4{
   top: 0.5em;
   margin: 0px;
   padding: 5px;
+  padding-top: 30px;
 }
 
 .role_con{
@@ -413,6 +418,11 @@ h4{
 }
 .doll-starheader img{
   width: 90rem;
+}
+
+#Limited_header{
+  padding-bottom: 1em;
+
 }
 
 #Limited_con{
@@ -850,7 +860,6 @@ h4{
 
 @media  screen and(max-device-width: 400px),(pointer: coarse) {
   .site_side_bar{
-    width: 80%;
     margin: 0;
     padding: 0;
     padding-inline: 2.7rem;
@@ -863,9 +872,11 @@ h4{
     overflow-y: scroll;
     overflow-x: hidden; */
     display: flex;
+    height: 102em;
     gap: 2rem;
     overflow-y: scroll;
     justify-content: center;
+    align-items: flex-end;
     overflow-x: hidden;
     flex-wrap: wrap;
     margin: 0;

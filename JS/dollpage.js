@@ -10,10 +10,10 @@ const expanded_container = document.getElementById("expanded_container");
 const Expanded = document.querySelectorAll("Expanded");
 
 
-function Display(e, doll) {
+function Display(doll) {
   document.querySelectorAll(".child_body").forEach(body=>{
     body.style.display = "none";
-    document.getElementById('body_container').style = 'display:flex';
+    document.getElementById('body_container').style = 'display:flex';   
   });
   document.querySelectorAll("icon_tag").forEach(tag=>{
     tag.className.replace("child_body","");
@@ -21,9 +21,11 @@ function Display(e, doll) {
   main_body.style = "padding-bottom: 0";
   document.getElementById(doll).style = "display: block";
   document.getElementById(doll).scrollIntoView({behavior: 'smooth'});
-  e.currentTarget.className += "";
-  main_body.style = ""
+  doll.className += "";
 }
+
+
+
 
 // document.querySelectorAll('.icon_tag').forEach(tag=>{
 //   const childBodies = document.querySelectorAll(".child_body");
