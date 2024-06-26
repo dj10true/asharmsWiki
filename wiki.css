@@ -20,8 +20,12 @@ body{
 
 /*GLOBALS*/
 .main_body_con{
-  height: 100%;
-  width:  100%;
+  display: flex;
+  max-width: 100%;
+  height:    100%;  
+  /* flex-wrap: nowrap; */
+  flex-direction: column;
+  background: center;
   margin:  0;
   padding: 0;
 }
@@ -64,7 +68,8 @@ body{
 }
 
 img{
-  max-width: 100%;
+  max-width:  100%;
+  max-height: 100%;
 }
 
 p{
@@ -129,14 +134,13 @@ h4{
 
 
 #site_header{
-  display: flex;
   background-color: red;
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
   align-items: baseline;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 #site_header_logo {
@@ -146,6 +150,7 @@ h4{
 #homepage{
  background-image: url('/img/BG_Preview_L_Default.png');
  background-repeat:no-repeat ;
+ padding-bottom: 50em;
 }
 /* #homepage img{
  width:  50%;
@@ -153,11 +158,10 @@ h4{
 } */
 
 #navId{
-  position: sticky;
-  float: left;
   width: 100%;
   z-index: 99;
-  margin: 0;
+  margin:  0;
+  padding: 0;
 }
 .nav-item ,.dropdown{
   margin: 0;
@@ -171,8 +175,7 @@ h4{
   display: block;
   color: white;
   position: relative;
-  padding-bottom: 20px;
-  padding-top: 3em;
+  padding-bottom: 30px;
 }
 
 #main_hub header{
@@ -184,17 +187,23 @@ h4{
   z-index: 1;
 }
 #main_hub_con{
-  opacity: 0.9;
+  background: center;
+  background-size: contain;
+  display:flex;
+  width:  100%;
+  height: 100%;
+  flex-direction: column;
   background-color: grey;
-  align-items: flex-start;
-  margin-bottom: 12em;
+  margin:  0;
+  padding: 0;
+  opacity: 0.9;
 }
 #hub_content{
   position: relative;
   display: inline-flex;
   flex-wrap: wrap;
   width: 80%;
-  left: 12em;
+  left: 20em;
 }
 #site_main_img{
   position: absolute;
@@ -219,7 +228,7 @@ h4{
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
   margin:  0;
   padding: 0;
   margin-left: 2px;
@@ -321,7 +330,7 @@ h4{
     align-items: self-start;
     margin:  0;
     padding: 0;
-    margin-bottom: 2em;
+    margin-bottom: 20em;
   }
   #hub_content{
     min-width: 85%;
