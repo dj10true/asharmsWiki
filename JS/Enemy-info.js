@@ -1,9 +1,10 @@
 const  modal = document.querySelector('.modal');
-const modalContainer = document.getElementById('modal-container');
+const modalContainer = document.querySelector('.modal-con');
 const  modalImg = document.getElementById("popupImg");
 const  captionText = document.getElementById("caption");
 const  bio = document.querySelector('.bio');
 const  closebtn = document.getElementsByClassName("close")[0];
+
 const Resetters = [
   { name:"Weiss-Blaut", info:'Description: yesssssss'},
   { name:"Tharsis", info:'Description: ROBOT'},
@@ -13,7 +14,8 @@ const Resetters = [
 const enemyImgs = document.querySelectorAll('.enemyImg').forEach(Img=>{
     Img.addEventListener('click',()=>{
      modalContainer.style.display = 'flex';
-     modal.style.display = 'block';
+     modalContainer.classList = "modal-con_opened";
+     modal.style.display = 'inline-flex';
      modalImg.src = Img.src;
      captionText.style.display = 'block'
      captionText.innerHTML = Img.alt;
@@ -49,4 +51,5 @@ const enemyImgs = document.querySelectorAll('.enemyImg').forEach(Img=>{
 
 closebtn.onclick = function() { 
   modal.style.display = "none";
+  modalContainer.classList = "modal-con_closed"
 }
