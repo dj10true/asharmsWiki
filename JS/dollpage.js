@@ -97,6 +97,7 @@ Leopard.src = "/img/BaseArt/LeopardFull.png";
 Kv1.src = "/img/BaseArt/Kv85Full.png";
 Kv2.src = "/img/BaseArt/Kv2Full.png";
 Jagdtiger.src = "/img/BaseArt/JagdtigerFull.png";
+Jagdpanther.src = "/img/BaseArt/JagdpantherFull.png";
 
 
 //two stars
