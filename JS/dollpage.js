@@ -25,6 +25,8 @@ function Display(doll) {
 }
 
 
+const Jobs = ["Interceptor ΙΙ","Exterminator ⅠⅠ","" ]
+
 
 
 // document.querySelectorAll('.icon_tag').forEach(tag=>{
@@ -60,7 +62,8 @@ Albina.src    = "/img/BaseArt/AlbinaFull.png";
 Bion.src      = "/img/BaseArt/BionFull.png";
 Felicette.src = "/img/BaseArt/FelicetteFull.png";
 Strelka.src   = "/img/BaseArt/StrelkaFull.png";
-
+Belka.src     = "/img/BaseArt/BelkaFull.png";
+Claire.src    = "/img/BaseArt/ClaireFull.png";
 //three stars
 Maus.src = "/img/BaseArt/maus full.png";
 Skua.src = "/img/BaseArt/SkuaFull.png";

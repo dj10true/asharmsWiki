@@ -657,10 +657,12 @@ h4{
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(3, minmax(1em, 1fr));
-  grid-template-rows: 15em 15em;
+  /* grid-template-rows: 15em 15em; */
   background-color: grey;
   align-items: start;
   justify-items: center;
+  padding-top: 15px;
+  margin: 0;
 }
 .passive{
   position: relative;
