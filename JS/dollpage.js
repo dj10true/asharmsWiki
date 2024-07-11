@@ -104,7 +104,11 @@ Jagdpanther.src = "/img/BaseArt/JagdpantherFull.png";
 
 
 //two stars
-Hyabusa.src = "/img/BaseArt/HyabusaFull.png";
+Hyabusa.src  = "/img/BaseArt/HyabusaFull.png";
+Beaufort.src = "/img/BaseArt/BeaufortFull.png";
+Cw19.src     = "/img/BaseArt/Cw19Full.png";
+Matilda.src  = "/img/BaseArt/MatildaFull.png";
+Achilles.src = "/img/BaseArt/AchillesFull.png";
 
 //one stars
 T26E.src      = "/img/BaseArt/T-26EFull.png";
