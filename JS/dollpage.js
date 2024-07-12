@@ -109,6 +109,8 @@ Beaufort.src = "/img/BaseArt/BeaufortFull.png";
 Cw19.src     = "/img/BaseArt/Cw19Full.png";
 Matilda.src  = "/img/BaseArt/MatildaFull.png";
 Achilles.src = "/img/BaseArt/AchillesFull.png";
+AEC.src      = "/img/BaseArt/AecFull.png";
+Sterling.src = "/img/BaseArt/StarlingFull.png";
 
 //one stars
 T26E.src      = "/img/BaseArt/T-26EFull.png";
