@@ -992,7 +992,7 @@ h4{
   height: 100%;
   margin:  0;
   padding: 0;
-  padding-bottom: 50rem;
+  padding-bottom: 52rem;
 }
 .enemy:hover{
   cursor: pointer;
@@ -1322,6 +1322,17 @@ padding: 0;
 
 
 /*Start of personal-growth*/
+#personalGrowth{
+  display: flex;
+  background: url(/img/Camp_Preview_SE001.png);
+  width: 100%;
+  height: 100%;
+  align-items: center;  
+  margin: 0;
+  padding: 0;
+  padding-bottom: 77rem;
+  
+}
 #tab_con{
   overflow: hidden;
   border: 2px solid grey;
@@ -1354,11 +1365,11 @@ padding: 0;
 
 .tabContent{
   display: none;
-  padding: 6px 12px;
-  border: 5rem solid black;
   border-top: none;
   border-left: none;
   border-right: none;
+  margin:  0;
+  padding: 0;
 }
 
 
@@ -1395,7 +1406,6 @@ section{
 
 
 
-
 #frames_con_header{
   width: 100%;
   height: 100%;
@@ -1419,25 +1429,26 @@ section{
 }
 
 .framesect{
+  display: inline-flex;
   background-color: grey;
-  display: inline-grid;
-  width: 35em;
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:  0;
+  padding: 0;
 }
 
 
 .frameHeader{
+  position: relative;
   color: white;
   background-color: black;
-  transform: translate(49%);
-  width: 50%;
-  height: 40px;
-  border: 3.2px solid red;
-  border-radius: 5px;
-  margin:  0;
+  width: 100%;
+  border: 5px solid red;
+  border-radius: 40px;
+  margin: 0; 
   padding: 0;
 }
 
@@ -1448,7 +1459,7 @@ section{
   display: none;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   opacity: 1;
 }
 
@@ -1469,11 +1480,11 @@ section{
 }
 
 .frame-modal{
+  position: relative;
   background-color: darkred;
-  width: 50%;
+  width: 100%;
   height: 50%;
   z-index: 10;
-  transform: translate(50%);
   opacity: 1;
 }
 
@@ -1485,6 +1496,14 @@ section{
 
 
 /*Start of misc-Page*/
+#miscPage{
+  background: url(/img/Camp_Preview_SE001.png);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 52rem;
+}
 .Container{
   display: flex;
   flex-direction: column;
