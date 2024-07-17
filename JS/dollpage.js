@@ -111,6 +111,11 @@ Matilda.src  = "/img/BaseArt/MatildaFull.png";
 Achilles.src = "/img/BaseArt/AchillesFull.png";
 AEC.src      = "/img/BaseArt/AecFull.png";
 Sterling.src = "/img/BaseArt/StarlingFull.png";
+Pe8.src      = "/img/BaseArt/Pe8Full.png";
+Fw189.src    = "/img/BaseArt/Fw189Full.png";
+Mitchell.src = "/img/BaseArt/MitchellFull.png";
+R35.src      = "/img/BaseArt/R35Full.png";
+
 
 //one stars
 T26E.src      = "/img/BaseArt/T-26EFull.png";
