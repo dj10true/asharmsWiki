@@ -12,11 +12,105 @@
     <title>Ash Arms Wiki | Personal-Growth</title>
 </head>
 <body>
-<main class="main_body_con" id="personalGrowth">
-<span class="site_side_bar"><a href="/index.html"><img id="home_btn" src="/img/515864.png"></a></span>
-  
+ <main class="main_body_con" id="personalGrowth">
+  <span class="site_side_bar"><a href="/index.html"><img id="home_btn" src="/img/515864.png"></a></span>
+  <header id="doll-personalgrwth_header"><h1>Dolls Personal Growth</h1></header>
+  <button class="tablinks" onclick="Tab(event, 'Frames')">Frames</button>
+  <button class="tablinks" onclick="Tab(event, 'Azban')">Azban-Stones</button>
+  <button class="tablinks" onclick="Tab(event, 'TBA')">TBA </button>
+ 
+  <div id="Frames" class="tabContent">
+      <section class="enemy_con">
+       <header id="enemy_names">Enemies</header>
+       <span class="aligner">
+       <div class="enemy"><img class="frameImg" id="Weiss-Blaut" src="/img/Frames/Frame_tier1_lvl1(Common).png" loading="lazy" alt="Weiss-Blaut"></div>
+       <div class="enemy"><img class="frameImg" id="Weiss-Blaut" src="/img/Frames/Frame_tier1_lvl1(Common).png" loading="lazy" alt="Weiss-Blaut"></div>
+       <div class="enemy"><img class="frameImg" id="Weiss-Blaut" src="/img/Frames/Frame_tier1_lvl1(Common).png" loading="lazy" alt="Weiss-Blaut"></div>
+       <div class="enemy"><img class="frameImg" id="Weiss-Blaut" src="/img/Frames/Frame_tier1_lvl1(Common).png" loading="lazy" alt="Weiss-Blaut"></div>
+       <div class="enemy"><img class="frameImg" id="Weiss-Blaut" src="/img/Frames/Frame_tier1_lvl1(Common).png" loading="lazy" alt="Weiss-Blaut"></div>
+       <div class="enemy"><img class="frameImg" id="Weiss-Blaut" src="/img/Frames/Frame_tier1_lvl1(Common).png" loading="lazy" alt="Weiss-Blaut"></div>
+       <div class="enemy"><img class="frameImg" id="Weiss-Blaut" src="/img/Frames/Frame_tier1_lvl1(Common).png" loading="lazy" alt="Weiss-Blaut"></div>
+       <div class="enemy"><img class="frameImg" src="/img/BaseArt/Enemies/Tharsis.png" loading="lazy" alt="Tharsis"></div>
+       <div class="enemy"><img class="frameImg" src="/img/BaseArt/Enemies/Crown.png" loading="lazy" alt="Crown"></div>
+      </section>
+ 
+   <div class="modal-con">
+     <div class="modal">
+      <span id="tester" class="modal-info-aligner">
+       <header>Skills</header>
+       <img src="/img/Icons/AntiAirIcon.png">
+       <p class="bio">More Info Goes Here...</p>
+       <img src="/img/Icons/AntiAirIcon.png">
+       <p class="bio">More Info Goes Here...</p>  
+        <img src="/img/Icons/AntiAirIcon.png">
+       <p class="bio">More Info Goes Here...</p> 
+       <img src="/img/Icons/AntiAirIcon.png">
+       <p class="bio">More Info Goes Here...</p>
+       <img src="/img/Icons/AntiAirIcon.png">
+       <p class="bio">More Info Goes Here...</p>      
+        <span class="close">&times;</span>
+         <img class="modal_img" id="popupImg" alt="">
+          <p id="caption"></p>
+          <p class="bio"></p>
 
-<div id="tab_con">
+
+         <section class="frames_con">
+           <div class="framesect">
+             <div class="frame_descrip" id="frame3" tabindex="-1" data-backdrop="static" data-keyboard="false">
+              <div class="frameHeader"><h3 class="frameName">Deadly Battle</h3></div>
+              <div class="frame-modal"><p>[Fighter Only]<br><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower](10%/for this attack)</p></div>
+              <button type="button" data-dismiss="modal">
+                Close
+              </button>
+                
+              <div class="lvlTab_con">
+                <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-2')"><p> Level 2</p></button>
+                <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-3')"><p> Level 3 </p></button> 
+                <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-4')"><p> Level 4 </p></button>
+              </div>
+      
+              <div class="frame_lvl" id="sect-1-3_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+                <div class="frameHeader"><h3 class="frameName">Deadly Battle Ⅱ</h3></div>
+                <div class="frame-modal"><p><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower](10%/during this turn)</p></div>
+                <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-2')">
+                  Close
+                </button>
+              </div>
+      
+              <div class="frame_lvl" id="sect-1-3_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+                <div class="frameHeader"><h3 class="frameName">Deadly Battle ⅡⅠ</h3></div>
+                <div class="frame-modal"><p><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower](14%/during this turn)</p></div>
+                <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-3')">
+                  Close
+                </button>
+              </div>
+      
+                <div class="frame_lvl" id="sect-1-3_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+                  <div class="frameHeader"><h3 class="frameName">Deadly Battle Ⅳ</h3></div>
+                  <div class="frame-modal"><p><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower] & [Evasion](14%/during this turn)</p></div>
+                  <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-4')">
+                  Close
+                  </button>
+                </div>
+             </div>
+           </div>
+        </section>
+      </span>
+    </div>
+   </div>
+ </div>
+ 
+ 
+ </main>
+  
+ <script src="/JS/Personal_Growth.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <div id="tab_con">
  <header id="doll-personalgrwth_header"><h1>Dolls Personal Growth</h1></header>
   <button class="tablinks" onclick="Tab(event, 'Frames')">Frames</button>
   <button class="tablinks" onclick="Tab(event, 'Azban')">Azban-Stones</button>
@@ -25,516 +119,518 @@
   
 <div id="Frames" class="tabContent">
   <section class="frames_con">
-  <div class="framesect">
+    <div class="framesect">
 
-  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame1" data-toggle="modal"><h2>スパルタ</h2>
-    <div class="frame_descrip" id="frame1" tabindex="-1" data-backdrop="static" data-keyboard="false">
-    <div class="frameHeader"><h3 class="frameName">Sparta</h3></div>
-    <div class="frame-modal"><p>[Light Tank Only]<br><span class="effect">Effect:</span> When  attacking an enemy, if  you have 2(Troops) more then the target, increases [Armor Penetration](+10%)</p></div>
-    <button type="button" data-dismiss="modal">
-      Close
-    </button>
+    <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame1" data-toggle="modal"><h2>スパルタ</h2>
+      <div class="frame_descrip" id="frame1" tabindex="-1" data-backdrop="static" data-keyboard="false">
+      <div class="frameHeader"><h3 class="frameName">Sparta</h3></div>
+      <div class="frame-modal"><p>[Light Tank Only]<br><span class="effect">Effect:</span> When  attacking an enemy, if  you have 2(Troops) more then the target, increases [Armor Penetration](+10%)</p></div>
+      <button type="button" data-dismiss="modal">
+        Close
+      </button>
 
-   <div class="lvlTab_con">
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-0_lvl-2')"><p> Level 2</p></button>
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-0_lvl-3')"><p> Level 3 </p></button> 
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-0_lvl-4')"><p> Level 4 </p></button>
-   </div>
+    <div class="lvlTab_con">
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-0_lvl-2')"><p> Level 2</p></button>
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-0_lvl-3')"><p> Level 3 </p></button> 
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-0_lvl-4')"><p> Level 4 </p></button>
+    </div>
 
-   <div class="frame_lvl" id="sect-1-0_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Sparta Ⅱ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> When  attacking an enemy, if  you have 2(Troops) more then the target, increases [Penetration](+14%)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-1-0_lvl-2')">
-      Close
-     </button>
-   </div>
+    <div class="frame_lvl" id="sect-1-0_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Sparta Ⅱ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> When  attacking an enemy, if  you have 2(Troops) more then the target, increases [Penetration](+14%)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-1-0_lvl-2')">
+        Close
+      </button>
+    </div>
 
-   <div class="frame_lvl" id="sect-1-0_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Sparta ⅡⅠ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> When  attacking an enemy with a lower troop count then yourself, increases [Penetration](+14%)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-1-0_lvl-3')">
-      Close
-     </button>
-   </div>
+    <div class="frame_lvl" id="sect-1-0_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Sparta ⅡⅠ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> When  attacking an enemy with a lower troop count then yourself, increases [Penetration](+14%)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-1-0_lvl-3')">
+        Close
+      </button>
+    </div>
 
-   <div class="frame_lvl" id="sect-1-0_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Sparta Ⅳ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> When  attacking an enemy with a lower troop count then yourself, increases [Penetration](+20%)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-1-0_lvl-4')">
-      Close
-     </button>
-   </div>
-  </div>
+    <div class="frame_lvl" id="sect-1-0_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Sparta Ⅳ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> When  attacking an enemy with a lower troop count then yourself, increases [Penetration](+20%)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-1-0_lvl-4')">
+        Close
+      </button>
+    </div>
+    </div>
 
-  
-  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame2" data-toggle="modal"><h2>死守</h2>
-  <div class="frame_descrip" id="frame2" tabindex="-1" data-backdrop="static" data-keyboard="false">
-    <div class="frameHeader"><h3 class="frameName">Last Stand</h3></div>
-    <div class="frame-modal"><p>[Medium Tank Only]<br><span class="effect">Effect:</span> After being attacked by an enemy if your health is at 90%/60%/30%, increases [Armor] 15%/25%/30%(1-turns/Non-Stackable)</p></div>
+    
+    <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame2" data-toggle="modal"><h2>死守</h2>
+    <div class="frame_descrip" id="frame2" tabindex="-1" data-backdrop="static" data-keyboard="false">
+      <div class="frameHeader"><h3 class="frameName">Last Stand</h3></div>
+      <div class="frame-modal"><p>[Medium Tank Only]<br><span class="effect">Effect:</span> After being attacked by an enemy if your health is at 90%/60%/30%, increases [Armor] 15%/25%/30%(1-turns/Non-Stackable)</p></div>
+      <button type="button" data-dismiss="modal">
+        Close
+      </button>
+
+      <div class="lvlTab_con">
+        <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-1_lvl-2')"><p> Level 2</p></button>
+        <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-1_lvl-3')"><p> Level 3 </p></button> 
+        <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-1_lvl-4')"><p> Level 4 </p></button>
+      </div>
+    
+      <div class="frame_lvl" id="sect-1-1_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+        <div class="frameHeader"><h3 class="frameName">Last Stand Ⅱ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> After being attacked by an enemy if your health is at 90%/60%/30%, increases [Armor] 16%/26%/31%(1-turn/Non-Stackable)</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-1-1_lvl-2')">
+          Close
+        </button>
+      </div>
+    
+      <div class="frame_lvl" id="sect-1-1_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+        <div class="frameHeader"><h3 class="frameName">Last Stand ⅡⅠ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> After being attacked by an enemy if your health is at 90%/60%/30%, increases [Armor] 17%/27%/32%(2-turn/Non-Stackable)</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-1-1_lvl-3')">
+          Close
+        </button>
+      </div>
+    
+      <div class="frame_lvl" id="sect-1-1_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+        <div class="frameHeader"><h3 class="frameName">Last Stand Ⅳ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> After being attacked by an enemy if your health is at 90%/60%/30%, increases [Armor] 20%/30%/35%(2-turn/Non-Stackable)</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-1-1_lvl-4')">
+          Close
+        </button>
+      </div>
+    </div>
+    
+    <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame3" data-toggle="modal"><h2>死闘</h2>
+      <div class="frame_descrip" id="frame3" tabindex="-1" data-backdrop="static" data-keyboard="false">
+      <div class="frameHeader"><h3 class="frameName">Deadly Battle</h3></div>
+      <div class="frame-modal"><p>[Fighter Only]<br><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower](10%/for this attack)</p></div>
+      <button type="button" data-dismiss="modal">
+        Close
+      </button>
+
+      
+    <div class="lvlTab_con">
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-2')"><p> Level 2</p></button>
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-3')"><p> Level 3 </p></button> 
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-4')"><p> Level 4 </p></button>
+    </div>
+
+    <div class="frame_lvl" id="sect-1-3_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Deadly Battle Ⅱ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower](10%/during this turn)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-2')">
+        Close
+      </button>
+    </div>
+
+    <div class="frame_lvl" id="sect-1-3_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Deadly Battle ⅡⅠ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower](14%/during this turn)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-3')">
+        Close
+      </button>
+    </div>
+
+    <div class="frame_lvl" id="sect-1-3_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Deadly Battle Ⅳ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower] & [Evasion](14%/during this turn)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-4')">
+        Close
+      </button>
+    </div>
+    </div>
+    
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame4" data-toggle="modal"><h2>戦闘準備</h2>
+  <div class="frame_descrip" id="frame4" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="frameHeader"><h3 class="frameName">Battle Preperation</h3></div>
+    <div class="frame-modal"><p>[By Activating This Frame The User Gains A Passive Skill]<br><span class="effect">Effect:</span>「Artillery Frame」 once every turn after an action gains 1-CP</p></div>
     <button type="button" data-dismiss="modal">
       Close
     </button>
 
     <div class="lvlTab_con">
-      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-1_lvl-2')"><p> Level 2</p></button>
-      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-1_lvl-3')"><p> Level 3 </p></button> 
-      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-1_lvl-4')"><p> Level 4 </p></button>
-     </div>
-  
-     <div class="frame_lvl" id="sect-1-1_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-      <div class="frameHeader"><h3 class="frameName">Last Stand Ⅱ</h3></div>
-       <div class="frame-modal"><p><span class="effect">Effect:</span> After being attacked by an enemy if your health is at 90%/60%/30%, increases [Armor] 16%/26%/31%(1-turn/Non-Stackable)</p></div>
-       <button type="button" onclick="Close_lvl(event, 'sect-1-1_lvl-2')">
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-2_lvl-2')"><p> Level 2</p></button>
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-2_lvl-3')"><p> Level 3 </p></button> 
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-2_lvl-4')"><p> Level 4 </p></button>
+    </div>
+
+      <div class="frame_lvl" id="sect-1-2_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Battle Preperation Ⅱ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> once every turn(up to 1-turn) after an action gains 2-CP</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-1-2_lvl-2')">
         Close
-       </button>
-     </div>
-  
-     <div class="frame_lvl" id="sect-1-1_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-      <div class="frameHeader"><h3 class="frameName">Last Stand ⅡⅠ</h3></div>
-       <div class="frame-modal"><p><span class="effect">Effect:</span> After being attacked by an enemy if your health is at 90%/60%/30%, increases [Armor] 17%/27%/32%(2-turn/Non-Stackable)</p></div>
-       <button type="button" onclick="Close_lvl(event, 'sect-1-1_lvl-3')">
+        </button>
+      </div>
+
+      <div class="frame_lvl" id="sect-1-2_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Battle Preperation ⅡⅠ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> once every turn(up to 2-turns) after an action gains 2-CP</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-1-2_lvl-3')">
         Close
-       </button>
-     </div>
-  
-     <div class="frame_lvl" id="sect-1-1_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-      <div class="frameHeader"><h3 class="frameName">Last Stand Ⅳ</h3></div>
-       <div class="frame-modal"><p><span class="effect">Effect:</span> After being attacked by an enemy if your health is at 90%/60%/30%, increases [Armor] 20%/30%/35%(2-turn/Non-Stackable)</p></div>
-       <button type="button" onclick="Close_lvl(event, 'sect-1-1_lvl-4')">
+        </button>
+      </div>
+
+      <div class="frame_lvl" id="sect-1-2_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Battle Preperation Ⅳ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> once every turn(up to 2-turns) after an action gains 3-CP</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-1-2_lvl-4')">
         Close
-       </button>
-     </div>
+        </button>
+      </div>
   </div>
-  
-  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame3" data-toggle="modal"><h2>死闘</h2>
-    <div class="frame_descrip" id="frame3" tabindex="-1" data-backdrop="static" data-keyboard="false">
-    <div class="frameHeader"><h3 class="frameName">Deadly Battle</h3></div>
-    <div class="frame-modal"><p>[Fighter Only]<br><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower](10%/for this attack)</p></div>
+
+
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame5" data-toggle="modal"><h2>猛る怒り</h2>
+  <div class="frame_descrip" id="frame5" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="frameHeader"><h3 class="frameName"></h3>Furious Rage</div>
+    <div class="frame-modal"><p>[By Activating This Frame The User Gains A Passive Skill]<br><span class="effect">Effect:</span> Every turn increases [Crit Rate](3%/Max 9%), if a crit occured increases [Crit Damage](15%/3-Turns)</p></div>
+    <button type="button" data-dismiss="modal">
+    Close
+    </button>
+
+    <div class="lvlTab_con">
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-2')"><p> Level 2</p></button>
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-3')"><p> Level 3 </p></button> 
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-4')"><p> Level 4 </p></button>
+    </div>
+
+      <div class="frame_lvl" id="sect-1-3_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Furious Rage Ⅱ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> Every turn increases [Crit Rate](3%/Max 9%), if a crit occured increases [Crit Damage](15%/3-Turns)</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-2')">
+        Close
+        </button>
+      </div>
+
+      <div class="frame_lvl" id="sect-1-3_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Furious Rage ⅡⅠ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> Every turn increases [Crit Rate](5%/Max 15%), if a crit occured increases [Crit Damage](25%/3-Turns)</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-3')">
+        Close
+        </button>
+      </div>
+
+      <div class="frame_lvl" id="sect-1-1_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Furious Rage Ⅳ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> Every turn increases [Crit Rate](7%/Max 21%), if a crit occured increases [Crit Damage](30%/3-Turns)</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-3-1_lvl-4')">
+        Close
+        </button>
+      </div>
+  </div>
+    
+    
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame6" data-toggle="modal"><h2>守護剣土</h2>
+  <div class="frame_descrip" id="frame6" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="frameHeader"><h3 class="frameName">Protective Kendo</h3></div>
+    <div class="frame-modal"><p>[By Activating This Frame The User Gains A Passive Skill]<br><span class="effect">Effect:</span> [Heavy Tank Frame], before attacking if there are 2 or more "non-Heavy" ground units within the same square as you, during this turn increases [Crit Rate](15%)</p></div>
     <button type="button" data-dismiss="modal">
       Close
     </button>
 
-    
-   <div class="lvlTab_con">
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-2')"><p> Level 2</p></button>
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-3')"><p> Level 3 </p></button> 
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-4')"><p> Level 4 </p></button>
-   </div>
+    <div class="lvlTab_con">
+    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-4_lvl-2')"><p> Level 2</p></button>
+    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-4_lvl-3')"><p> Level 3 </p></button> 
+    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-4_lvl-4')"><p> Level 4 </p></button>
+    </div>
 
-   <div class="frame_lvl" id="sect-1-3_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Deadly Battle Ⅱ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower](10%/during this turn)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-2')">
+    <div class="frame_lvl" id="sect-1-4_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+    <div class="frameHeader"><h3 class="frameName">Protective Kendo Ⅱ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> before attacking if there are 2 or more "non-Heavy" ground unit within the same square as you, during this turn increases [Crit Rate](20%)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-1-4_lvl-2')">
       Close
-     </button>
-   </div>
+      </button>
+    </div>
 
-   <div class="frame_lvl" id="sect-1-3_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Deadly Battle ⅡⅠ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower](14%/during this turn)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-3')">
+    <div class="frame_lvl" id="sect-1-4_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+    <div class="frameHeader"><h3 class="frameName">Protective Kendo ⅡⅠ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> before attacking if there is a "non-Heavy" ground unit within the same square as you, during this turn increases [Crit Rate](20%)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-1-4_lvl-3')">
       Close
-     </button>
-   </div>
+      </button>
+    </div>
 
-   <div class="frame_lvl" id="sect-1-3_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Deadly Battle Ⅳ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> At the time of attacking if there is no other "Flying Unit" present in the same square with you or the target, increases [Anti-Air Firepower] & [Evasion](14%/during this turn)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-4')">
+    <div class="frame_lvl" id="sect-1-4_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+    <div class="frameHeader"><h3 class="frameName">Protective Kendo Ⅳ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> before attacking if there is a "non-Heavy" ground unit within the same square as you, during this turn increases [Crit Rate](25%)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-1-4_lvl-4')">
       Close
-     </button>
-   </div>
+      </button>
+    </div>
+  </div></div>
+              
+      
+      
+  <div class="framesect">
+
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame7" data-toggle="modal"><h2>復讐者</h2>
+  <div class="frame_descrip" id="frame7" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="frameHeader"><h3 class="frameName">Avenger</h3></div>
+    <div class="frame-modal"><p>[By Activating This Frame The User Gains A Passive Skill]. <br><span class="effect">Effect:</span> [Heavy Fighter Frame], When attacked increases [Crit Rate](15%/1-turn/non-stackable)</p></div>
+    <button type="button" data-dismiss="modal">
+      Close
+    </button>
+
+    <div class="lvlTab_con">
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-0_lvl-2')"><p> Level 2</p></button>
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-0_lvl-3')"><p> Level 3 </p></button> 
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-0_lvl-4')"><p> Level 4 </p></button>
+    </div>
+
+    <div class="frame_lvl" id="sect-2-0_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Avenger Ⅱ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> When attacked increases [Crit Rate](20%/1-turn/non-stackable)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-2-0_lvl-2')">
+        Close
+      </button>
+    </div>
+
+    <div class="frame_lvl" id="sect-2-0_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Avenger ⅡⅠ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> When attacked increases [Crit Rate](20%/2-turns/non-stackable)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-2-0_lvl-3')">
+        Close
+      </button>
+    </div>
+
+    <div class="frame_lvl" id="sect-2-0_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Avenger Ⅳ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> When attacked increases [Crit Rate](25%/2-turns/non-stackable)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-2-0_lvl-4')">
+        Close
+      </button>
+    </div>
   </div>
-  
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame4" data-toggle="modal"><h2>戦闘準備</h2>
-<div class="frame_descrip" id="frame4" tabindex="-1" data-backdrop="static" data-keyboard="false">
-  <div class="frameHeader"><h3 class="frameName">Battle Preperation</h3></div>
-  <div class="frame-modal"><p>[By Activating This Frame The User Gains A Passive Skill]<br><span class="effect">Effect:</span>「Artillery Frame」 once every turn after an action gains 1-CP</p></div>
+      
+    
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame8" data-toggle="modal"><h2>火力制圧</h2>
+  <div class="frame_descrip" id="frame8" tabindex="-1" data-backdrop="static" data-keyboard="false">
+  <div class="frameHeader"><h3 class="frameName"> Firepower Control</h3></div>
+    <div class="frame-modal"><p>[Anti Air Frame]. <br><span class="effect">Effect:</span> When attacking a marked enemy reduces it's [Anti Ground Firepower](10%/1-turn)</p></div>
+    <button type="button" data-dismiss="modal">
+      Close
+    </button>
+
+    <div class="lvlTab_con">
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-1_lvl-2')"><p> Level 2</p></button>
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-1_lvl-3')"><p> Level 3 </p></button> 
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-1_lvl-4')"><p> Level 4 </p></button>
+    </div>
+
+      <div class="frame_lvl" id="sect-2-1_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Firepower Control Ⅱ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> When attacking a marked unit reduces its [Anti Ground Firepower](15%/1-turn)</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-2-1_lvl-2')">
+        Close
+        </button>
+      </div>
+
+      <div class="frame_lvl" id="sect-2-1_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Firepower Control ⅡⅠ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> When attacking a marked unit reduces it's [Anti Ground Firepower](15%/1-turn) & [Accuracy](10%/1-turn)</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-2-1_lvl-3')">
+        Close
+        </button>
+      </div>
+
+    <div class="frame_lvl" id="sect-2-1_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Firepower Control Ⅳ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> When attacking a marked enemy reduces it's [Anti Ground Firepower](20%/1-turn) & [Accuracy](15%/1-turn)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-2-1_lvl-4')">
+        Close
+      </button>
+    </div>
+  </div>
+      
+    
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame9" data-toggle="modal"><h2>罪域ノ焔</h2>
+    <div class="frame_descrip" id="frame9" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="frameHeader"><h3 class="frameName">Sinful Reigon's  Flame ⅠⅠ</h3></div>
+    <div class="frame-modal"><p><span class="effect">Effect:</span> Before Attacking if your unit moved 2-squares or more increases [Firepower](14%) given only once per battle</p></div>
+    <button type="button" data-dismiss="modal">
+      Close
+    </button>
+
+    <div class="lvlTab_con">
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-2_lvl-3')"><p> Level 3 </p></button> 
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-2_lvl-4')"><p> Level 4 </p></button>
+    </div>
+
+    <div class="frame_lvl" id="sect-2-2_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Sinful Reiogon's Flame ⅡⅠ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span>  Before Attacking if your unit moved 2-squares or more increases [Firepower](20%) given only once per battle</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-2-2_lvl-3')">
+        Close
+      </button>
+    </div>
+
+    <div class="frame_lvl" id="sect-2-2_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Sinful Reiogon's Flame Ⅳ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span>  Before Attacking if your unit moved 2-squares or more increases [Firepower](24%) given only once per battle</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-2-2_lvl-4')">
+        Close
+      </button>
+    </div>
+  </div>
+      
+      
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame10" data-toggle="modal"><h2>激流</h2>
+    <div class="frame_descrip" id="frame10" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="frameHeader"><h3 class="frameName">Intense torrent ⅠⅠ</h3></div>
+    <div class="frame-modal"><p><span class="effect">Effect:</span> At the start of your turn increases [Firepower] by (10%/15%/18%/24%) in the (1st/2nd/3rd/4th turn) after 4-turns increases [Firepower](40%)</p></div>
+    <button type="button" data-dismiss="modal">
+      Close
+    </button>
+
+    <div class="lvlTab_con">
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-3_lvl-3')"><p> Level 3 </p></button> 
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-3_lvl-4')"><p> Level 4 </p></button>
+    </div>
+
+    <div class="frame_lvl" id="sect-2-3_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Intense Torrent ⅡⅠ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> At the start of your turn increases [Firepower] by (15%/18%/24%) in the (1st/2nd/3rd turn) after 3-turns increases [Firepower](40%)</div>
+      <button type="button" onclick="Close_lvl(event, 'sect-2-3_lvl-3')">
+        Close
+      </button>
+    </div>
+
+    <div class="frame_lvl" id="sect-2-3_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Intense Torrent Ⅳ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> At the start of your turn increases [Firepower] by (18%/24%) in the (1st/2nd turn) after 2-turns increases [Firepower](40%)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-2-3_lvl-4')">
+        Close
+      </button>
+    </div>
+  </div></div>
+      
+
+  <div class="framesect">
+      
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame11" data-toggle="modal"><h2>断空の疾風</h2>
+    <div class="frame_descrip" id="frame11" tabindex="-1" data-backdrop="static" data-keyboard="false" >
+    <div class="frameHeader"><h3 class="frameName">Gust of Wind ⅠⅠ</h3></div>
+    <div class="frame-modal"><p><span class="effect">Effect:</span> After taking out a enemy gain 2CP</p></div>
+    <button type="button" data-dismiss="modal" id="close">
+      Close
+    </button>
+
+    <div class="lvlTab_con">
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-0_lvl-3')"><p> Level 3 </p></button> 
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-0_lvl-4')"><p> Level 4 </p></button>
+    </div>
+
+    <div class="frame_lvl" id="sect-3-0_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Gust of Wind ⅠⅡ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> After taking out a enemy gain 3CP</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-3-0_lvl-3')">
+        Close
+      </button>
+    </div>
+
+      <div class="frame_lvl" id="sect-3-0_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Gust of Wind Ⅳ</h3></div>
+        <div class="frame-modal"><p><span class="effect">Effect:</span> After taking out a enemy gain 5CP</p></div>
+        <button type="button" onclick="Close_lvl(event, 'sect-3-0_lvl-4')">
+        Close
+      </button>
+      </div>
+  </div>
+      
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame12" data-toggle="modal"><h2>深淵ノ悲嘆</h2>
+  <div class="frame_descrip" id="frame12" tabindex="-1" data-backdrop="static" data-keyboard="false">
+  <div class="frameHeader"><h3 class="frameName">Grief of The Abyss ⅠⅠ</h3></div>
+  <div class="frame-modal"><p><span class="effect">Effect:</span> After attacking if in X or X, reduces enemy [Firepower](15%/1-turn)</p></div>
   <button type="button" data-dismiss="modal">
     Close
   </button>
 
   <div class="lvlTab_con">
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-2_lvl-2')"><p> Level 2</p></button>
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-2_lvl-3')"><p> Level 3 </p></button> 
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-2_lvl-4')"><p> Level 4 </p></button>
+    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-1_lvl-3')"><p> Level 3 </p></button> 
+    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-1_lvl-4')"><p> Level 4 </p></button>
   </div>
 
-    <div class="frame_lvl" id="sect-1-2_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-     <div class="frameHeader"><h3 class="frameName">Battle Preperation Ⅱ</h3></div>
-      <div class="frame-modal"><p><span class="effect">Effect:</span> once every turn(up to 1-turn) after an action gains 2-CP</p></div>
-      <button type="button" onclick="Close_lvl(event, 'sect-1-2_lvl-2')">
+    <div class="frame_lvl" id="sect-3-1_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+    <div class="frameHeader"><h3 class="frameName">Grief of The Abyss ⅠⅡ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span>  After attacking if in X or X, reduces enemy [Firepower](20%/1-turn)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-3-1_lvl-3')">
       Close
       </button>
     </div>
 
-    <div class="frame_lvl" id="sect-1-2_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-     <div class="frameHeader"><h3 class="frameName">Battle Preperation ⅡⅠ</h3></div>
-      <div class="frame-modal"><p><span class="effect">Effect:</span> once every turn(up to 2-turns) after an action gains 2-CP</p></div>
-      <button type="button" onclick="Close_lvl(event, 'sect-1-2_lvl-3')">
-      Close
-      </button>
-    </div>
-
-    <div class="frame_lvl" id="sect-1-2_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-     <div class="frameHeader"><h3 class="frameName">Battle Preperation Ⅳ</h3></div>
-      <div class="frame-modal"><p><span class="effect">Effect:</span> once every turn(up to 2-turns) after an action gains 3-CP</p></div>
-      <button type="button" onclick="Close_lvl(event, 'sect-1-2_lvl-4')">
-      Close
-      </button>
-    </div>
-</div>
-
-
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame5" data-toggle="modal"><h2>猛る怒り</h2>
-<div class="frame_descrip" id="frame5" tabindex="-1" data-backdrop="static" data-keyboard="false">
-  <div class="frameHeader"><h3 class="frameName"></h3>Furious Rage</div>
-  <div class="frame-modal"><p>[By Activating This Frame The User Gains A Passive Skill]<br><span class="effect">Effect:</span> Every turn increases [Crit Rate](3%/Max 9%), if a crit occured increases [Crit Damage](15%/3-Turns)</p></div>
-  <button type="button" data-dismiss="modal">
-  Close
-  </button>
-
-  <div class="lvlTab_con">
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-2')"><p> Level 2</p></button>
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-3')"><p> Level 3 </p></button> 
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-3_lvl-4')"><p> Level 4 </p></button>
-  </div>
-
-    <div class="frame_lvl" id="sect-1-3_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-     <div class="frameHeader"><h3 class="frameName">Furious Rage Ⅱ</h3></div>
-      <div class="frame-modal"><p><span class="effect">Effect:</span> Every turn increases [Crit Rate](3%/Max 9%), if a crit occured increases [Crit Damage](15%/3-Turns)</p></div>
-      <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-2')">
-      Close
-      </button>
-    </div>
-
-    <div class="frame_lvl" id="sect-1-3_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-     <div class="frameHeader"><h3 class="frameName">Furious Rage ⅡⅠ</h3></div>
-      <div class="frame-modal"><p><span class="effect">Effect:</span> Every turn increases [Crit Rate](5%/Max 15%), if a crit occured increases [Crit Damage](25%/3-Turns)</p></div>
-      <button type="button" onclick="Close_lvl(event, 'sect-1-3_lvl-3')">
-      Close
-      </button>
-    </div>
-
-    <div class="frame_lvl" id="sect-1-1_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Furious Rage Ⅳ</h3></div>
-      <div class="frame-modal"><p><span class="effect">Effect:</span> Every turn increases [Crit Rate](7%/Max 21%), if a crit occured increases [Crit Damage](30%/3-Turns)</p></div>
+    <div class="frame_lvl" id="sect-3-1_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+    <div class="frameHeader"><h3 class="frameName">Grief of The Abyss Ⅳ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span>  After attacking if in X or X, reduces enemy [Firepower](24%/1-turn)</p></div>
       <button type="button" onclick="Close_lvl(event, 'sect-3-1_lvl-4')">
       Close
       </button>
     </div>
-</div>
-  
-  
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame6" data-toggle="modal"><h2>守護剣土</h2>
-<div class="frame_descrip" id="frame6" tabindex="-1" data-backdrop="static" data-keyboard="false">
-  <div class="frameHeader"><h3 class="frameName">Protective Kendo</h3></div>
-  <div class="frame-modal"><p>[By Activating This Frame The User Gains A Passive Skill]<br><span class="effect">Effect:</span> [Heavy Tank Frame], before attacking if there are 2 or more "non-Heavy" ground units within the same square as you, during this turn increases [Crit Rate](15%)</p></div>
-  <button type="button" data-dismiss="modal">
-    Close
-  </button>
-
-  <div class="lvlTab_con">
-   <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-4_lvl-2')"><p> Level 2</p></button>
-   <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-4_lvl-3')"><p> Level 3 </p></button> 
-   <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-1-4_lvl-4')"><p> Level 4 </p></button>
   </div>
-
-  <div class="frame_lvl" id="sect-1-4_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-   <div class="frameHeader"><h3 class="frameName">Protective Kendo Ⅱ</h3></div>
-    <div class="frame-modal"><p><span class="effect">Effect:</span> before attacking if there are 2 or more "non-Heavy" ground unit within the same square as you, during this turn increases [Crit Rate](20%)</p></div>
-    <button type="button" onclick="Close_lvl(event, 'sect-1-4_lvl-2')">
-    Close
-    </button>
-  </div>
-
-  <div class="frame_lvl" id="sect-1-4_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-   <div class="frameHeader"><h3 class="frameName">Protective Kendo ⅡⅠ</h3></div>
-    <div class="frame-modal"><p><span class="effect">Effect:</span> before attacking if there is a "non-Heavy" ground unit within the same square as you, during this turn increases [Crit Rate](20%)</p></div>
-    <button type="button" onclick="Close_lvl(event, 'sect-1-4_lvl-3')">
-    Close
-    </button>
-  </div>
-
-  <div class="frame_lvl" id="sect-1-4_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-   <div class="frameHeader"><h3 class="frameName">Protective Kendo Ⅳ</h3></div>
-    <div class="frame-modal"><p><span class="effect">Effect:</span> before attacking if there is a "non-Heavy" ground unit within the same square as you, during this turn increases [Crit Rate](25%)</p></div>
-    <button type="button" onclick="Close_lvl(event, 'sect-1-4_lvl-4')">
-    Close
-    </button>
-  </div>
-</div></div>
-            
-     
-     
-<div class="framesect">
-
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame7" data-toggle="modal"><h2>復讐者</h2>
-<div class="frame_descrip" id="frame7" tabindex="-1" data-backdrop="static" data-keyboard="false">
-  <div class="frameHeader"><h3 class="frameName">Avenger</h3></div>
-  <div class="frame-modal"><p>[By Activating This Frame The User Gains A Passive Skill]. <br><span class="effect">Effect:</span> [Heavy Fighter Frame], When attacked increases [Crit Rate](15%/1-turn/non-stackable)</p></div>
-  <button type="button" data-dismiss="modal">
-    Close
-  </button>
-
-  <div class="lvlTab_con">
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-0_lvl-2')"><p> Level 2</p></button>
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-0_lvl-3')"><p> Level 3 </p></button> 
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-0_lvl-4')"><p> Level 4 </p></button>
-  </div>
-
-   <div class="frame_lvl" id="sect-2-0_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Avenger Ⅱ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> When attacked increases [Crit Rate](20%/1-turn/non-stackable)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-2-0_lvl-2')">
-      Close
-     </button>
-   </div>
-
-   <div class="frame_lvl" id="sect-2-0_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Avenger ⅡⅠ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> When attacked increases [Crit Rate](20%/2-turns/non-stackable)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-2-0_lvl-3')">
-      Close
-     </button>
-   </div>
-
-   <div class="frame_lvl" id="sect-2-0_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-     <div class="frameHeader"><h3 class="frameName">Avenger Ⅳ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> When attacked increases [Crit Rate](25%/2-turns/non-stackable)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-2-0_lvl-4')">
-      Close
-     </button>
-   </div>
-</div>
     
-  
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame8" data-toggle="modal"><h2>火力制圧</h2>
-<div class="frame_descrip" id="frame8" tabindex="-1" data-backdrop="static" data-keyboard="false">
- <div class="frameHeader"><h3 class="frameName"> Firepower Control</h3></div>
-  <div class="frame-modal"><p>[Anti Air Frame]. <br><span class="effect">Effect:</span> When attacking a marked enemy reduces it's [Anti Ground Firepower](10%/1-turn)</p></div>
+
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame13" data-toggle="modal"><h2>曝君の剣</h2>
+  <div class="frame_descrip" id="frame13" tabindex="-1" data-backdrop="static" data-keyboard="false">
+  <div class="frameHeader"><h3 class="frameName">Tyrants Sword ⅠⅠ</h3></div>
+  <div class="frame-modal"><p><span class="effect">Effect:</span> After Attacking if in X or X, deal 375 additional[Burn] damage(3-times per battle)</p></div>
   <button type="button" data-dismiss="modal">
     Close
   </button>
 
   <div class="lvlTab_con">
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-1_lvl-2')"><p> Level 2</p></button>
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-1_lvl-3')"><p> Level 3 </p></button> 
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-1_lvl-4')"><p> Level 4 </p></button>
+    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-2_lvl-3')"><p> Level 3 </p></button> 
+    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-2_lvl-4')"><p> Level 4 </p></button>
   </div>
 
-    <div class="frame_lvl" id="sect-2-1_lvl-2" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-     <div class="frameHeader"><h3 class="frameName">Firepower Control Ⅱ</h3></div>
-      <div class="frame-modal"><p><span class="effect">Effect:</span> When attacking a marked unit reduces its [Anti Ground Firepower](15%/1-turn)</p></div>
-      <button type="button" onclick="Close_lvl(event, 'sect-2-1_lvl-2')">
-       Close
-      </button>
-    </div>
-
-    <div class="frame_lvl" id="sect-2-1_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-     <div class="frameHeader"><h3 class="frameName">Firepower Control ⅡⅠ</h3></div>
-      <div class="frame-modal"><p><span class="effect">Effect:</span> When attacking a marked unit reduces it's [Anti Ground Firepower](15%/1-turn) & [Accuracy](10%/1-turn)</p></div>
-      <button type="button" onclick="Close_lvl(event, 'sect-2-1_lvl-3')">
+    <div class="frame_lvl" id="sect-3-2_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+    <div class="frameHeader"><h3 class="frameName">Tyrans Sword ⅡⅠ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span>  After attacking if in X or X, deals 500 additional[Burn] damage(3-times per battle)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-3-2_lvl-3')">
       Close
       </button>
     </div>
 
-  <div class="frame_lvl" id="sect-2-1_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Firepower Control Ⅳ</h3></div>
-    <div class="frame-modal"><p><span class="effect">Effect:</span> When attacking a marked enemy reduces it's [Anti Ground Firepower](20%/1-turn) & [Accuracy](15%/1-turn)</p></div>
-    <button type="button" onclick="Close_lvl(event, 'sect-2-1_lvl-4')">
+    <div class="frame_lvl" id="sect-3-2_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+    <div class="frameHeader"><h3 class="frameName">Tyrants Sword Ⅳ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> After attacking if in X or X, deals 600 additional[Burn] damage(3-turns per battle)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-3-2_lvl-4')">
       Close
-    </button>
-  </div>
-</div>
-    
-  
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame9" data-toggle="modal"><h2>罪域ノ焔</h2>
-  <div class="frame_descrip" id="frame9" tabindex="-1" data-backdrop="static" data-keyboard="false">
-  <div class="frameHeader"><h3 class="frameName">Sinful Reigon's  Flame ⅠⅠ</h3></div>
-  <div class="frame-modal"><p><span class="effect">Effect:</span> Before Attacking if your unit moved 2-squares or more increases [Firepower](14%) given only once per battle</p></div>
-  <button type="button" data-dismiss="modal">
-    Close
-  </button>
-
-  <div class="lvlTab_con">
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-2_lvl-3')"><p> Level 3 </p></button> 
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-2_lvl-4')"><p> Level 4 </p></button>
-  </div>
-
-   <div class="frame_lvl" id="sect-2-2_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Sinful Reiogon's Flame ⅡⅠ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span>  Before Attacking if your unit moved 2-squares or more increases [Firepower](20%) given only once per battle</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-2-2_lvl-3')">
-      Close
-     </button>
-   </div>
-
-   <div class="frame_lvl" id="sect-2-2_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Sinful Reiogon's Flame Ⅳ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span>  Before Attacking if your unit moved 2-squares or more increases [Firepower](24%) given only once per battle</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-2-2_lvl-4')">
-      Close
-     </button>
-   </div>
-</div>
-    
-    
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame10" data-toggle="modal"><h2>激流</h2>
-  <div class="frame_descrip" id="frame10" tabindex="-1" data-backdrop="static" data-keyboard="false">
-   <div class="frameHeader"><h3 class="frameName">Intense torrent ⅠⅠ</h3></div>
-   <div class="frame-modal"><p><span class="effect">Effect:</span> At the start of your turn increases [Firepower] by (10%/15%/18%/24%) in the (1st/2nd/3rd/4th turn) after 4-turns increases [Firepower](40%)</p></div>
-   <button type="button" data-dismiss="modal">
-    Close
-   </button>
-
-  <div class="lvlTab_con">
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-3_lvl-3')"><p> Level 3 </p></button> 
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-2-3_lvl-4')"><p> Level 4 </p></button>
-  </div>
-
-   <div class="frame_lvl" id="sect-2-3_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Intense Torrent ⅡⅠ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> At the start of your turn increases [Firepower] by (15%/18%/24%) in the (1st/2nd/3rd turn) after 3-turns increases [Firepower](40%)</div>
-     <button type="button" onclick="Close_lvl(event, 'sect-2-3_lvl-3')">
-      Close
-     </button>
-   </div>
-
-   <div class="frame_lvl" id="sect-2-3_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Intense Torrent Ⅳ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> At the start of your turn increases [Firepower] by (18%/24%) in the (1st/2nd turn) after 2-turns increases [Firepower](40%)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-2-3_lvl-4')">
-      Close
-     </button>
-  </div>
-</div></div>
-     
-
-<div class="framesect">
-     
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame11" data-toggle="modal"><h2>断空の疾風</h2>
-  <div class="frame_descrip" id="frame11" tabindex="-1" data-backdrop="static" data-keyboard="false" >
-  <div class="frameHeader"><h3 class="frameName">Gust of Wind ⅠⅠ</h3></div>
-  <div class="frame-modal"><p><span class="effect">Effect:</span> After taking out a enemy gain 2CP</p></div>
-  <button type="button" data-dismiss="modal" id="close">
-    Close
-  </button>
-
-  <div class="lvlTab_con">
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-0_lvl-3')"><p> Level 3 </p></button> 
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-0_lvl-4')"><p> Level 4 </p></button>
-  </div>
-
-  <div class="frame_lvl" id="sect-3-0_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Gust of Wind ⅠⅡ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> After taking out a enemy gain 3CP</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-3-0_lvl-3')">
-      Close
-     </button>
-  </div>
-
-    <div class="frame_lvl" id="sect-3-0_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-     <div class="frameHeader"><h3 class="frameName">Gust of Wind Ⅳ</h3></div>
-      <div class="frame-modal"><p><span class="effect">Effect:</span> After taking out a enemy gain 5CP</p></div>
-      <button type="button" onclick="Close_lvl(event, 'sect-3-0_lvl-4')">
-      Close
-     </button>
+      </button>
     </div>
-</div>
-     
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame12" data-toggle="modal"><h2>深淵ノ悲嘆</h2>
-<div class="frame_descrip" id="frame12" tabindex="-1" data-backdrop="static" data-keyboard="false">
- <div class="frameHeader"><h3 class="frameName">Grief of The Abyss ⅠⅠ</h3></div>
- <div class="frame-modal"><p><span class="effect">Effect:</span> After attacking if in X or X, reduces enemy [Firepower](15%/1-turn)</p></div>
- <button type="button" data-dismiss="modal">
-  Close
- </button>
-
- <div class="lvlTab_con">
-  <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-1_lvl-3')"><p> Level 3 </p></button> 
-  <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-1_lvl-4')"><p> Level 4 </p></button>
- </div>
-
-  <div class="frame_lvl" id="sect-3-1_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-   <div class="frameHeader"><h3 class="frameName">Grief of The Abyss ⅠⅡ</h3></div>
-    <div class="frame-modal"><p><span class="effect">Effect:</span>  After attacking if in X or X, reduces enemy [Firepower](20%/1-turn)</p></div>
-    <button type="button" onclick="Close_lvl(event, 'sect-3-1_lvl-3')">
-    Close
-    </button>
   </div>
-
-  <div class="frame_lvl" id="sect-3-1_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-   <div class="frameHeader"><h3 class="frameName">Grief of The Abyss Ⅳ</h3></div>
-    <div class="frame-modal"><p><span class="effect">Effect:</span>  After attacking if in X or X, reduces enemy [Firepower](24%/1-turn)</p></div>
-    <button type="button" onclick="Close_lvl(event, 'sect-3-1_lvl-4')">
-    Close
-    </button>
-  </div>
-</div>
-  
-
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame13" data-toggle="modal"><h2>曝君の剣</h2>
- <div class="frame_descrip" id="frame13" tabindex="-1" data-backdrop="static" data-keyboard="false">
- <div class="frameHeader"><h3 class="frameName">Tyrants Sword ⅠⅠ</h3></div>
- <div class="frame-modal"><p><span class="effect">Effect:</span> After Attacking if in X or X, deal 375 additional[Burn] damage(3-times per battle)</p></div>
- <button type="button" data-dismiss="modal">
-  Close
- </button>
-
- <div class="lvlTab_con">
-  <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-2_lvl-3')"><p> Level 3 </p></button> 
-  <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-2_lvl-4')"><p> Level 4 </p></button>
- </div>
-
-  <div class="frame_lvl" id="sect-3-2_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-   <div class="frameHeader"><h3 class="frameName">Tyrans Sword ⅡⅠ</h3></div>
-    <div class="frame-modal"><p><span class="effect">Effect:</span>  After attacking if in X or X, deals 500 additional[Burn] damage(3-times per battle)</p></div>
-    <button type="button" onclick="Close_lvl(event, 'sect-3-2_lvl-3')">
-     Close
-    </button>
-  </div>
-
-  <div class="frame_lvl" id="sect-3-2_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-   <div class="frameHeader"><h3 class="frameName">Tyrants Sword Ⅳ</h3></div>
-    <div class="frame-modal"><p><span class="effect">Effect:</span> After attacking if in X or X, deals 600 additional[Burn] damage(3-turns per battle)</p></div>
-    <button type="button" onclick="Close_lvl(event, 'sect-3-2_lvl-4')">
-    Close
-    </button>
-  </div>
-</div>
+      
     
-  
-<img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame14" data-toggle="modal"><h2>精密捕捉</h2>
-<div class="frame_descrip" id="frame14" tabindex="-1" data-backdrop="static" data-keyboard="false">
- <div class="frameHeader"><h3 class="frameName">Detailed Capture ⅠⅠ</h3></div>
-  <div class="frame-modal"><p><span class="effect">Effect</span> When attacked by boss type enemy increases [Armor](10%)</p></div>
-  <button type="button" data-dismiss="modal">
-  Close
-  </button>
+  <img src="/img/Frames/Frame_tier1_lvl1(Common).png" class="frame_img" data-target="#frame14" data-toggle="modal"><h2>精密捕捉</h2>
+  <div class="frame_descrip" id="frame14" tabindex="-1" data-backdrop="static" data-keyboard="false">
+  <div class="frameHeader"><h3 class="frameName">Detailed Capture ⅠⅠ</h3></div>
+    <div class="frame-modal"><p><span class="effect">Effect</span> When attacked by boss type enemy increases [Armor](10%)</p></div>
+    <button type="button" data-dismiss="modal">
+    Close
+    </button>
 
-  <div class="lvlTab_con">
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-3_lvl-3')"><p> Level 3 </p></button> 
-    <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-3_lvl-4')"><p> Level 4 </p></button>
+    <div class="lvlTab_con">
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-3_lvl-3')"><p> Level 3 </p></button> 
+      <button type="button"   class="framelvlTab" onclick="ChangeLevel(event, 'sect-3-3_lvl-4')"><p> Level 4 </p></button>
+    </div>
+
+    <div class="frame_lvl" id="sect-3-3_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+      <div class="frameHeader"><h3 class="frameName">Detailed Capture ⅡⅠ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> When attacked by boss type enemy increases [Armor](20%)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-3-3_lvl-3')">
+        Close
+      </button>
+    </div>
+
+    <div class="frame_lvl" id="sect-3-3_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+    <div class="frameHeader"><h3 class="frameName">Detailed Capture Ⅳ</h3></div>
+      <div class="frame-modal"><p><span class="effect">Effect:</span> When attacked by boss type enemy increases [Armor](30%)</p></div>
+      <button type="button" onclick="Close_lvl(event, 'sect-3-3_lvl-4')">
+        Close
+      </button>
+    </div>
   </div>
+</section>
 
-   <div class="frame_lvl" id="sect-3-3_lvl-3" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-    <div class="frameHeader"><h3 class="frameName">Detailed Capture ⅡⅠ</h3></div>
-     <div class="frame-modal"><p><span class="effect">Effect:</span> When attacked by boss type enemy increases [Armor](20%)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-3-3_lvl-3')">
-      Close
-     </button>
-   </div>
-
-  <div class="frame_lvl" id="sect-3-3_lvl-4" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
-   <div class="frameHeader"><h3 class="frameName">Detailed Capture Ⅳ</h3></div>
-    <div class="frame-modal"><p><span class="effect">Effect:</span> When attacked by boss type enemy increases [Armor](30%)</p></div>
-     <button type="button" onclick="Close_lvl(event, 'sect-3-3_lvl-4')">
-      Close
-     </button>
-   </div>
-
-</div></section></div>
+</div>
   
 <div id="Azban" class="tabContent">
   <div id="azban_con"> 
@@ -543,14 +639,10 @@
   </div>
 </div>
 
-<div id="TBA" class="tabContent">
-  <div id="TBA_con"> 
-   <p>Something Coming Soon.. 🤷‍♂️</p>
+<div id="Implants" class="tabContent">
+  <div id="Implants_con"> 
      
   </div>
 </div>
 
-</main>
-<script src="/JS/Personal_Growth.js"></script>
-</body>
-</html>
+</main> -->
