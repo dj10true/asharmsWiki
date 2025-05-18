@@ -1124,11 +1124,11 @@ h4{
   to {transform:scale(2)}
 } 
 /* 100% Image Width on Smaller Screens */
-@container(max-width: 700px){
+/* @container(max-width: 700px){
   .modal_img {
     width: 100%;
   }
-}
+} */
 /*End of Enemy-info*/
 
 
