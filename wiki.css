@@ -545,6 +545,13 @@ h4{
 
 
 /*header when for clicked on doll*/
+
+.modal_aligner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .doll_header {
   background: linear-gradient(34deg, grey, red);
   width: 100%;
@@ -555,12 +562,12 @@ h4{
 
 /*The Container For The Image In the Popup Display*/
 .modal_img{
-  min-width: 21em;
-  min-height: 21em;
-  max-height: 0;
+  max-width: 50em;
+  max-height: 40em;
   padding: 0;
-  margin: 0;
+  margin:  0;
   background-image: url(/img/bg_a.jpg);
+  background-repeat: no-repeat;
 }
 
 /*For The Skins*/
@@ -586,11 +593,8 @@ h4{
 }
 
 .job_select{
-  display: flex;
   flex-wrap: wrap;
   max-width: 50%;
-  height: 120px;
-  margin: 0;
   padding: 0;
   background-color: #121716;
 }
@@ -625,13 +629,13 @@ h4{
   padding: 0;
   position: relative;
   cursor: pointer;
-  transform: translate(0px,10px);
+  transform: translate(0px,1px);
   transition: all  ease-in-out;
   background-color: rgba(200, 200, 200, 0.5);
 }
 
 .jobswap:hover + .jobtxt{
-  transform: translate(0px,10px);
+  transform: translate(0px,1px);
   opacity: 1;
   transition: 0.3s;
   cursor: pointer;
@@ -670,15 +674,14 @@ h4{
 }
 
 .passive_con{
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(3, minmax(1em, 1fr));
-  /* grid-template-rows: 15em 15em; */
-  background-color: grey;
-  align-items: start;
+  display: flex;
+  height: 30em;
+  overflow: auto;
+  scrollbar-width: none;
   justify-items: center;
-  padding-top: 15px;
-  margin: 0;
+  align-items: start;
+  margin:  0;
+  padding: 0;
 }
 .passive{
   position: relative;
@@ -810,9 +813,9 @@ h4{
 
 #Skins_icon{
   position: relative;
-  width: 35px;
-  height: 35px;
-  margin: 0;
+  width: 50em;
+  height: 4em;
+  margin:  0;
   padding: 0;
   cursor: pointer;
 }
@@ -917,9 +920,9 @@ h4{
     padding: 0;
   }
   #body_container{
-    /* padding-right: 100%;
+    padding-right: 100%;
     max-width: 20%;
-    display: none; */
+    display: none; 
     width: 100%;
     margin:  0;
     padding: 0;
