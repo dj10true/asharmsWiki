@@ -1,108 +1,274 @@
+* { text-align: center; font-family: sans-serif; }
+
 body
 html{
   margin: 0;
   padding: 0;
-   display: flex;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
   flex-direction: column; 
-}
-
-#site_body_inner{
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
-#site_header{
+
+body{
+  padding: 0;
+  margin:  0;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+/*GLOBALS*/
+.main_body_con{
   display: flex;
+  max-width: 100%;
+  height:    100%;  
+  /* flex-wrap: nowrap; */
+  flex-direction: column;
+  background: center;
+  margin:  0;
+  padding: 0;
+}
+.page-hint{
+  background-color: green;
+  /* animation: hint 3s forwards cubic-bezier(0.5, 1, 0.89, 1); */
+  max-width: fit-content;
+  align-self: center;
+  animation: hint 2s ease-in-out forwards;
+}@keyframes hint {
+  0%  {opacity: 0;};
+  80% { opacity: 0.6;};
+  100%{ opacity: 1;};
+}
+
+#home_btn{
+ /* position: relative;*/
+  height: 30px;
+  left: 20px;
+}
+
+.site_side_bar{
+  position: sticky;
+  display: block;
+  left: 0;
+  top:  0;
+  align-self: center;
+  width: 100%;
+  opacity: 0.8;
+  /* padding: 11.3px; */
+  margin:  0;
+  padding: 0;
+  background: linear-gradient(180deg, grey, orange);
+  z-index: 100;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}  
+.site_side_bar img{
+  width: 60px;
+  height: 60px;
+}
+
+img{
+  max-width:  100%;
+}
+
+p{
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 1.7rem;
+}
+
+button:hover{ cursor: pointer; }
+
+ul,li,ol{
+  color: white;
+  word-break: break-all;
+  align-self: center; 
+  margin:  1em;
+  padding: 1em;
+  background-color: rgba(70, 70, 70, 1);
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+th,td {
+  border: 3px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+/* caption{
+  caption-side: bottom;
+} */
+
+
+header{
+  position: relative;
+  background: linear-gradient(34deg, grey, red);
+  width:  100%;
+  height: 100%;
+  font-weight: bolder;
+  font-size: larger;
+  margin:  0;
+  padding: 0;
+}
+h1{
+  font-size: 25px;
+}
+
+h2{
+  width: 100%;
+  font-size: 2.5vh;
+  text-transform:capitalize;
+  margin:  0;
+  padding: 0;
+}
+h4{
+  font-size: 1.5rem;
+  text-shadow: red 1px 0 4px;
+}
+
+@media screen and(max-width: 768px),(orientation: portrait){
+  #home_btn {
+    font-size: 2.5em;
+    height: 5rem;
+  } 
+  
+  li{
+    font-size:2rem
+  }
+  
+  h1,h2,h3{
+    font-size: 2rem;
+  }
+
+}
+/*End of Globals*/
+
+
+#site_header{
   background-color: red;
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
   align-items: baseline;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 #site_header_logo {
  align-self: center;
 }
 
+#homepage{
+ background-image: url('/img/BG_Preview_L_Default.png');
+ background-repeat:no-repeat ;
+ padding-bottom: 50em;
+}
+/* #homepage img{
+ width:  50%;
+ height: 50%;
+} */
+
 #navId{
-  position: sticky;
-  float: left;
   width: 100%;
+  z-index: 99;
+  margin:  0;
+  padding: 0;
+}
+.nav-item ,.dropdown{
+  margin: 0;
+  padding: 0;
 }
 
 .link_img{
   height: 30px;
 }
-.site_welcome *{
+.site_welcome{
   display: block;
   color: white;
-  text-align: center;
-  padding-bottom: 20px;
+  position: relative;
+  padding-bottom: 30px;
 }
 
 #main_hub header{
-  text-align: center;
   height: 100%;
   width: 100%;
   background-color: red;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 #main_hub_con{
-  display: flex;
+  background: center;
+  background-size: contain;
+  display:flex;
+  width:  100%;
+  height: 100%;
+  flex-direction: column;
   background-color: grey;
-  align-items: flex-start;
+  margin:  0;
+  padding: 0;
+  opacity: 0.9;
 }
 #hub_content{
+  position: relative;
   display: inline-flex;
   flex-wrap: wrap;
-  max-width: 25%;
+  width: 80%;
+  left: 20em;
 }
 #site_main_img{
+  position: absolute;
+  float: left;
+  left: -25px;
   margin: 0;
   padding: 0;
   display: block;
   width: 20%;
 }
 #hub_header{ 
-  position: absolute;
-  float: left;
-  text-align: center;
+  position: relative;
   min-width: 100%;
   max-height: 2rem;
   background-color: yellowgreen;
-  top: 28rem;
   margin: 0;
   padding: 0;
 }
 
 #hub_content_footer{
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
   margin:  0;
   padding: 0;
-  margin-left: 1em;
-  padding-top: 8em;
+  margin-left: 2px;
+  padding-top: 5em;
 }
 .links{
-  width: 40%;
-  max-width:  100%;
-  max-height: 100%;
+  width:  80%;
+  height: 100%;
+  object-fit: contain;
   margin: 5px;
   padding: 0;  
 }
 .footer_imgs{
-  height: 60px;
-  width:  90px;
+  height: 100%;
+  width:  50%;
+  object-fit: contain;
+  flex-grow: 1;
 }
 #modes{
+  display: inline-flex;
+  flex-grow: 1;
   width: 100%;
-  height: 5em;
+  height: 100%;
 }
 #test{
   position: relative;
@@ -125,10 +291,37 @@ html{
   padding: 0;
   margin:  0;
 }
-#campaign_img:hover + .txt{
+.Dollpage-text:hover + .txt{
   position: absolute;
   display: inline-block;
-  transform: translate(0px,10px);
+  transform: translate(-90px,10px);
+  opacity: 1;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.Events-text:hover + .txt{
+  position: absolute;
+  display: inline-block;
+  transform: translate(-90px,10px);
+  opacity: 1;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.Mainstory-text:hover + .txt{
+  position: absolute;
+  display: inline-block;
+  transform: translate(-90px,10px);
+  opacity: 1;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.Guide-text:hover + .txt{
+  position: absolute;
+  display: inline-block;
+  transform: translate(-90px,10px);
   opacity: 1;
   transition: 0.3s;
   z-index: 99;
@@ -144,38 +337,1200 @@ html{
 /*SMARTPHONES*/ 
  @media screen and(max-width: 400px),(orientation: portrait){
   #hub_header{
-    position: absolute;
+    position: inherit;
     top: -1.5em;
     left: 0;
   } 
   #main_hub_con{
     width: 100%;
     transform: translate(0px,0px);
+    align-items: self-start;
     margin:  0;
     padding: 0;
+    margin-bottom: 20em;
   }
   #hub_content{
     min-width: 85%;
+    float: left;
+    left: 3rem;
   }
   #hub_content_footer{
-    width: 90%;
+    display: inline-flex;
+    flex-wrap: nowrap;
   }
   .footer_imgs{
     width: 100%;
-    height: 5em;
-
-  }
-  #test{
-    display: none;
+    height: 60px;
   }
   #site_main_img{
-    width: 19%;
+    width: 15%;
+    top:  20px;
+    left: -1px;
     margin:  0;
     padding: 0;
   }
   #test{
     width: 100%;
     height: 15rem;
+    display: none;
     padding-inline: 0;
   }
 }  
+/* End of homepage////////////////////////////*/
+
+
+
+/*Doll-page start/////////////////////////////*/
+ #icon_container{
+  /* display: inline-flex;
+  flex-wrap: nowrap; */
+  background-image: url('/img/BG_Preview_L_Default.png');
+  background-size: 100%;
+  height: 80rem;
+  padding: 0;
+  margin: 0;
+ }
+ 
+ 
+ .icon_tag{
+  width: 100%;
+  height: 5em;
+  outline: auto black 10rem;
+  cursor: pointer;
+}
+ 
+ 
+ 
+.icon_info_con{
+  position: relative;
+  max-width: 32rem;
+  right: 5em;
+  top: 0.5em;
+  margin: 0px;
+  padding: 5px;
+  padding-top: 30px;
+}
+
+.role_con{
+  display: flex;
+  flex-wrap: wrap;
+  height: 20.5em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: purple;
+} 
+
+.role_img{
+  position: relative;
+  align-self: center;
+  width: 100%;
+  min-height: 9rem;
+  background-image: url(/img//Camp_Preview_SE001.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.icon_header{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+}
+.doll-starheader{
+  position: sticky;
+  top:  0;
+  left: 0;
+  min-width: 4rem;
+  margin:  0;
+  padding: 0;
+}
+.doll-starheader img{
+  width: 90rem;
+}
+
+#Limited_header{
+  padding-bottom: 1em;
+
+}
+
+#Limited_con{
+  display: inline-flex;
+  max-width: 20rem;
+  max-height: 34.5rem;
+  background-color: rgb(199, 187, 70);
+  padding: 0;
+  padding-inline-start: 3.8em;
+  margin: 1em;
+  outline: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#threestr_con{
+  display: inline-flex;
+  max-width: 20rem;
+  max-height: 34.5rem;
+  background-color: rgb(199, 187, 70);
+  padding: 0;
+  padding-inline-start: 3.8em;
+  margin: 1em;
+  outline: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+
+#twostr_con{
+  display: inline-flex;
+  max-width: 20rem;
+  max-height: 34.5rem;
+  background-color: silver;
+  padding: 0;
+  padding-inline-start: 3.8em;
+  margin: 1em; 
+  outline: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#onestr_con{
+  display: inline-flex;
+  width: 20rem;
+  max-height: 34.5rem;
+  background-color: burlywood;
+  padding: 0;
+  padding-inline-start: 3.8em;
+  margin: 1em;
+  outline: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+
+
+
+
+/*Container for Popup display for after clicking on doll icons*/
+#body_container{
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow: hidden;
+  margin: 1px;
+  padding: 1px;
+  display: none;
+}
+
+.child_body{
+  min-height: 100%;
+  min-width: 25rem;
+  width: 100%;
+  min-width: 30%;
+  height: 100%;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  background-image: url(img/Camp_Preview_SE001.png);
+  display: none;
+}
+
+
+
+/*header when for clicked on doll*/
+
+.modal_aligner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.doll_header {
+  background: linear-gradient(34deg, grey, red);
+  width: 100%;
+  height: 37px;
+  margin: 0;
+  padding: 0;
+}
+
+/*The Container For The Image In the Popup Display*/
+.modal_img{
+  max-width: 50em;
+  max-height: 40em;
+  padding: 0;
+  margin:  0;
+  background-image: url(/img/bg_a.jpg);
+  background-repeat: no-repeat;
+}
+
+/*For The Skins*/
+.collection_assignment{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+
+.job_header{
+  height: 55px;
+  width: 100%;
+  background-color: #8e9992;
+  margin:  0;
+}
+
+.job_container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.job_select{
+  flex-wrap: wrap;
+  max-width: 50%;
+  padding: 0;
+  background-color: #121716;
+}
+
+
+.jobtxt{
+  position: inherit;
+  opacity: 0;
+  z-index: 99;
+  top: -50px;
+  left: 0;
+  color: rgb(171, 0, 0);
+  padding: 0;
+  margin: 0;
+}
+
+
+/*here*/
+.jobs{
+  position: relative;
+  display: flex;
+  left: 15px;
+  height: 60px;
+  width: 60px;
+}
+.jobswap{
+  margin:  0;
+  padding: 0;
+}
+.jobs img:hover{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  transform: translate(0px,1px);
+  transition: all  ease-in-out;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.jobswap:hover + .jobtxt{
+  transform: translate(0px,1px);
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.skill_con{ 
+  display: flex;
+  background-color: grey;
+  flex-direction: column;
+}
+.skill_header{
+  position: relative;
+  width: 100%;
+  min-width: 50%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(34deg, grey, red);  
+}
+.skill_name{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  top: -21px;
+}
+.skill{
+  min-height: 40rem;
+  width: 100%;
+  min-width: 15rem;
+  color: whitesmoke;
+  padding: 0;
+  padding-bottom: 5rem;
+}
+
+.passive_con{
+  display: flex;
+  height: 30em;
+  overflow: auto;
+  scrollbar-width: none;
+  justify-items: center;
+  align-items: start;
+  margin:  0;
+  padding: 0;
+}
+.passive{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 21px;
+  color: whitesmoke;
+  margin:  0;
+  padding: 0;
+  padding-bottom: 0;
+}
+
+
+
+.affect{
+  position: relative;
+  background-color: black;
+  max-width: 100%;
+  min-width: 84%;
+  top: -45px;
+}
+
+
+
+.p_descrip img{
+  gap: 4px;
+  width: 60px;
+  height: 60px;
+  padding: auto;
+  align-self: center;
+}
+
+.skill_header{
+  position: relative;
+  width: 100%;
+  min-width: 50%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+
+.morphs{
+  width: 500px;
+  height: 100%;
+  outline: solid 2px black;
+  padding: 0;
+  margin: 0;
+}
+
+.chibi_con{
+  padding: 0;
+  width: 60px;
+  height: 17px;
+  margin: -7px;
+}
+
+.chibi{
+  height: 60px;
+}
+
+.chibitxt{
+  background-color: black;
+  position: relative;
+  z-index: 2;
+  top: -20px;
+  left: -5px;
+  width: 49px;
+}
+
+.Skills_header{
+  background-color: black;
+  color: white;
+  border-radius: 9px;
+  margin-right: 6px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.Air_Ranges{
+  display: flex;
+  border-radius: 40px;
+  gap: 5px;
+  background-color: red;
+  padding: 0;
+  margin: 0;
+  min-height: 130px;
+  max-width: 98%;
+
+}
+.Tiles{
+  border: 5px solid black;
+  border-radius: 5px;
+  min-height: 100px;
+  min-width: 30px;
+  background-color: yellow;
+  padding: 5px;
+  margin: 5px;
+}
+
+.Ground_Ranges{
+  display: flex;
+  border-radius: 40px;
+  gap: 5px;
+  background-color: red;
+  padding: 0;
+  margin: 0;
+  min-height: 130px;
+  max-width: 98%;
+  margin-top: 20px;
+}
+
+
+
+/*Skins*/
+#Skin_container{
+  white-space: nowrap;
+  width: 90%;
+  height: 100%;
+  min-width: 24em;
+  max-height: 26em;
+  background-color: rgba(69, 20, 44, 1);
+  padding: 1rem;
+  margin: 1rem;
+  display: none;
+  overflow-y: hidden;
+} 
+
+#Skins_icon{
+  position: relative;
+  width: 50em;
+  height: 4em;
+  margin:  0;
+  padding: 0;
+  cursor: pointer;
+}
+#skin_closer{
+  height: 100%;
+  min-width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: red;
+}
+.Skin_header{
+  width: 100%;
+}
+.Skin_header h1{
+  position: sticky;
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+
+.skin_collection{
+  display: flex;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.Skins{
+  background-color: black;
+  max-width: 25em;
+  max-height: 14rem;
+  margin: 5px;
+  padding: 5px;
+  outline: solid 5px white;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+
+
+#maus_collection{
+  display: none;
+}
+
+#skua_collection{
+  display: none;
+}
+
+
+#expanded_container{
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+/*For When Clicking To Enlarge Skin*/
+.Expanded{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow-y: hidden;
+  object-fit: contain; 
+  inline-size: 100%;
+  max-height: 580px;
+}
+
+.Expanded img{
+  overflow-x: scroll;
+}
+
+
+@media  screen and(max-device-width: 400px),(pointer: coarse) {
+  .site_side_bar{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-inline: 2.7rem;
+  }
+  #icon_container{
+    /* display:  inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden; */
+    display: flex;
+    height: 102em;
+    gap: 2rem;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: flex-end;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  #body_container{
+    padding-right: 100%;
+    max-width: 20%;
+    display: none; 
+    width: 100%;
+    margin:  0;
+    padding: 0;
+  }
+  .child_body{
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .modal_img{
+    display: block;
+  }
+    #threestr_con{
+      display: flex;
+      width: 89%;
+      background-color: rgb(199, 187, 70);
+      padding: 0;
+      padding-top: 1rem;
+      margin: 0;
+      padding-inline-start: 3.8em;
+      outline: auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    
+    
+    #twostr_con{
+      display: flex;
+      width: 89%;
+      background-color: silver;
+      padding: 0;
+      padding-top: 1rem;
+      margin: 0;
+      margin-top: 25px;
+      padding-inline-start: 3.8em;
+      outline: auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    
+    #onestr_con{
+      display: flex;
+      width: 89%;
+      background-color: burlywood;
+      padding: 0;
+      padding-top: 1rem;
+      margin: 0;
+      margin-top: 25px;
+      padding-inline-start: 3.8em;
+      outline: auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    .Air_Ranges{
+      border-radius: 15px;
+      gap: 0px;
+    }
+    .Ground_Ranges{
+      border-radius: 15px;
+      gap: 0px;
+    }
+    .skill{
+      max-width: 30rem;
+    }
+    .passive_con{
+      display: inline-grid;
+      grid-template-columns: repeat(2, minmax(615px, 1fr));
+      height: 100%;
+      width: 100%;
+      grid-gap: 5em;
+      justify-content: space-around;
+      padding-bottom: 8em;
+    }
+    .passive{
+      width: 100%;
+      padding: 5px;
+      padding-bottom: 0;
+    }
+    
+  }
+/*End of doll-page////////////////////////////////////////////////*/
+
+/*Start of Enemy-info*/
+#enemy_page{
+  background: url('/img/Camp_Preview_SE001.png');
+  width:  100%;
+  height: 100%;
+  margin:  0;
+  padding: 0;
+  padding-bottom: 52rem;
+}
+.enemy:hover{
+  cursor: pointer;
+  background-color: green;
+}
+.modal-con{
+  display: none;
+  margin:  0;
+  padding: 0;
+}
+.modal{
+  /*container-type: inline-size;*/
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey;
+  align-self: center;
+  width: 100%;
+}
+#tester{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin:  0;
+  padding: 0;
+}
+
+#caption {
+  width: 100%;
+  height: 100%;
+  color: #ccc;
+  display: none;
+  margin:  0;
+  padding: 0;
+}
+.bio{
+  position: relative;
+}
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.close {
+  position: absolute;
+  display: none;
+  width: 20%;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+@-webkit-keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(3)}
+}
+@keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(2)}
+} 
+/* 100% Image Width on Smaller Screens */
+/* @container(max-width: 700px){
+  .modal_img {
+    width: 100%;
+  }
+} */
+/*End of Enemy-info*/
+
+
+/*Start of gameui*/
+#ui_info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: grey;
+  margin:  0;
+  padding: 0;
+}
+#ui_img{
+  width: 100%;
+  height: 100%;
+}
+.icons{
+  height: 50px;
+  width: 50px;
+}
+
+/* #contet{
+margin: 0;
+margin-top: 40px;
+padding-top: 40px;
+padding: 0;
+} */
+/*End of gameui*/
+
+/*Main-story*/
+.MapBox{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+}
+.BG {
+  width:  100%;
+  height: 100%;
+  z-index: 99;
+  overflow: hidden;
+  /* display: none; */
+}
+.Stages{
+  position: absolute;
+  float: left;
+  left: 0;
+  /* background-color: red;  */
+  width: 11%;
+  height: 100%;
+  cursor: pointer;
+  /* transform: translate(100%, -2000%); */
+}
+.stage_infoCon{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width:  30%;
+  height: 50%;
+  background-color: blue;
+  overflow: hidden;
+  display: none;
+}
+.stage_info_header{
+  width: 100%;
+  font-size: 3vh;
+  background-color: white;
+}
+.stageWrapper{
+  background-color: yellow;
+  width: 100%;
+  height: 50%;
+  margin:  0;
+  padding: 0;
+}
+.enemy_grid{
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 6rem 6em 6em 6em;
+  grid-template-rows: 5em;
+  width:  100%;
+  height: 100%;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 5px;
+  justify-content: flex-end;
+}
+.enemy_grid img{
+  width:  35px;
+  height: 35px;
+}
+.enemy_placements{
+  display: flex;
+  background-color: grey;
+  outline: 1px solid red;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.Next{
+  cursor: pointer;
+}
+
+#a{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(25em,1em);
+}
+#b{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(36em,-9em);
+}
+#c{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(47em,-2em);
+}
+#d{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(60em,5em);
+}
+#e{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(66em,-5em);
+}
+
+#f{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(52em,-12em);
+}
+#s1{
+  position: relative;
+  width: 7%;
+  height: 15%;
+  transform: translate(39em,-30em); 
+  cursor: pointer;
+  background-color: green;
+}
+
+
+/*Map-Two*/
+#g{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(26em,-34em);
+}
+#h{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(38em,-22em);
+}
+#i{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(46em,-36em);
+}
+#j{
+  width: 11%;
+  height: 15.5%;
+  transform: translate(64em,-28em);
+}
+#s2{
+  position: relative;
+  width: 7%;
+  height: 15%;
+  transform: translate(75em,-31em); 
+  cursor: pointer;
+  background-color: green;
+}
+/*End of mainstory*/
+
+/*Start of Enemy-info*/
+#main_header{
+  border: black 9px thick;
+  background-color: gray;
+}
+
+.enemy_con{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin:  0;
+  padding: 0;
+  padding-top: 1em;
+}
+.aligner{
+  display: grid;
+  grid-template-columns: 8em 8em 8em;
+  grid-template-rows: 10em;
+  height: 100%;
+  border: solid red 9px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin:  0;
+  padding: 0;
+}
+.modal-info-aligner{
+  display: block;
+
+}
+#enemy_names{
+  background-color: grey;
+  width: 40%;
+}
+.enemy{
+  background-color: white;
+  border-style: groove ridge;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.enemy img{
+  margin: 0;
+  padding: 0;
+}
+.enemy_info_con{
+  background-color: grey; 
+}
+.passive_skills{
+  cursor: pointer;
+  background-color: goldenrod;  
+}
+.active_skills{
+  cursor: pointer;
+  background-color: red;
+}
+/*End of enemy-info/////////////////////////////////////////////////////*/
+
+
+
+/*Start of personal-growth*/
+#personalGrowth{
+  display: flex;
+  background: url(/img/Camp_Preview_SE001.png);
+  width: 100%;
+  height: 100%;
+  align-items: center;  
+  margin: 0;
+  padding: 0;
+  padding-bottom: 77rem;
+  
+}
+#tab_con{
+  overflow: hidden;
+  border: 2px solid grey;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+#tab button{
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+#tab_con button:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+#tab_con button.active{
+  background-color: red;
+}
+
+.tabContent{
+  display: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin:  0;
+  padding: 0;
+}
+
+
+
+#doll-personalgrwth_header{
+  color: rgba(49, 146, 78, 0.9);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+section{
+  display: inline-block;
+}
+
+#Azban_tab{
+  display: flex;
+  color: white;
+  flex-direction: row;
+
+}
+
+#Azban_con{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+
+
+#frames_con_header{
+  width: 100%;
+  height: 100%;
+}
+.frames_con{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+.frame_img{
+  margin: 0;
+  padding: 0;
+}
+.frame_img:hover{
+  cursor: pointer;
+  background-color: gainsboro;
+}
+
+.framesect{
+  display: inline-flex;
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:  0;
+  padding: 0;
+}
+
+
+.frameHeader{
+  position: relative;
+  color: white;
+  background-color: black;
+  width: 100%;
+  border: 5px solid red;
+  border-radius: 40px;
+  margin: 0; 
+  padding: 0;
+}
+
+.frame_descrip{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  opacity: 1;
+}
+
+.framelvlTab{
+  display: inline-block;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 5px;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 9px 9px 0px -9px;
+}
+.framelvlTab:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.frame-modal{
+  position: relative;
+  background-color: darkred;
+  width: 100%;
+  height: 50%;
+  z-index: 10;
+  opacity: 1;
+}
+
+
+.frame_descrip button{
+  width: 10rem;
+}
+/*End of personal-Growth/////////////////////////////////////////////////*/
+
+
+/*Start of misc-Page*/
+#miscPage{
+  background: url(/img/Camp_Preview_SE001.png);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 52rem;
+}
+.Container{
+  display: flex;
+  flex-direction: column;
+  background-color: grey; 
+  opacity: 0.95;
+}
+#misc_body{
+  display: flex;
+  flex-wrap: wrap;
+}
+/*End of misc-Page*/
