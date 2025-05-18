@@ -2,6 +2,8 @@ const main_body = document.querySelector(".main_body_con");
 const doll = document.querySelectorAll("icon_tag");
 const collection_assignment = document.querySelectorAll("collection_assignment");
 const jobswap = document.querySelectorAll("jobswap");
+const posSkill = document.querySelectorAll("pos_skill");
+
 const Skin_container =  document.getElementById("Skin_container");
 const skin_collection = document.querySelectorAll("skin_collection");
 const maus_collection = document.getElementById("maus_collection");
@@ -182,9 +184,11 @@ function JobSwap(job){
   if(job.className == ""){
   job.className = "jobswap";
   job.style = "display:inline-block";
+  posSkill.style = "  display: none;"
   } else{
   job.style = "display:none";
   job.className = "";
+  posSkill.style = "  display: none;";
   }
 }JobSwap(jobswap)
 
