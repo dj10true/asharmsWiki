@@ -2354,8 +2354,12 @@ function Display(doll,id,displayname){
       l_tanksrc.src = Brenten;
     break;
     
-    case "Dawnt":
+    case "SBD-3 Dawnt":
       l_attackersrc.src = Dawnt;
+    break;
+
+    case "Dawnt":
+      l_tanksrc.src = Dawnt;
     break;
     
     case "Ju88A4":
@@ -2445,7 +2449,8 @@ function Display(doll,id,displayname){
     case "Malda2":
       l_tdsrc.src = Malda;
     break;
-    
+
+    //limited below
     case "Marfusha":
       l_tanksrc.src = Marfusha;
     break;

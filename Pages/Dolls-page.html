@@ -425,11 +425,11 @@
       <span class="role_con"><h1>Light-Type Tank</h1><img class="role_img" src="/img/Icon_GetStep2_Tank.png"></span>
     </div>
 
-    <div class="doll"><img class="dollIcon" id="Dawnt_icon" src="/img/Icons/Dawnt.png" alt="SBD-3 Dawnt" onclick="Display('lightattacker_body','Dawnt')">
+    <div class="doll"><img class="dollIcon" id="Dawnt_icon" src="/img/Icons/Dawnt.png" alt="SBD-3 Dawnt" onclick="Display('lightattacker_body','SBD-3 Dawnt')">
       <span class="role_con"><h1>Light-Type Attacker Plane</h1><img class="role_img" src="/img/Icon_GetStep2_Attacker.png"></span>
     </div>
 
-    <div class="doll"><img class="dollIcon" id="T70_icon" src="/img/Icons/T-70.png" alt="T-70" onclick="Display('lighttank_body','T70')">
+    <div class="doll"><img class="dollIcon" id="T70_icon" src="/img/Icons/T-70.png" alt="T-70" onclick="Display('lighttank_body','T-70')">
       <span class="role_con"><h1>Light-Type Tank</h1><img class="role_img" src="/img/Icon_GetStep2_Tank.png"></span>
     </div>
 
@@ -2205,7 +2205,7 @@
   <div class="skill"><h1 class="skill_name">Bomb Threat</h1><br><img loading="lazy" src="/img/Icons/BombThreat.png"><br>
   <div class= "affect">
     <h2> 
-     Carries out an attack on all of the "ground" within 1-2~Squares below, 
+     Carries out an attack on all of the "ground" enemies within 1-2~Squares below, 
      removes every unit's buff in range(Regardless if enemy or ally), 
      reduces targets [Accuracy](20%/Non-stackable) & [Threat Level -3](2-turns/Non-stackable),
      after attacking advances forward 1-Square
@@ -2223,7 +2223,7 @@
   <div class="skill"><h1 class="skill_name">Bomb Interception</h1><br><img loading="lazy" src="/img/Icons/Intercept.png"><br>
   <div class= "affect">
   <h2>
-    Carries out a Cautionary attack on the all "ground" enemies 1-2~Squares below 1-time
+    Carries out a Cautionary attack on all "ground" enemies 1-2~Squares below 1-time
   </h2>
   <h1>Range:</h1>
   <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
@@ -2371,13 +2371,15 @@
   </h2>
   <h1>Range:</h1>
   <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
-   <div class="Tiles" style="color:purple"></div>
-   <div class="Tiles" style="color:purple"></div> 
-   <div class="Tiles" style="color:purple"></div>
-   <div class="Tiles" style="color:purple"></div> 
+   
   </div>
   <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
+    <div class="Skills_header"><h1>Ground</h1>
+      <div class="Tiles" style="color:purple"></div>
+      <div class="Tiles" style="color:purple"></div> 
+      <div class="Tiles" style="color:purple"></div>
+      <div class="Tiles" style="color:purple"></div> 
+    </div>
   </div></div></div> 
 
 
@@ -2468,7 +2470,7 @@
   <div class="skill"><h1 class="skill_name">Breakthrough Assult</h1><br><img loading="lazy" src="/img/Icons/Breakthrough_Assault.png"><br>
   <div class= "affect">
     <h2> 
-      Carries out an attack on 1-group of enemies 2~squares ahead of you, inflicts [Broken], afer attacking increases own [Armor](15%/2-turns) advances forward 1~sqaure,
+      Carries out an attack on 1-group of enemies 2~squares ahead, inflicts [Broken], afer attacking increases own [Armor](15%/2-turns) advances forward 1~sqaure,
       if the target is already inflicted with [Broken] status, before attacking reduces targets [Armor] & [Mobility](18%/until [Broken] is removed/non-stackable), 
       normal attacks have an affect, after attacking the affect will activate
     </h2>
@@ -2482,7 +2484,7 @@
   <div class="skill"><h1 class="skill_name">Advancing Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
   <div class= "affect">
   <h2>
-    Carries out a blade battle against 1-squad of enemies 1~2~squares ahead, 
+    Carries out a blade battle against 1-squad of enemies 1-2~squares ahead, 
     before attacking  if the target is in [Broken] status reduces the targets [Armor](18%/until [Broken] ends/non-Stackable) & [Mobility](18%/until [Broken] ends/non-Stackable) advances 2~squares
   </h2>
   <h1>Range:</h1>
@@ -2508,7 +2510,7 @@
   <div class="skill"><h1 class="skill_name">Destructive Shooting</h1><br><img loading="lazy" src="/img/Icons/destructive_fire.png"><br>
   <div class= "affect">
   <h2>
-    Carries out an atack on 1-group of enemies 1-2~squares ahead of you, if attacking a "Heavy Tank" type increases own [Anti-Ground-FirePower](25%/for this attack), if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack only)
+    Carries out an atack on 1-group of enemies 1-2~squares ahead, if attacking a "Heavy" Tank type increases own [Anti Ground FirePower](25%/for this attack), if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack only)
   </h2>
   <h1>Range:</h1>
   <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
