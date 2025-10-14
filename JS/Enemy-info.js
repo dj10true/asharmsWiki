@@ -10,7 +10,7 @@ const Resetters = [
   { name:"Tharsis", info:'Description: ROBOT'},
   { name:"Crown", info:'Description: A massive Crown'},
 ];
-
+module
 const enemyImgs = document.querySelectorAll('.enemyImg').forEach(Img=>{
     Img.addEventListener('click',()=>{
      modalContainer.style.display = 'flex';

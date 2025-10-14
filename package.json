@@ -1,0 +1,15 @@
+{
+  "name": "asharmswiki",
+  "version": "1.0.0",
+  "description": "wiki for asharms a cn/jp  Game",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dj10",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^4.0.3"
+  }
+}

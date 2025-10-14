@@ -21,11 +21,11 @@ body{
 /*GLOBALS*/
 .main_body_con{
   display: flex;
-  max-width: 100%;
-  height:    100%;  
-  /* flex-wrap: nowrap; */
-  flex-direction: column;
-  background: center;
+  max-width:  100%;
+  max-height: 100%;  
+  flex-wrap: wrap; 
+  align-items: center;
+  background:  center;
   margin:  0;
   padding: 0;
 }
@@ -143,7 +143,8 @@ h4{
   }
   
   h1,h2,h3{
-    font-size: 2rem;
+    font-size: 100%;
+    font-family: sans-serif;
   }
 
 }
@@ -167,6 +168,7 @@ h4{
 #homepage{
  background-image: url('/img/BG_Preview_L_Default.png');
  background-repeat:no-repeat ;
+ background-size: cover;
  padding-bottom: 50em;
 }
 /* #homepage img{
@@ -189,6 +191,7 @@ h4{
   height: 30px;
 }
 .site_welcome{
+  width: 100%;
   display: block;
   color: white;
   position: relative;
@@ -229,7 +232,7 @@ h4{
   margin: 0;
   padding: 0;
   display: block;
-  width: 20%;
+  max-height: 45%;
 }
 #hub_header{ 
   position: relative;
@@ -363,9 +366,9 @@ h4{
     height: 60px;
   }
   #site_main_img{
-    width: 15%;
-    top:  20px;
-    left: -1px;
+    min-width: 25%;
+    min-height: 60%;
+    top: 2em;
     margin:  0;
     padding: 0;
   }
@@ -381,18 +384,24 @@ h4{
 
 
 /*Doll-page start/////////////////////////////*/
- #icon_container{
-  /* display: inline-flex;
-  flex-wrap: nowrap; */
+
+#dollpage_con{
   background-image: url('/img/BG_Preview_L_Default.png');
-  background-size: 100%;
-  height: 80rem;
+  background-size: cover;
+  max-height: 100%;
+  max-width:  100%;
   padding: 0;
-  margin: 0;
+  margin:  0;
+ 
+}
+ #icon_container{
+  display: flex;
+  flex-direction: column;
  }
  
  
- .icon_tag{
+ /**.icon_tag,**/
+  .dollIcon{
   width: 100%;
   height: 5em;
   outline: auto black 10rem;
@@ -401,11 +410,12 @@ h4{
  
  
  
-.icon_info_con{
+/**.icon_info_con**/
+.doll{
   position: relative;
   max-width: 32rem;
   right: 5em;
-  top: 0.5em;
+  top: 2em;
   margin: 0px;
   padding: 5px;
   padding-top: 30px;
@@ -414,18 +424,16 @@ h4{
 .role_con{
   display: flex;
   flex-wrap: wrap;
-  height: 20.5em;
-  width: 100%;
-  margin: 0;
+  justify-content: center;
+  height:  20em;
+  margin:  0;
   padding: 0;
-  background-color: purple;
+  background: linear-gradient(115deg, red, black)
 } 
 
 .role_img{
-  position: relative;
+  height: 10rem;
   align-self: center;
-  width: 100%;
-  min-height: 9rem;
   background-image: url(/img//Camp_Preview_SE001.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -442,14 +450,12 @@ h4{
 .doll-starheader{
   position: sticky;
   top:  0;
-  left: 0;
+  left: 25em;
   min-width: 4rem;
   margin:  0;
   padding: 0;
 }
-.doll-starheader img{
-  width: 90rem;
-}
+
 
 #Limited_header{
   padding-bottom: 1em;
@@ -457,56 +463,48 @@ h4{
 }
 
 #Limited_con{
-  display: inline-flex;
-  max-width: 20rem;
-  max-height: 34.5rem;
+  display:  inline-flex;
+  max-width: 70em;
   background-color: rgb(199, 187, 70);
-  padding: 0;
-  padding-inline-start: 3.8em;
-  margin: 1em;
   outline: auto;
+  padding-inline-start: 2em;
   overflow-x: scroll;
   overflow-y: hidden;
+  margin:  0;
 }
 
 #threestr_con{
-  display: inline-flex;
-  max-width: 20rem;
-  max-height: 34.5rem;
+  display:  inline-flex;
+  max-width: 70em;
   background-color: rgb(199, 187, 70);
-  padding: 0;
-  padding-inline-start: 3.8em;
-  margin: 1em;
   outline: auto;
+  padding-inline-start: 2em;
   overflow-x: scroll;
   overflow-y: hidden;
+  margin:  0;
 }
 
 
 #twostr_con{
   display: inline-flex;
-  max-width: 20rem;
-  max-height: 34.5rem;
+  max-width: 70em;
   background-color: silver;
-  padding: 0;
-  padding-inline-start: 3.8em;
-  margin: 1em; 
+  padding-inline-start: 2em;
   outline: auto;
   overflow-x: scroll;
   overflow-y: hidden;
+  margin: 0; 
 }
 
 #onestr_con{
   display: inline-flex;
-  width: 20rem;
-  max-height: 34.5rem;
+  max-width: 70em;
   background-color: burlywood;
-  padding: 0;
-  padding-inline-start: 3.8em;
-  margin: 1em;
+  padding-inline-start: 2em;
   outline: auto;
   overflow-x: scroll;
   overflow-y: hidden;
+  margin: 0; 
 }
 
 
@@ -526,13 +524,14 @@ h4{
   display: none;
 }
 
-.child_body{
-  min-height: 100%;
-  min-width: 25rem;
+/**.child_body**/
+ .doll_body{
+  max-height: 100%;
+  max-width: 100%;
   width: 100%;
-  min-width: 30%;
   height: 100%;
   position: absolute;
+  scrollbar-width: none;
   overflow-x: hidden;
   overflow-y: scroll;
   margin: 0;
@@ -543,16 +542,18 @@ h4{
 }
 
 
-
 /*header when for clicked on doll*/
 
 .modal_aligner{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  display: flex;
+  flex-wrap: nowrap;
 }
-.doll_header {
+.displayname_inserter {
   background: linear-gradient(34deg, grey, red);
   width: 100%;
   height: 37px;
@@ -562,12 +563,12 @@ h4{
 
 /*The Container For The Image In the Popup Display*/
 .modal_img{
-  max-width: 50em;
-  max-height: 40em;
+  max-width:  50%;
+  max-height: 100%;
   padding: 0;
   margin:  0;
   background-image: url(/img/bg_a.jpg);
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*For The Skins*/
@@ -593,15 +594,17 @@ h4{
 }
 
 .job_select{
-  flex-wrap: wrap;
-  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
   padding: 0;
-  background-color: #121716;
+  background: linear-gradient(40deg, transparent, black)
 }
 
 
 .jobtxt{
   position: inherit;
+  display: none;
   opacity: 0;
   z-index: 99;
   top: -50px;
@@ -624,27 +627,32 @@ h4{
   margin:  0;
   padding: 0;
 }
+
+
 .jobs img:hover{
-  margin: 0;
-  padding: 0;
+  
   position: relative;
   cursor: pointer;
   transform: translate(0px,1px);
   transition: all  ease-in-out;
   background-color: rgba(200, 200, 200, 0.5);
+  margin: 0;
+  padding: 0;
 }
 
 .jobswap:hover + .jobtxt{
-  transform: translate(0px,1px);
+  transform: translate(0px,50px);
   opacity: 1;
+  display: inline-block;
+
   transition: 0.3s;
   cursor: pointer;
 }
 
 .skill_con{ 
   display: flex;
-  background-color: grey;
   flex-direction: column;
+  background: linear-gradient(40deg, transparent, black)
 }
 .skill_header{
   position: relative;
@@ -656,52 +664,50 @@ h4{
   background: linear-gradient(34deg, grey, red);  
 }
 .skill_name{
-  position: relative;
-  width: 100%;
-  height: 20%;
-  background-color: black;
   margin: 0;
   padding: 0;
-  top: -21px;
 }
 .skill{
   min-height: 40rem;
   width: 100%;
   min-width: 15rem;
   color: whitesmoke;
+  /* background: linear-gradient(34deg, grey, transparent); */
   padding: 0;
   padding-bottom: 5rem;
 }
 
 .passive_con{
-  display: flex;
-  height: 30em;
-  overflow: auto;
+  max-height: 30em;
   scrollbar-width: none;
-  justify-items: center;
-  align-items: start;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: grey;
   margin:  0;
   padding: 0;
 }
 .passive{
-  position: relative;
   display: flex;
   flex-direction: column;
-  top: 21px;
+  align-items: center;
   color: whitesmoke;
-  margin:  0;
+  background-color: black;
+  margin:  1em;
   padding: 0;
   padding-bottom: 0;
 }
 
 
 
+
+
 .affect{
-  position: relative;
+  /* position: relative;
   background-color: black;
   max-width: 100%;
   min-width: 84%;
-  top: -45px;
+  top: -45px; */
+  max-width: 100%;
 }
 
 
@@ -813,8 +819,8 @@ h4{
 
 #Skins_icon{
   position: relative;
-  width: 50em;
-  height: 4em;
+  max-width: 5em;
+  max-height: 5em;
   margin:  0;
   padding: 0;
   cursor: pointer;
@@ -901,6 +907,10 @@ h4{
     padding: 0;
     padding-inline: 2.7rem;
   }
+  h1,h2,h3{
+    font-size: 1rem;
+  }
+
   #icon_container{
     /* display:  inline-flex;
     flex-wrap: nowrap;
@@ -919,20 +929,27 @@ h4{
     margin: 0;
     padding: 0;
   }
+
+  /* .jobs{
+    left: 10em;
+  } */
+
+
   #body_container{
     padding-right: 100%;
-    max-width: 20%;
     display: none; 
     width: 100%;
     margin:  0;
     padding: 0;
   }
-  .child_body{
+  .child_body .doll_body{
     overflow-x: scroll;
     width: 100%;
   }
   .modal_img{
     display: block;
+    min-width:  50%;
+    min-height: 50%;
   }
     #threestr_con{
       display: flex;
@@ -975,6 +992,7 @@ h4{
       overflow-x: scroll;
       overflow-y: hidden;
     }
+
     .Air_Ranges{
       border-radius: 15px;
       gap: 0px;
@@ -987,13 +1005,7 @@ h4{
       max-width: 30rem;
     }
     .passive_con{
-      display: inline-grid;
-      grid-template-columns: repeat(2, minmax(615px, 1fr));
-      height: 100%;
-      width: 100%;
-      grid-gap: 5em;
-      justify-content: space-around;
-      padding-bottom: 8em;
+      height: 21em;
     }
     .passive{
       width: 100%;
@@ -1003,6 +1015,7 @@ h4{
     
   }
 /*End of doll-page////////////////////////////////////////////////*/
+
 
 /*Start of Enemy-info*/
 #enemy_page{
@@ -1017,7 +1030,7 @@ h4{
   cursor: pointer;
   background-color: green;
 }
-.modal-con{
+.modal-con .Doll{
   display: none;
   margin:  0;
   padding: 0;
@@ -1031,6 +1044,32 @@ h4{
   align-self: center;
   width: 100%;
 }
+/* Modal styling */
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  /**box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);**/
+}
+
+.modal-content {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 #tester{
   display: flex;
   flex-wrap: wrap;
@@ -1096,11 +1135,11 @@ h4{
   to {transform:scale(2)}
 } 
 /* 100% Image Width on Smaller Screens */
-/* @container(max-width: 700px){
+ @container(max-width: 700px){
   .modal_img {
     width: 100%;
   }
-} */
+} 
 /*End of Enemy-info*/
 
 
@@ -1305,23 +1344,19 @@ padding: 0;
   margin:  0;
   padding: 0;
 }
-.modal-info-aligner{
-  display: block;
 
-}
 #enemy_names{
   background-color: grey;
   width: 40%;
 }
-.enemy{
-  background-color: white;
+.doll{
   border-style: groove ridge;
   height: 100%;
-  width: 100%;
+  width:  100%;
   margin: 0;
   padding: 0;
 }
-.enemy img{
+.doll, img{
   margin: 0;
   padding: 0;
 }

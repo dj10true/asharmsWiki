@@ -13,13 +13,13 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="wiki.css">
+    <link rel="stylesheet" href="/wiki.css">
     <title>Asharms-Wiki | Homepage</title>
    </head>
   <body>
 
 <main id="homepage" class="main_body_con"> 
-  <header id="site_header"><img  id="site_header_logo"src="img/logo_sharpened.png" alt="Logo Header"></header>
+  <header id="site_header"><img  id="site_header_logo"src="/img/logo_sharpened.png" alt="Logo Header"></header>
 
   
        <ul class="nav nav-tabs" id="navId">
@@ -64,8 +64,8 @@
         <li class="nav-item">
           <a href="https://twitter.com/AshArms_staff" class="nav-link">Twitter</a>
         </li>
-        <li class="nav-item">
-          <p>Made By dj10 - Last Updated 5/18/2025</p>
+        <li class="nav-item" >
+          <p id="updater">Made By dj10 - Last Updated 10/14/2025</p>
         </li>
 
        </ul>
@@ -73,11 +73,12 @@
        
        
        <script>
-        $('#navId a').click(e => {
+        $('#navId').click(e => {
           e.preventDefault();
           $(this).tab('show');
         });
-       </script>         
+       </script>  
+
        <div class="site_welcome"><header><h1>Updated Wiki For English Players of [ァシッァームス(Ash-Arms)]</h1></header></div>
        
        
