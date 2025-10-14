@@ -651,7 +651,7 @@ h4{
 .skill_con{ 
   display: flex;
   flex-direction: column;
-  background: linear-gradient(40deg, transparent, black)
+  /* background: linear-gradient(40deg, transparent, black) */
 }
 .skill_header{
   position: relative;
