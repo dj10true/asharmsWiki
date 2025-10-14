@@ -392,7 +392,6 @@ h4{
   max-width:  100%;
   padding: 0;
   margin:  0;
- 
 }
  #icon_container{
   display: flex;
@@ -910,6 +909,14 @@ h4{
   h1,h2,h3{
     font-size: 1rem;
   }
+  #dollpage_con{
+    background-image: url('/img/BG_Preview_L_Default.png');
+    background-size: cover;
+    max-height: 100%;
+    max-width:  100%;
+    padding: 0;
+    margin:  0;
+  }
 
   #icon_container{
     /* display:  inline-flex;
@@ -1001,9 +1008,9 @@ h4{
       border-radius: 15px;
       gap: 0px;
     }
-    .skill{
+    /* .skill{
       max-width: 30rem;
-    }
+    } */
     .passive_con{
       height: 21em;
     }
