@@ -919,21 +919,14 @@ h4{
   }
 
   #icon_container{
-    /* display:  inline-flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    gap: 2rem;
-    overflow-y: scroll;
-    overflow-x: hidden; */
     display: flex;
-    height: 102em;
     gap: 2rem;
     overflow-y: scroll;
-    justify-content: center;
-    align-items: flex-end;
     overflow-x: hidden;
-    flex-wrap: wrap;
-    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin:  0;
     padding: 0;
   }
 
