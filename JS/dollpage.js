@@ -1768,6 +1768,50 @@ const Dolls =
       }]
   },
 
+  Hachiroku:{
+    passives:[
+      {
+        name: "a place with railways", 
+        affect: `before you take action,
+        if there exist any other "railroad" allies increases own [Damage Cut](24%/this turn,
+        moves 1~square in front of any other "railrod" allies that are the most ahead,
+        "railroad": hachiroku, olivi, nishika)`
+      },
+      {
+        name: "Awakening", 
+        affect: `At the start of your phase,
+        increases each of own copies [Anti Ground Firepower](hacirokus initial [HP] and current [HP])(this turn),
+        this affect can be activated any amount of times,
+        before carrying out an attack recovers own [HP](33% of max [HP]) & remove all debuffs,
+        this affect can be activated 3-times in a single battle`
+      },
+      {
+        name: "Resonance", 
+        affect: `At the start of your phase,
+        if there exists any other "railroad" ally increases all "railroad" allies [Crit Rate](40%/this turn),
+        pulls any damage that other "railroad" allies will take to hachiroku(excluding blade attacks))`
+      },
+
+      {
+        name: "Railroad", 
+        affect: `[Railroad] nullifies the demerits of this terrain`
+      },
+
+      {
+        name: "Gale Of Wind", 
+        affect: `If dealing an attack defeats an enemy unit, gain 2[CP]`
+      },
+    ],
+    unique_skill:[
+      {
+        name:"What Connects us",
+        affect: `"Stationary" mode limited skill,
+       carries out an attack with 150%[Power] on  3-squads of "ground" units 1-2~squares away,
+       after attacking  increases all ally "ground" units [Total Anti Ground Firepower](25% of hachiroku's [Anti Ground Firepower]/1-turn/non stackable) &
+       all ally "flying" units [Total Anti Air Firepower](25% of hachiroku's [Anti Ground Firepower]/1-turn/non stackable)`
+      }]
+  },
+
 
 }
 let inserted = false;
@@ -1828,8 +1872,10 @@ const Felicette = "/img/BaseArt/FelicetteFull.png";
 const Strelka   = "/img/BaseArt/StrelkaFull.png";
 const Belka     = "/img/BaseArt/BelkaFull.png";
 const Claire    = "/img/BaseArt/ClaireFull.png";
-
-
+const Hachiroku = "/img/BaseArt/HachirokuFull.png";
+const Olivi     = "/img/BaseArt/OliviFull.png";
+const Nishika   = "/img/BaseArt/NishikaFull.png";
+ 
 //three stars
 const mausFull    = "/img/BaseArt/maus full.png";
 const Aircraft11  = "/img/BaseArt/Aircraft11Full.png";
@@ -1970,7 +2016,6 @@ function Display(doll,id,displayname){
   let m_tanksrc   = document.getElementById('medtanksrc');
   let m_cannonsrc = document.getElementById('medcannonsrc');
   let m_aasrc = document.getElementById('medaasrc');
-  let m_tdsrc = document.getElementById('medtdsrc');
 
   let l_tanksrc   = document.getElementById('lighttanksrc');
   let l_cannonsrc = document.getElementById('lightcannonsrc');
@@ -1998,7 +2043,6 @@ function Display(doll,id,displayname){
   m_tanksrc.getAttribute('src');
   m_cannonsrc.getAttribute('src');
   m_aasrc.getAttribute('src');
-  m_tdsrc.getAttribute('src');
 
   l_tanksrc.getAttribute('src');
   l_cannonsrc.getAttribute('src');
@@ -2354,12 +2398,8 @@ function Display(doll,id,displayname){
       l_tanksrc.src = Brenten;
     break;
     
-    case "SBD-3 Dawnt":
-      l_attackersrc.src = Dawnt;
-    break;
-
     case "Dawnt":
-      l_tanksrc.src = Dawnt;
+      l_attackersrc.src = Dawnt;
     break;
     
     case "Ju88A4":
@@ -2449,8 +2489,7 @@ function Display(doll,id,displayname){
     case "Malda2":
       l_tdsrc.src = Malda;
     break;
-
-    //limited below
+    
     case "Marfusha":
       l_tanksrc.src = Marfusha;
     break;
@@ -2475,6 +2514,10 @@ function Display(doll,id,displayname){
 
     case "Felicette":
       h_tdsrc.src = Felicette;
+    break;
+
+    case "Hachiroku":
+      h_tanksrc.src = Hachiroku;
     break;
     
 
@@ -2530,6 +2573,22 @@ function Display(doll,id,displayname){
            }  
          break;
 
+         case "JagdTiger":
+          passivenames =  Array.from(Dolls.Jagd_Tiger.passives).map(p=>p.name);
+          for (let i = 0; i < passiveid; i++) {
+            name.innerText = passivenames[i]
+          }  
+        break;
+
+        
+        case "Hachiroku":
+          passivenames =  Array.from(Dolls.Hachiroku.passives).map(p=>p.name);
+          for (let i = 0; i < passiveid; i++) {
+            name.innerText = passivenames[i]
+          }  
+        break;
+         
+
          case "B4":
           passivenames =  Array.from(Dolls.B4.passives).map(p=>p.name);
           for (let i = 0; i < passiveid; i++) {
@@ -2576,6 +2635,20 @@ function Display(doll,id,displayname){
           const geta11 = Dolls.Aircraft11.unique_skill.map(n=>n.name);
           for (let i = 0; i < skillname; i++) {
             name.innerText = geta11
+          }  
+        break;
+
+        case "JagdTiger":
+          const getjtiger = Dolls.Jagd_Tiger.unique_skill.map(n=>n.name);
+          for (let i = 0; i < skillname; i++) {
+            name.innerText = getjtiger
+          }  
+        break;
+
+        case "Hachiroku":
+          const gethachiroku = Dolls.Hachiroku.unique_skill.map(n=>n.name);
+          for (let i = 0; i < skillname; i++) {
+            name.innerText = gethachiroku
           }  
         break;
       
@@ -2644,6 +2717,34 @@ function Display(doll,id,displayname){
             for (let i = 0; i < skillcount; i++) {
              affect.innerText = s_affects
              createDivs(3,skillcount)
+             inserted = true
+            }  
+          break;
+
+          case "JagdTiger":
+            p_affects =  Array.from(Dolls.Jagd_Tiger.passives).map(p=>p.affect);
+            for (let i = 0; i < passiveid; i++) {
+             affect.innerText = p_affects[i]
+            }  
+
+            s_affects =  Array.from(Dolls.Jagd_Tiger.unique_skill).map(p=>p.affect);
+            for (let i = 0; i < skillcount; i++) {
+             affect.innerText = s_affects
+             createDivs(2,skillcount)
+             inserted = true
+            }  
+          break;
+
+          case "Hachiroku":
+            p_affects =  Array.from(Dolls.Hachiroku.passives).map(p=>p.affect);
+            for (let i = 0; i < passiveid; i++) {
+             affect.innerText = p_affects[i]
+            }  
+
+            s_affects =  Array.from(Dolls.Hachiroku.unique_skill).map(p=>p.affect);
+            for (let i = 0; i < skillcount; i++) {
+             affect.innerText = s_affects
+             createDivs(2,skillcount)
              inserted = true
             }  
           break;
