@@ -1950,7 +1950,7 @@ const TKS = "/img/BaseArt/TksFull.png";
 const Honi = "/img/BaseArt/HoniFull.png";
 const Tomohawk = "/img/BaseArt/TomohawkFull.png";
 const Yer2 = "/img/BaseArt/Yer2Full.png";
-const Yek7 = "/img/BaseArt/Yak7Full.png";
+const Yak7 = "/img/BaseArt/Yak7Full.png";
 const Hien = "/img/BaseArt/HienFull.png";
 const Helldiver = "/img/BaseArt/HelldiverFull.png";
 const Havok = "/img/BaseArt/HavokFull.png";
@@ -2292,7 +2292,7 @@ function Display(doll,id,displayname){
       m_bombersrc.src = Yer2;
     break;
     
-    case "Yak7":
+    case "Yak-7":
       l_fightersrc.src = Yak7;
     break;
     case "Hien":
