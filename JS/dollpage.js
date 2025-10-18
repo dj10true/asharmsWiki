@@ -1970,7 +1970,7 @@ const Bellwind = "/img/BaseArt/VillebellwindFull.png";
 const Corsair = "/img/BaseArt/CorsairFull.png";
 const AT1 = "/img/BaseArt/At1Full.png";
 const churchellmkv = "/img/BaseArt/Churchellmk5Full.png";
-const groundbomber11 = "/img/BaseArt/GroundBomber_Type11Full.png";
+const groundbomber11 = "/img/BaseArt/Groundbomber_type11Full.png";
 const Ju88A4 = "/img/BaseArt/Ju88A-4Alt.png";
 const I220 = "/img/BaseArt/I-220Full.png";
 //one stars
@@ -2381,7 +2381,7 @@ function Display(doll,id,displayname){
       h_cannonsrc.src = churchellmkv;
     break;
     
-    case "groundbomber11":
+    case "Ground_Bomber_Type-11":
       m_bombersrc.src = groundbomber11;
     break;
     //end 2star
