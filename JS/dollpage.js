@@ -2014,8 +2014,6 @@ function Display(doll,id,displayname){
   let h_tdsrc = document.getElementById('heavytdsrc');
 
   let m_tanksrc   = document.getElementById('medtanksrc');
-  let m_cannonsrc = document.getElementById('medcannonsrc');
-  let m_aasrc = document.getElementById('medaasrc');
 
   let l_tanksrc   = document.getElementById('lighttanksrc');
   let l_cannonsrc = document.getElementById('lightcannonsrc');
@@ -2027,10 +2025,7 @@ function Display(doll,id,displayname){
   let h_attackersrc = document.getElementById('heavyattackersrc');
 
   let m_bombersrc   = document.getElementById('medbombersrc');
-  let m_fightersrc  = document.getElementById('medfightersrc');
-  let m_attackersrc = document.getElementById('medattackersrc');
 
-  let l_bombersrc   = document.getElementById('lightbombersrc');
   let l_fightersrc  = document.getElementById('lightfightersrc');
   let l_attackersrc = document.getElementById('lightattackersrc');
 
@@ -2041,8 +2036,6 @@ function Display(doll,id,displayname){
   h_tdsrc.getAttribute('src');
 
   m_tanksrc.getAttribute('src');
-  m_cannonsrc.getAttribute('src');
-  m_aasrc.getAttribute('src');
 
   l_tanksrc.getAttribute('src');
   l_cannonsrc.getAttribute('src');
@@ -2055,10 +2048,7 @@ function Display(doll,id,displayname){
   h_attackersrc.getAttribute('src');
 
   m_bombersrc.getAttribute('src');
-  m_fightersrc.getAttribute('src');
-  m_attackersrc.getAttribute('src');
 
-  l_bombersrc.getAttribute('src');
   l_fightersrc.getAttribute('src');
   l_attackersrc.getAttribute('src');
 

@@ -2186,7 +2186,7 @@
   <div class="Tiles"></div>
   </div></div></div>
 
-  <div class="skill"><h1 class="skill_name">Bomb Interception</h1><br><img loading="lazy" src="/img/Icons/Intercept.png"><br>
+  <div class="skill"><h1 class="skill_name">Bomb Interception</h1><br><img loading="lazy" src="/img/Icons/bomb_Intercept.png"><br>
   <div class= "affect">
   <h2>
     Carries out a Cautionary attack on the all "ground" enemies 1-2~Squares below 1-time
@@ -2598,943 +2598,19 @@
 <!--end of medtanks-->
 
 
-<!--body for all med Cannons-->
-<div class="doll_body" id="medcannon_body">
-  
-  <h1 class="displayname_inserter">REPLACE</h1>
-
-  <span class="modal_aligner">
-  <img class="modal_img" id="medcannonsrc" src="" loading="lazy" alt="">
-  <!-- <p id="caption"></p> -->
-
-  <img  id="Skins_icon" class="collection_assignment"  loading="lazy" src="/img/Icons/Item_Quality_Boxs_Skin.png" onclick="Assign(doll_collection)" loading="lazy">
-    
-  <div class="passive_con">
-  <h1 class="skill_header">Passives</h1>
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="1">REPLACE</h1><br><img loading="lazy" src="/img/Icons/SelfPassive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="1">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="2">NAME</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="2">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="3">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="4">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="4"> 
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="5">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="5">
-    AFFECT-HERE
-  </h2>
-  </div></div></div>
-  </span>
-
-  <div class="job_select">
-  <div class="job_header"><h1>Jobs</h1></div>
-  <div class="jobs"><img  src="/img/Icons/Interceptor.png"  class="jobswap" onclick="JobSwap(medcannon_j1)" loading="lazy">
-  <span class="jobtxt"><h1>Interceptor</h1></span></div>
-  <div class="jobs"><img  src="/img/Icons/Fire_Support.png" class="jobswap" onclick="JobSwap(medcannon_j2)" loading="lazy">
-  <span class="jobtxt"><h1>Fire Support</h1></span></div>
-
-
-  <!--Actives-->
-  <div id="medcannon_j1" class="jobswap_con" style="display: none;">
-  <div class="skill_header"><h1>Actives</h1></div>
-  <div class="skill_con">
-
-  <div class="skill"><h1 class="skill_name">Breakthrough Assult</h1><br><img loading="lazy" src="/img/Icons/Breakthrough_Assault.png"><br>
-  <div class= "affect">
-    <h2> 
-      Carries out an attack on 1-group of enemies 2~squares ahead of you, inflicts [Broken], afer attacking increases own [Armor](15%/2-turns) advances forward 1~sqaure,
-      if the target is already inflicted with [Broken] status, before attacking reduces targets [Armor] & [Mobility](18%/until [Broken] is removed/non-stackable), 
-      normal attacks have an affect, after attacking the affect will activate
-    </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div>
-  </div></div></div>
-
-  <div class="skill"><h1 class="skill_name">Thrusting Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out a blade battle against a group of enemies 1~2~squares ahead, 
-    if the target is in [Broken]status reduces [Armor] & [Mobility](18%/until [Broken] ends/non-Stackable) advances 2~squares
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="1">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="1">
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="skill_name">Destructive Shooting</h1><br><img loading="lazy" src="/img/Icons/destructive_fire.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an atack on 1-group of enemies 1-2~squares ahead of you, if attacking a "Heavy Tank" type increases own [Anti-Ground-FirePower](25%/for this attack), if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack only)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div>
-  </div></div></div> 
-
-
-
-  <div class="skill"><h1 class="skill_name">Charging Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
-  <div class= "affect">
-  <h2>        
-    Carries out a blade battle against all enemy units on the enemy side, 
-    if a target was already defeated, reduces enemies [Armor] & [Mobility](18%/until defeated/non-stackable)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="2">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="2">
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div></div></div> 
-
-  <!--2nd-job-->
-  <div id="medcannon_j2" class="jobswap_con" style="display: none;">
-  <div class="skill_header"><h1 >Actives</h1></div>
-  <div class="skill_con">
-
-
-  <div class="skill"><h1 class="skill_name">Diversion Battle Plan</h1><br><img loading="lazy" src="/img/Icons/diversion_skill.png"><br>
-  <div class= "affect">
-  <h2>
-    Gives self [Marked] status increases [Crit Rate](25%/1-turn) & [Threat Level +2] & [Damage Cut](20%/during this turn)
-    carries out an atack on any existing squad of enemies ahead of you
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div>
-  </div></div></div> 
-
-  <div class="skill"><h1 class="skill_name">Defense Vigilance</h1><br><img loading="lazy" src="/img/Icons/warning_skill.png"><br>
-  <div class= "affect">
-  <h2>
-    Transitions to Stationary State, at the start of the enemies phase,
-    carries out a pre-emptive attack on an existing group of enemies 1~2~squares ahead of you
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="3"> 
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-    <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div>
-
-
-  <div class="skill"><h1 class="skill_name">Provocative Shooting</h1><br><img loading="lazy" src="/img/Icons/Provoke.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an attack on 1~group of enemies..after attacking, increases [Threat +4](during this turn)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="skill_name">Counter Position</h1><br><img loading="lazy" src="/img/Icons/counter_position.png"><br>
-  <div class= "affect">
-  <h2>
-    At the start of your phase, if attacked by any "ground" enemy carries out a counter-attack to that enemy, 
-    applies [Camp] status to self Removes every debuff affect including [Marked] except special debuffs, 
-    increases [Armor](50%/during this turn) & [Damage Cut](20%/during this turn), while under the affect of [Camp] if [Marked] increases own [Anti-Ground-Firepower](30%/3-turns/non-stackable), 
-    at the start of the phase if in "mobile" state cancels [Camp]
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="4">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="4">    
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div></div>
-
-  </div></div></div>
-<!--end of medCannon-->
-
-
-<!--No med TD's-->
-
-<!--body for all med AA-->
-<div class="doll_body" id="medaa_body">
-  
-  <h1 class="displayname_inserter">REPLACE</h1>
-
-  <span class="modal_aligner">
-  <img class="modal_img" id="medaasrc" src="" loading="lazy" alt="">
-  <!-- <p id="caption"></p> -->
-
-  <img  id="Skins_icon" class="collection_assignment"  loading="lazy" src="/img/Icons/Item_Quality_Boxs_Skin.png" onclick="Assign(doll_collection)" loading="lazy">
-    
-  <div class="passive_con">
-  <h1 class="skill_header">Passives</h1>
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="1">REPLACE</h1><br><img loading="lazy" src="/img/Icons/SelfPassive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="1">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="2">NAME</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="2">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="3">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="4">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="4"> 
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="5">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="5">
-    AFFECT-HERE
-  </h2>
-  </div></div></div>
-  </span>
-
-  <div class="job_select">
-  <div class="job_header"><h1>Jobs</h1></div>
-  <div class="jobs"><img  src="/img/Icons/Interceptor.png"  class="jobswap" onclick="JobSwap(medaa_j1)" loading="lazy">
-  <span class="jobtxt"><h1>Interceptor</h1></span></div>
-  <div class="jobs"><img  src="/img/Icons/Fire_Support.png" class="jobswap" onclick="JobSwap(medaa_j2)" loading="lazy">
-  <span class="jobtxt"><h1>Fire Support</h1></span></div>
-
-
-  <!--Actives-->
-  <div id="medaa_j1" class="jobswap_con" style="display: none;">
-  <div class="skill_header"><h1>Actives</h1></div>
-  <div class="skill_con">
-
-  <div class="skill"><h1 class="skill_name">Breakthrough Assult</h1><br><img loading="lazy" src="/img/Icons/Breakthrough_Assault.png"><br>
-  <div class= "affect">
-    <h2> 
-      Carries out an attack on 1-group of enemies 2~squares ahead of you, inflicts [Broken], afer attacking increases own [Armor](15%/2-turns) advances forward 1~sqaure,
-      if the target is already inflicted with [Broken] status, before attacking reduces targets [Armor] & [Mobility](18%/until [Broken] is removed/non-stackable), 
-      normal attacks have an affect, after attacking the affect will activate
-    </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div>
-  </div></div></div>
-
-  <div class="skill"><h1 class="skill_name">Thrusting Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out a blade battle against a group of enemies 1~2~squares ahead, 
-    if the target is in [Broken]status reduces [Armor] & [Mobility](18%/until [Broken] ends/non-Stackable) advances 2~squares
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="1">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="1">
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="skill_name">Destructive Shooting</h1><br><img loading="lazy" src="/img/Icons/destructive_fire.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an atack on 1-group of enemies 1-2~squares ahead of you, if attacking a "Heavy Tank" type increases own [Anti-Ground-FirePower](25%/for this attack), if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack only)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div>
-  </div></div></div> 
-
-
-
-  <div class="skill"><h1 class="skill_name">Charging Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
-  <div class= "affect">
-  <h2>        
-    Carries out a blade battle against all enemy units on the enemy side, 
-    if a target was already defeated, reduces enemies [Armor] & [Mobility](18%/until defeated/non-stackable)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="2">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="2">
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div></div></div> 
-
-  <!--2nd-job-->
-  <div id="medaa_j2" class="jobswap_con" style="display: none;">
-  <div class="skill_header"><h1 >Actives</h1></div>
-  <div class="skill_con">
-
-
-  <div class="skill"><h1 class="skill_name">Diversion Battle Plan</h1><br><img loading="lazy" src="/img/Icons/diversion_skill.png"><br>
-  <div class= "affect">
-  <h2>
-    Gives self [Marked] status increases [Crit Rate](25%/1-turn) & [Threat Level +2] & [Damage Cut](20%/during this turn)
-    carries out an atack on any existing squad of enemies ahead of you
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div>
-  </div></div></div> 
-
-  <div class="skill"><h1 class="skill_name">Defense Vigilance</h1><br><img loading="lazy" src="/img/Icons/warning_skill.png"><br>
-  <div class= "affect">
-  <h2>
-    Transitions to Stationary State, at the start of the enemies phase,
-    carries out a pre-emptive attack on an existing group of enemies 1~2~squares ahead of you
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="3"> 
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-    <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div>
-
-
-  <div class="skill"><h1 class="skill_name">Provocative Shooting</h1><br><img loading="lazy" src="/img/Icons/Provoke.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an attack on 1~group of enemies..after attacking, increases [Threat +4](during this turn)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="skill_name">Counter Position</h1><br><img loading="lazy" src="/img/Icons/counter_position.png"><br>
-  <div class= "affect">
-  <h2>
-    At the start of your phase, if attacked by any "ground" enemy carries out a counter-attack to that enemy, 
-    applies [Camp] status to self Removes every debuff affect including [Marked] except special debuffs, 
-    increases [Armor](50%/during this turn) & [Damage Cut](20%/during this turn), while under the affect of [Camp] if [Marked] increases own [Anti-Ground-Firepower](30%/3-turns/non-stackable), 
-    at the start of the phase if in "mobile" state cancels [Camp]
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div> 
+<!--no med cannons-->
 
+<!--no med TD's-->
 
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="4">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="4">    
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div></div>
+<!--No Med AA's-->
 
-  </div></div></div>
-<!--end of med AA-->
+<!--no med fighters-->
 
-
-<!--body for all med Fighter-->
-<div class="doll_body" id="medfighter_body">
-  
-  <h1 class="displayname_inserter">REPLACE</h1>
-  
-  <span class="modal_aligner">
-  <img class="modal_img" id="medfightersrc" src="" loading="lazy" alt="">
-  <!-- <p id="caption"></p> -->
-  
-  <img  id="Skins_icon" class="collection_assignment"  loading="lazy" src="/img/Icons/Item_Quality_Boxs_Skin.png" onclick="Assign(doll_collection)" loading="lazy">
-    
-  <div class="passive_con">
-  <h1 class="skill_header">Passives</h1>
-  
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="1">REPLACE</h1><br><img loading="lazy" src="/img/Icons/SelfPassive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="1">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-  
-  
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="2">NAME</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="2">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-  
-  
-  
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="3">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-  
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="4">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="4"> 
-    AFFECT-HERE
-  </h2>
-  </div></div>
-  
-  
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="5">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="5">
-    AFFECT-HERE
-  </h2>
-  </div></div></div>
-  </span>
-  
-  <div class="job_select">
-  <div class="job_header"><h1>Jobs</h1></div>
-  <div class="jobs"><img  src="/img/Icons/Interceptor.png"  class="jobswap" onclick="JobSwap(medfighter_j1)" loading="lazy">
-  <span class="jobtxt"><h1>Interceptor</h1></span></div>
-  <div class="jobs"><img  src="/img/Icons/Fire_Support.png" class="jobswap" onclick="JobSwap(medfighter_j2)" loading="lazy">
-  <span class="jobtxt"><h1>Fire Support</h1></span></div>
-  
-  
-  <!--Actives-->
-  <div id="medfighter_j1" class="jobswap_con" style="display: none;">
-  <div class="skill_header"><h1>Actives</h1></div>
-  <div class="skill_con">
-  
-  <div class="skill"><h1 class="skill_name">Breakthrough Assult</h1><br><img loading="lazy" src="/img/Icons/Breakthrough_Assault.png"><br>
-  <div class= "affect">
-    <h2> 
-      Carries out an attack on 1-group of enemies 2~squares ahead of you, inflicts [Broken], afer attacking increases own [Armor](15%/2-turns) advances forward 1~sqaure,
-      if the target is already inflicted with [Broken] status, before attacking reduces targets [Armor] & [Mobility](18%/until [Broken] is removed/non-stackable), 
-      normal attacks have an affect, after attacking the affect will activate
-    </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div>
-  </div></div></div>
-  
-  <div class="skill"><h1 class="skill_name">Thrusting Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out a blade battle against a group of enemies 1~2~squares ahead, 
-    if the target is in [Broken]status reduces [Armor] & [Mobility](18%/until [Broken] ends/non-Stackable) advances 2~squares
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-  
-  
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="1">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="1">
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div> 
-  
-  
-  <div class="skill"><h1 class="skill_name">Destructive Shooting</h1><br><img loading="lazy" src="/img/Icons/destructive_fire.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an atack on 1-group of enemies 1-2~squares ahead of you, if attacking a "Heavy Tank" type increases own [Anti-Ground-FirePower](25%/for this attack), if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack only)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div>
-  </div></div></div> 
-  
-  
-  
-  <div class="skill"><h1 class="skill_name">Charging Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
-  <div class= "affect">
-  <h2>        
-    Carries out a blade battle against all enemy units on the enemy side, 
-    if a target was already defeated, reduces enemies [Armor] & [Mobility](18%/until defeated/non-stackable)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
-  </div></div></div> 
-  
-  
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="2">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="2">
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div></div></div> 
-  
-  <!--2nd-job-->
-  <div id="medfighter_j2" class="jobswap_con" style="display: none;">
-  <div class="skill_header"><h1 >Actives</h1></div>
-  <div class="skill_con">
-  
-  
-  <div class="skill"><h1 class="skill_name">Diversion Battle Plan</h1><br><img loading="lazy" src="/img/Icons/diversion_skill.png"><br>
-  <div class= "affect">
-  <h2>
-    Gives self [Marked] status increases [Crit Rate](25%/1-turn) & [Threat Level +2] & [Damage Cut](20%/during this turn)
-    carries out an atack on any existing squad of enemies ahead of you
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div>
-  </div></div></div> 
-  
-  <div class="skill"><h1 class="skill_name">Defense Vigilance</h1><br><img loading="lazy" src="/img/Icons/warning_skill.png"><br>
-  <div class= "affect">
-  <h2>
-    Transitions to Stationary State, at the start of the enemies phase,
-    carries out a pre-emptive attack on an existing group of enemies 1~2~squares ahead of you
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-  
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="3"> 
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-    <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div>
-  
-  
-  <div class="skill"><h1 class="skill_name">Provocative Shooting</h1><br><img loading="lazy" src="/img/Icons/Provoke.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an attack on 1~group of enemies..after attacking, increases [Threat +4](during this turn)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
-  </div></div></div> 
-  
-  
-  <div class="skill"><h1 class="skill_name">Counter Position</h1><br><img loading="lazy" src="/img/Icons/counter_position.png"><br>
-  <div class= "affect">
-  <h2>
-    At the start of your phase, if attacked by any "ground" enemy carries out a counter-attack to that enemy, 
-    applies [Camp] status to self Removes every debuff affect including [Marked] except special debuffs, 
-    increases [Armor](50%/during this turn) & [Damage Cut](20%/during this turn), while under the affect of [Camp] if [Marked] increases own [Anti-Ground-Firepower](30%/3-turns/non-stackable), 
-    at the start of the phase if in "mobile" state cancels [Camp]
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div> 
-  
-  
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="4">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="4">    
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div></div>
+<!--no med attackers-->
   
-</div></div></div>
-<!--end of med Fighter-->
-  
-
+<!--no light bombers-->
 
-<!--body for all medAttacker-->
-<div class="doll_body" id="medattacker_body">
 
-  <h1 class="displayname_inserter">REPLACE</h1>
-  
-  <span class="modal_aligner">
-  <img class="modal_img" id="medattackersrc" src="" loading="lazy" alt="">
-  <!-- <p id="caption"></p> -->
-  
-  <img  id="Skins_icon" class="collection_assignment"  loading="lazy" src="/img/Icons/Item_Quality_Boxs_Skin.png" onclick="Assign(doll_collection)" loading="lazy">
-    
-  <div class="passive_con">
-  <h1 class="skill_header">Passives</h1>
-  
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="1">REPLACE</h1><br><img loading="lazy" src="/img/Icons/SelfPassive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="1">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-  
-  
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="2">NAME</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="2">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-  
-  
-  
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="3">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-  
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="4">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="4"> 
-    AFFECT-HERE
-  </h2>
-  </div></div>
-  
-  
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="5">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="5">
-    AFFECT-HERE
-  </h2>
-  </div></div></div>
-  </span>
-  
-  <div class="job_select">
-  <div class="job_header"><h1>Jobs</h1></div>
-  <div class="jobs"><img  src="/img/Icons/Interceptor.png"  class="jobswap" onclick="JobSwap(medattacker_j1)" loading="lazy">
-  <span class="jobtxt"><h1>Interceptor</h1></span></div>
-  <div class="jobs"><img  src="/img/Icons/Fire_Support.png" class="jobswap" onclick="JobSwap(medattacker_j2)" loading="lazy">
-  <span class="jobtxt"><h1>Fire Support</h1></span></div>
-  
-  
-  <!--Actives-->
-  <div id="medattacker_j1" class="jobswap_con" style="display: none;">
-  <div class="skill_header"><h1>Actives</h1></div>
-  <div class="skill_con">
-  
-  <div class="skill"><h1 class="skill_name">Breakthrough Assult</h1><br><img loading="lazy" src="/img/Icons/Breakthrough_Assault.png"><br>
-  <div class= "affect">
-    <h2> 
-      Carries out an attack on 1-group of enemies 2~squares ahead of you, inflicts [Broken], afer attacking increases own [Armor](15%/2-turns) advances forward 1~sqaure,
-      if the target is already inflicted with [Broken] status, before attacking reduces targets [Armor] & [Mobility](18%/until [Broken] is removed/non-stackable), 
-      normal attacks have an affect, after attacking the affect will activate
-    </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div>
-  </div></div></div>
-  
-  <div class="skill"><h1 class="skill_name">Thrusting Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out a blade battle against a group of enemies 1~2~squares ahead, 
-    if the target is in [Broken]status reduces [Armor] & [Mobility](18%/until [Broken] ends/non-Stackable) advances 2~squares
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-  
-  
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="1">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="1">
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div> 
-  
-  
-  <div class="skill"><h1 class="skill_name">Destructive Shooting</h1><br><img loading="lazy" src="/img/Icons/destructive_fire.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an atack on 1-group of enemies 1-2~squares ahead of you, if attacking a "Heavy Tank" type increases own [Anti-Ground-FirePower](25%/for this attack), if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack only)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div>
-  </div></div></div> 
-  
-  
-  
-  <div class="skill"><h1 class="skill_name">Charging Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
-  <div class= "affect">
-  <h2>        
-    Carries out a blade battle against all enemy units on the enemy side, 
-    if a target was already defeated, reduces enemies [Armor] & [Mobility](18%/until defeated/non-stackable)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
-  </div></div></div> 
-  
-  
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="2">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="2">
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div></div></div> 
-  
-  <!--2nd-job-->
-  <div id="medattacker_j2" class="jobswap_con" style="display: none;">
-  <div class="skill_header"><h1 >Actives</h1></div>
-  <div class="skill_con">
-  
-  
-  <div class="skill"><h1 class="skill_name">Diversion Battle Plan</h1><br><img loading="lazy" src="/img/Icons/diversion_skill.png"><br>
-  <div class= "affect">
-  <h2>
-    Gives self [Marked] status increases [Crit Rate](25%/1-turn) & [Threat Level +2] & [Damage Cut](20%/during this turn)
-    carries out an atack on any existing squad of enemies ahead of you
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div>
-  </div></div></div> 
-  
-  <div class="skill"><h1 class="skill_name">Defense Vigilance</h1><br><img loading="lazy" src="/img/Icons/warning_skill.png"><br>
-  <div class= "affect">
-  <h2>
-    Transitions to Stationary State, at the start of the enemies phase,
-    carries out a pre-emptive attack on an existing group of enemies 1~2~squares ahead of you
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-  
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="3"> 
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-    <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div>
-  
-  
-  <div class="skill"><h1 class="skill_name">Provocative Shooting</h1><br><img loading="lazy" src="/img/Icons/Provoke.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an attack on 1~group of enemies..after attacking, increases [Threat +4](during this turn)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
-  </div></div></div> 
-  
-  
-  <div class="skill"><h1 class="skill_name">Counter Position</h1><br><img loading="lazy" src="/img/Icons/counter_position.png"><br>
-  <div class= "affect">
-  <h2>
-    At the start of your phase, if attacked by any "ground" enemy carries out a counter-attack to that enemy, 
-    applies [Camp] status to self Removes every debuff affect including [Marked] except special debuffs, 
-    increases [Armor](50%/during this turn) & [Damage Cut](20%/during this turn), while under the affect of [Camp] if [Marked] increases own [Anti-Ground-Firepower](30%/3-turns/non-stackable), 
-    at the start of the phase if in "mobile" state cancels [Camp]
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div> 
-  
-  
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="4">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="4">    
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div></div>
-  
-</div></div></div>
-<!--end of med Attacker-->
 
 
 <!--body for all med Bombers-->
@@ -4731,7 +3807,7 @@
 
 
 
-
+<!-- DONE light fighters-->
 <!--body for all light Fighter-->
 <div class="doll_body" id="lightfighter_body">
   
@@ -4788,10 +3864,10 @@
   
   <div class="job_select">
   <div class="job_header"><h1>Jobs</h1></div>
-  <div class="jobs"><img  src="/img/Icons/Interceptor.png"  class="jobswap" onclick="JobSwap(lightfighter_j1)" loading="lazy">
-  <span class="jobtxt"><h1>Interceptor</h1></span></div>
-  <div class="jobs"><img  src="/img/Icons/Fire_Support.png" class="jobswap" onclick="JobSwap(lightfighter_j2)" loading="lazy">
-  <span class="jobtxt"><h1>Fire Support</h1></span></div>
+  <div class="jobs"><img  src="/img/Icons/Air_Control.png"  class="jobswap" onclick="JobSwap(lightfighter_j1)" loading="lazy">
+  <span class="jobtxt"><h1>Air Control</h1></span></div>
+  <div class="jobs"><img  src="/img/Icons/Flying_Fighter.png" class="jobswap" onclick="JobSwap(lightfighter_j2)" loading="lazy">
+  <span class="jobtxt"><h1>Aerial Fighter</h1></span></div>
   
   
   <!--Actives-->
@@ -4799,31 +3875,32 @@
   <div class="skill_header"><h1>Actives</h1></div>
   <div class="skill_con">
   
-  <div class="skill"><h1 class="skill_name">Breakthrough Assult</h1><br><img loading="lazy" src="/img/Icons/Breakthrough_Assault.png"><br>
+  <div class="skill"><h1 class="skill_name">Intercept</h1><br><img loading="lazy" src="/img/Icons/Air_Intercept.png"><br>
   <div class= "affect">
     <h2> 
-      Carries out an attack on 1-group of enemies 2~squares ahead of you, inflicts [Broken], afer attacking increases own [Armor](15%/2-turns) advances forward 1~sqaure,
-      if the target is already inflicted with [Broken] status, before attacking reduces targets [Armor] & [Mobility](18%/until [Broken] is removed/non-stackable), 
-      normal attacks have an affect, after attacking the affect will activate
+      Carries out an attack on 1-group of flying enemies 1~square ahead,
+      increases own [Crit Rate](30%/2-turns), gives self [Marked](1-turn)
     </h2>
   <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+  <div class="Tiles"></div>
+ </div>
   <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div>
+  <div class="Skills_header"><h1>Ground</h1></div></div>
   </div></div></div>
   
-  <div class="skill"><h1 class="skill_name">Thrusting Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
+  <div class="skill"><h1 class="skill_name">Waiting for the chance</h1><br><img loading="lazy" src="/img/Icons/Self_Buff.png"><br>
   <div class= "affect">
   <h2>
-    Carries out a blade battle against a group of enemies 1~2~squares ahead, 
-    if the target is in [Broken]status reduces [Armor] & [Mobility](18%/until [Broken] ends/non-Stackable) advances 2~squares
+    Moves into "High Flying" mode,
+    removes every [Marked] affect and increases own [Anti Air Firepower](20%/2-turns/non stackable) & [Armor Pierce](20%/2-turns/non stackable),
+    if you are not [Marked] gives self "Super High Flying" state,
+    if attacked by a "ground" unit increases own [Damage Cut](70%/this attack only)
   </h2>
   <h1>Range:</h1>
   <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
   <div class= "Ground_Ranges">
   <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div> 
   </div></div></div>
   
   
@@ -4839,31 +3916,40 @@
   </div></div></div> 
   
   
-  <div class="skill"><h1 class="skill_name">Destructive Shooting</h1><br><img loading="lazy" src="/img/Icons/destructive_fire.png"><br>
+  <div class="skill"><h1 class="skill_name">Energy Hunting</h1><br><img loading="lazy" src="/img/Icons/Distant_Shooting.png"><br>
   <div class= "affect">
   <h2>
-    Carries out an atack on 1-group of enemies 1-2~squares ahead of you, if attacking a "Heavy Tank" type increases own [Anti-Ground-FirePower](25%/for this attack), if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack only)
+    Carries out an attack on the flying enemies 2-3~squares ahead,
+    increases own [Crit Rate](25%/this attack only) and advance forward 1~square,
+    if your [Reaction] is higher then the targets carry out an additional attack,
+   if in "Super High Flying"  before attacking increases own [Crit Damage](20%/1-turn) & [Hit Rate](20%/1-turn),
+   if not in "Super High Flying" give self [Marked](1-turn),
+   after attacking moves into "Low Flying" mode
   </h2>
   <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div>
+   <div class="Tiles" style="opacity:0.5"></div>
+   <div class="Tiles"></div>
+   <div class="Tiles"></div> 
+  </div>
   <div class= "Ground_Ranges">
   <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div>
   </div></div></div> 
   
   
   
-  <div class="skill"><h1 class="skill_name">Charging Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
+  <div class="skill"><h1 class="skill_name">Cut Throat</h1><br><img loading="lazy" src="/img/Icons/KnifeIcon.png"><br>
   <div class= "affect">
   <h2>        
-    Carries out a blade battle against all enemy units on the enemy side, 
-    if a target was already defeated, reduces enemies [Armor] & [Mobility](18%/until defeated/non-stackable)
+    Carries out a blade battle on every "flying" enemy 1~square ahead,
+    if the target is in "Low Flying" mode increases own [Anti Air Firepower](30%/this attack) & [Armor Pierce](30%/this attack)
   </h2>
   <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
+   <div class="Tiles"></div> 
+  </div>
   <div class= "Ground_Ranges">
   <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
   </div></div></div> 
   
   
@@ -4884,70 +3970,77 @@
   <div class="skill_con">
   
   
-  <div class="skill"><h1 class="skill_name">Diversion Battle Plan</h1><br><img loading="lazy" src="/img/Icons/diversion_skill.png"><br>
+  <div class="skill"><h1 class="skill_name">Intercept</h1><br><img loading="lazy" src="/img/Icons/Intercepted.png"><br>
   <div class= "affect">
   <h2>
-    Gives self [Marked] status increases [Crit Rate](25%/1-turn) & [Threat Level +2] & [Damage Cut](20%/during this turn)
-    carries out an atack on any existing squad of enemies ahead of you
+    Carries out an attack on an enemy squad 1~square ahead,
+    increases own [Threat Level +2](this turn) and reduces targets [Accuracy](30%/2-turns)
   </h2>
   <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
+   <div class="Tiles"></div>
+  </div>
   <div class= "Ground_Ranges">
   <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div>
   </div></div></div> 
   
-  <div class="skill"><h1 class="skill_name">Defense Vigilance</h1><br><img loading="lazy" src="/img/Icons/warning_skill.png"><br>
+  <div class="skill"><h1 class="skill_name">Aerial Awareness</h1><br><img loading="lazy" src="/img/Icons/warning_skill.png"><br>
   <div class= "affect">
   <h2>
-    Transitions to Stationary State, at the start of the enemies phase,
-    carries out a pre-emptive attack on an existing group of enemies 1~2~squares ahead of you
+    Transitions into "High Flying" mode,
+    removes all [Marked] affects and carries out a cautionary attack on the enemies 1-2~squares ahead,
+    if you are not [Marked] increases own [Mobility](30%/this turn) and grant self "super high flying" status,
+    if attacked by a ground unit, increases own [Damage Cut](70%/this attack)
   </h2>
   <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-  
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="3"> 
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-    <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div>
-  
-  
-  <div class="skill"><h1 class="skill_name">Provocative Shooting</h1><br><img loading="lazy" src="/img/Icons/Provoke.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an attack on 1~group of enemies..after attacking, increases [Threat +4](during this turn)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
   <div class="Tiles"></div> 
+  <div class="Tiles"></div> 
+  </div>
+  <div class= "Ground_Ranges">
+    <div class="Skills_header"><h1>Ground</h1></div>
+  </div></div></div>
+
+  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
+    <div class= "affect">
+    <h2 class="insert_affect" data-skillcount="3">    
+      AFFECT-HERE
+    </h2>
+    <h1>Range:</h1>
+    <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+    <div class= "Ground_Ranges tile_inserter">
+    <div class="Skills_header"><h1>Ground</h1></div>
+    </div></div></div>
+  
+  <div class="skill"><h1 class="skill_name">Energy Exhaustion</h1><br><img loading="lazy" src="/img/Icons/Energy_Attack.png"><br>
+  <div class= "affect">
+  <h2>
+    Carries out an attack on a enemy squad ahead,
+    inflicts [Marked](3-turns),
+    reduces targets [Armor](18%/2-turns/non stackable) & [Mobility](18%/2-turns/non stackable),
+    reduces [Threat Level -3](2-turns/non stackable)
+  </h2>
+  <h1>Range:</h1>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
+  <div class="Tiles"></div> 
+  <div class="Tiles"></div> 
+  </div>
+  <div class= "Ground_Ranges">
+  <div class="Skills_header"><h1>Ground</h1></div>
   </div></div></div> 
   
   
-  <div class="skill"><h1 class="skill_name">Counter Position</h1><br><img loading="lazy" src="/img/Icons/counter_position.png"><br>
+  <div class="skill"><h1 class="skill_name">Aereial Blade</h1><br><img loading="lazy" src="/img/Icons/KnifeIcon.png"><br>
   <div class= "affect">
   <h2>
-    At the start of your phase, if attacked by any "ground" enemy carries out a counter-attack to that enemy, 
-    applies [Camp] status to self Removes every debuff affect including [Marked] except special debuffs, 
-    increases [Armor](50%/during this turn) & [Damage Cut](20%/during this turn), while under the affect of [Camp] if [Marked] increases own [Anti-Ground-Firepower](30%/3-turns/non-stackable), 
-    at the start of the phase if in "mobile" state cancels [Camp]
+    Carries out a blade battle on a enemy squad 1-1~squares ahead
   </h2>
   <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
+  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> 
+   <div class="Tiles"></div> 
+  </div>
   <div class= "Ground_Ranges">
     <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
   </div></div></div> 
   
   
@@ -5200,239 +4293,6 @@
 </div></div></div>
 <!--end of light Attacker-->
 
-
-<!--body for all lightBombers-->
-<div class="doll_body" id="lightbomber_body">
-    
-  <h1 class="displayname_inserter">REPLACE</h1>
-
-  <span class="modal_aligner">
-  <img class="modal_img" id="lightbombersrc" src="" loading="lazy" alt="">
-  <!-- <p id="caption"></p> -->
-
-  <img  id="Skins_icon" class="collection_assignment"  loading="lazy" src="/img/Icons/Item_Quality_Boxs_Skin.png" onclick="Assign(doll_collection)" loading="lazy">
-    
-  <div class="passive_con">
-  <h1 class="skill_header">Passives</h1>
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="1">REPLACE</h1><br><img loading="lazy" src="/img/Icons/SelfPassive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="1">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="2">NAME</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="2">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="3">
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="4">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="4"> 
-    AFFECT-HERE
-  </h2>
-  </div></div>
-
-
-  <div class="passive"><h1 class="insert_name skill_name" data-passname="5">REPLACE</h1><br><img loading="lazy" src="/img/Icons/passive.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-passiveid="5">
-    AFFECT-HERE
-  </h2>
-  </div></div></div>
-  </span>
-
-  <div class="job_select">
-  <div class="job_header"><h1>Jobs</h1></div>
-  <div class="jobs"><img  src="/img/Icons/Bomber.png"  class="jobswap" onclick="JobSwap(lightbomber_j1)" loading="lazy">
-  <span class="jobtxt"><h1>Bomber</h1></span></div>
-  <div class="jobs"><img  src="/img/Icons/Strategic_Cruiser.png" class="jobswap" onclick="JobSwap(lightbomber_j2)" loading="lazy">
-  <span class="jobtxt"><h1>Strategic Cruiser</h1></span></div>
-
-
-  <!--Actives-->
-  <div id="lightbomber_j1" class="jobswap_con" style="display: none;">
-  <div class="skill_header"><h1>Actives</h1></div>
-  <div class="skill_con">
-
-  <div class="skill"><h1 class="skill_name">Breakthrough Assult</h1><br><img loading="lazy" src="/img/Icons/Breakthrough_Assault.png"><br>
-  <div class= "affect">
-    <h2> 
-      Carries out an attack on 1-group of enemies 2~squares ahead of you, inflicts [Broken], afer attacking increases own [Armor](15%/2-turns) advances forward 1~sqaure,
-      if the target is already inflicted with [Broken] status, before attacking reduces targets [Armor] & [Mobility](18%/until [Broken] is removed/non-stackable), 
-      normal attacks have an affect, after attacking the affect will activate
-    </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles" style="opacity: 0.5;"></div><div class="Tiles"></div>
-  </div></div></div>
-
-  <div class="skill"><h1 class="skill_name">Thrusting Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out a blade battle against a group of enemies 1~2~squares ahead, 
-    if the target is in [Broken]status reduces [Armor] & [Mobility](18%/until [Broken] ends/non-Stackable) advances 2~squares
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="1">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="1">
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="skill_name">Destructive Shooting</h1><br><img loading="lazy" src="/img/Icons/destructive_fire.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an atack on 1-group of enemies 1-2~squares ahead of you, if attacking a "Heavy Tank" type increases own [Anti-Ground-FirePower](25%/for this attack), if the enemy is [Marked] increase [Anti-Ground-FirePower(30%/for this attack only)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div></div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div><div class="Tiles"></div>
-  </div></div></div> 
-
-
-
-  <div class="skill"><h1 class="skill_name">Charging Blade</h1><br><img loading="lazy" src="/img/Icons/DoubleKnifeIcon.png"><br>
-  <div class= "affect">
-  <h2>        
-    Carries out a blade battle against all enemy units on the enemy side, 
-    if a target was already defeated, reduces enemies [Armor] & [Mobility](18%/until defeated/non-stackable)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="2">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="2">
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div></div></div> 
-
-  <!--2nd-job-->
-  <div id="lightbomber_j2" class="jobswap_con" style="display: none;">
-  <div class="skill_header"><h1 >Actives</h1></div>
-  <div class="skill_con">
-
-
-  <div class="skill"><h1 class="skill_name">Diversion Battle Plan</h1><br><img loading="lazy" src="/img/Icons/diversion_skill.png"><br>
-  <div class= "affect">
-  <h2>
-    Gives self [Marked] status increases [Crit Rate](25%/1-turn) & [Threat Level +2] & [Damage Cut](20%/during this turn)
-    carries out an atack on any existing squad of enemies ahead of you
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div>
-  </div></div></div> 
-
-  <div class="skill"><h1 class="skill_name">Defense Vigilance</h1><br><img loading="lazy" src="/img/Icons/warning_skill.png"><br>
-  <div class= "affect">
-  <h2>
-    Transitions to Stationary State, at the start of the enemies phase,
-    carries out a pre-emptive attack on an existing group of enemies 1~2~squares ahead of you
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div>
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="3">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="3"> 
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-    <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div>
-
-
-  <div class="skill"><h1 class="skill_name">Provocative Shooting</h1><br><img loading="lazy" src="/img/Icons/Provoke.png"><br>
-  <div class= "affect">
-  <h2>
-    Carries out an attack on 1~group of enemies..after attacking, increases [Threat +4](during this turn)
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  <div class="Tiles"></div> 
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="skill_name">Counter Position</h1><br><img loading="lazy" src="/img/Icons/counter_position.png"><br>
-  <div class= "affect">
-  <h2>
-    At the start of your phase, if attacked by any "ground" enemy carries out a counter-attack to that enemy, 
-    applies [Camp] status to self Removes every debuff affect including [Marked] except special debuffs, 
-    increases [Armor](50%/during this turn) & [Damage Cut](20%/during this turn), while under the affect of [Camp] if [Marked] increases own [Anti-Ground-Firepower](30%/3-turns/non-stackable), 
-    at the start of the phase if in "mobile" state cancels [Camp]
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges">
-    <div class="Skills_header"><h1>Ground</h1></div>
-    <div class="Tiles"></div><div class="Tiles"></div> 
-  </div></div></div> 
-
-
-  <div class="skill"><h1 class="insert_active_name skill_name" data-skillname="4">REPLACE</h1><br><img loading="lazy" src="/img/Icons/Special_Skill.png"><br>
-  <div class= "affect">
-  <h2 class="insert_affect" data-skillcount="4">    
-    AFFECT-HERE
-  </h2>
-  <h1>Range:</h1>
-  <div class= "Air_Ranges"><div class="Skills_header"><h1>Air</h1></div> </div>
-  <div class= "Ground_Ranges tile_inserter">
-  <div class="Skills_header"><h1>Ground</h1></div>
-  </div></div></div></div>
-
-</div></div></div>
-<!--end of light Bombers-->
 
 
 
