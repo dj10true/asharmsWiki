@@ -392,7 +392,6 @@ h4{
   max-width:  100%;
   padding: 0;
   margin:  0;
- 
 }
  #icon_container{
   display: flex;
@@ -652,7 +651,7 @@ h4{
 .skill_con{ 
   display: flex;
   flex-direction: column;
-  background: linear-gradient(40deg, transparent, black)
+  /* background: linear-gradient(40deg, transparent, black) */
 }
 .skill_header{
   position: relative;
@@ -910,23 +909,24 @@ h4{
   h1,h2,h3{
     font-size: 1rem;
   }
+  #dollpage_con{
+    background-image: url('/img/BG_Preview_L_Default.png');
+    background-size: cover;
+    max-height: 100%;
+    max-width:  100%;
+    padding: 0;
+    margin:  0;
+  }
 
   #icon_container{
-    /* display:  inline-flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    gap: 2rem;
-    overflow-y: scroll;
-    overflow-x: hidden; */
     display: flex;
-    height: 102em;
     gap: 2rem;
     overflow-y: scroll;
-    justify-content: center;
-    align-items: flex-end;
     overflow-x: hidden;
-    flex-wrap: wrap;
-    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin:  0;
     padding: 0;
   }
 
@@ -1001,9 +1001,9 @@ h4{
       border-radius: 15px;
       gap: 0px;
     }
-    .skill{
+    /* .skill{
       max-width: 30rem;
-    }
+    } */
     .passive_con{
       height: 21em;
     }
